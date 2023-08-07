@@ -1,22 +1,27 @@
-import React, {Component} from 'react'
+import React, {useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 
-export default class Login extends Component {
+export default function Login(){
 
-    logInFunction = (e) => {
+    const navigate = useNavigate()
+    const [userName, setUserName] = useState('')
+    const [password, setPassword] = useState('')
+
+    function logInFunction(e){
         e.preventDefault()
-        console.log('submitted')
+        console.log({userName, password})
+        navigate('/home')
     }
 
-    render(){
         return(
-            <form onSubmit={this.logInFunction}>
+            <form onSubmit={logInFunction}>
                 <h1>Log In</h1>
                 <label>Username:</label>
-                <input type='text' placeholder='Enter Username' />
+                <input type='text' placeholder='Enter Username' onChange={e => setUserName(e.target.value)}/>
                 <label>Password:</label>
-                <input type='password' placeholder='Enter Password'/>
+                <input type='password' placeholder='Enter Password' onChange={e => setPassword(e.target.value)}/>
                 <button type='submit'>Log In</button>
             </form>
         )
-    }
+    
 }
