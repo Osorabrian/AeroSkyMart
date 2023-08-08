@@ -14,13 +14,13 @@ export default function Login(){
     }
 
         return(
-            <form onSubmit={logInFunction}>
+            <form onSubmit={logInFunction} className='w-9/12 mx-auto'>
                 <h1>Log In</h1>
                 <label>Username:</label>
                 <input type='text' placeholder='Enter Username' onChange={e => setUserName(e.target.value)}/>
                 <label>Password:</label>
                 <input type='password' placeholder='Enter Password' onChange={e => setPassword(e.target.value)}/>
-                <button type='submit'>Log In</button>
+                <button type='submit' className='bg-midnight'>Log In</button>
             </form>
         )
     
