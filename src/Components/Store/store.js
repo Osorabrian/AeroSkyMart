@@ -1,15 +1,14 @@
 import React from "react";
-import {FcFilledFilter} from 'react-icons/fc'
 
 export default function Store(){
 
     return(
         <>
-            <div className="row">
-                <h1 className="text-4xl mt-3 col-6">Our Products</h1>
-                <FcFilledFilter className="col-3"/>
-                <p className="col-3">Filter</p>
+            <div className=" mt-3">
+                <h1 className="text-4xl">Our Products</h1>
+                <p className="text-right me-3"><i class="fa-solid fa-filter mt-3" style={{color: "#e96f0c"}}></i>   Filter Products</p>
             </div>
+            
         </>
     )
 }
