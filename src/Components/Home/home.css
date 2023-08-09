@@ -1,12 +1,12 @@
 #headline{
     background-image: url('../images/gulfstream.jpg');
     height: fit-content;
-    padding: 20px;
+    padding: 30px;
     background-size: cover;
 }
 
 #headline-message{
-    max-width: 400px;
+    max-width: 500px;
 }
 
 #store-button{
