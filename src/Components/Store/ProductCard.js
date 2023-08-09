@@ -5,7 +5,7 @@ import gulf from '../images/gulfstream.jpg'
 export default function ProjectCard(){
 
     return(
-        <div className="card ms-4 px-0" id='product-card'>
+        <div className="card ms-4 px-0 rounded-0" id='product-card'>
             <img src={gulf} alt='lt' className="card-img-top px-0 flex-0"/>
             <div className="card-body text-left">
                 <p className='card-title'>Wall Art</p>
