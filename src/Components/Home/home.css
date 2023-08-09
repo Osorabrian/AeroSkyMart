@@ -1,10 +1,11 @@
-#headline-photo{
-    width: 100%;
-    margin-top: -353px;
+#headline{
+    background-image: url('../images/gulfstream.jpg');
+    height: fit-content;
+    padding: 20px;
+    background-size: cover;
 }
 
 #headline-message{
-    margin-top: -500px;
     max-width: 400px;
 }
 
