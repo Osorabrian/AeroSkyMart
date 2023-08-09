@@ -1,8 +1,9 @@
 import React from "react";
+import gulfStream from '../images/gulfstream.jpg'
 
 export default function Home() {
 
     return(
-        <h1>Welcome Home</h1>
+        <img src={gulfStream} alt='headline' id='headline photo'/>
     )
 }
