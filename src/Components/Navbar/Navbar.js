@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaHome} from 'react-icons/fa'
 import {BiStore} from 'react-icons/bi'
-import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd, AiOutlineMenuFold} from 'react-icons/ai'
+import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 import {NavLink} from 'react-router-dom'
 import './Navbar.css'
 
