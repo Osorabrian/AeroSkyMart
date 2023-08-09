@@ -10,7 +10,7 @@ export default function Home() {
 
                 <div id='headline-message' className="text-left">
 
-                   <h1 className="text-6xl text-light font-semibold leading-normal mt-3">Elevate Your Aviation Experience!</h1>
+                   <h1 className="text-6xl text-light font-semibold leading-normal mt-4">Elevate Your Aviation Experience!</h1>
 
                     <button type="button" id='store-button' className="mt-5 mb-5 ms-3">
                         <div className="row">
