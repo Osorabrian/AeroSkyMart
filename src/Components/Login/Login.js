@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { useNavigate, NavLink } from 'react-router-dom'
 import {FaFighterJet} from 'react-icons/fa'
+import {GiPlanePilot} from 'react-icons/gi'
 import './Login.css'
 
 export default function Login(){
@@ -20,9 +21,9 @@ export default function Login(){
 
             <form onSubmit={logInFunction} className='w-9/12 mx-auto text-left mt-5 p-4' id='login-form'>
 
-                <h1 className='text-6xl text-center'>Log In</h1>
+                <GiPlanePilot className='text-6xl mx-auto' />
 
-                <div className='mt-5 mb-3'>
+                <div className='mt-3 mb-3'>
                     <label className={'form-label'}>Username:</label>
                     <input type='text' placeholder='Enter Username' className='form-control' onChange={e => setUserName(e.target.value)} required/>
                 </div>
