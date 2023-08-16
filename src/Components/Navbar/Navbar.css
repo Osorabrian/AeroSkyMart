@@ -5,3 +5,7 @@
 .navbar-toggler{
     border-style: none;
 }
+
+#nav-bar{
+    padding: 21px;
+}

@@ -7,9 +7,9 @@ import './Navbar.css'
 
 export default function Navbar(){
     return(
-        <nav className='bg-[rgb(0,0,0)] text-light navbar'>
+        <nav className='bg-[rgb(0,0,0)] text-light navbar' id='nav-bar'>
 
-            <NavLink className='navbar-brand text-light' to='/'>AeroSkyMart</NavLink>
+            <NavLink className='navbar-brand text-light text-2xl' to='/'>AeroSkyMart</NavLink>
 
             <div className='d-flex ms-auto' id='nav-content'>
 
