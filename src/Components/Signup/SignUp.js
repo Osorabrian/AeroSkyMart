@@ -48,7 +48,7 @@ export default function SignUp(){
                 </div>
 
                 <input type="checkbox" className="me-2" />
-                <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[rgb(0,0,255)]">Terms & Conditions.</a></label>
+                <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[#ff9800]">Terms & Conditions.</a></label>
 
                 <div style={{textAlign: 'center'}} className="mt-3">
                     <button className="border-1 border-black row mx-auto" id='create-button'>

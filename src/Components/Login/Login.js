@@ -47,7 +47,7 @@ export default function Login(){
                 </div>
 
                 <div className='mt-3 text-center'>
-                    <p>Don't have an acount ? <NavLink to='/signup' className='text-[#ff9800]'>Create Account.</NavLink></p>
+                    <p>Don't have an acount ? <NavLink to='/signup' className='text-[#ff9800]'>Sign Up.</NavLink></p>
                 </div>
                
 
