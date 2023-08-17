@@ -7,9 +7,9 @@ export default function SignUp(){
         <>
             <form id="signup-form" className="text-left mx-auto mt-5 border-1 border-black p-7">
 
-                <div className="row mb-3">
+                <div className="row mb-3 flex-wrap">
                     <div className="col-6">
-                        <label>First Name</label>
+                        <label className="form-label">First Name</label>
                         <input type='text' placeholder='First Name' required  className="form-control"/>
                     </div>
                     <div className="col-6">
