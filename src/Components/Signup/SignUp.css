@@ -1,5 +1,6 @@
 #signup-form{
-    max-width: 600px;
+    max-width: 500px;
+    margin: 10px auto;
 }
 
 #create-button{
@@ -12,6 +13,9 @@
 }
 
 #email-input{
-    max-width: 200px;
-    margin-right: 5px;
+    max-width: 310px;
+}
+
+#phone-input{
+    max-width: 320px
 }
