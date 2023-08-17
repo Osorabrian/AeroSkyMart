@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import PhoneInput from 'react-phone-number-input'
+import {BsPersonFillAdd} from 'react-icons/bs'
 import 'react-phone-number-input/style.css'
 import './SignUp.css'
 
@@ -9,7 +10,7 @@ export default function SignUp(){
 
     return(
         <>
-            <form id="signup-form" className="text-left mt-3 border-1 border-black p-7">
+            <form id="signup-form" className="text-left mt-3">
 
                 <div className="row mb-3 flex flex-wrap">
                     <div className="col-6">
@@ -50,7 +51,10 @@ export default function SignUp(){
                 <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[rgb(0,0,255)]">Terms & Conditions.</a></label>
 
                 <div style={{textAlign: 'center'}} className="mt-3">
-                    <button className="border-1 border-black" id='create-button'>Create Account</button>
+                    <button className="border-1 border-black row mx-auto" id='create-button'>
+                       <span className='col-9'>Sign Up</span>   
+                        <BsPersonFillAdd className="col-3 -ml-5 text-xl "/>
+                    </button>
                 </div>
 
             </form>
