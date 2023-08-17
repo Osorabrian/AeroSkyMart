@@ -18,15 +18,15 @@ export default function SignUp(){
                     </div>
                 </div>
 
-                <div className="row mb-3 flex-wrap">
-                    <div className="col-6">
+                <div className="mb-3 flex-wrap">
                         <label className="form-label">Email</label>
                         <input placeholder="email@domain.com" required className="form-control" type="text" />
-                    </div>
-                    <div className="col-6">
+                </div>
+                    
+
+                <div>
                         <label className="form-label">TelePhone</label>
                         <input className="form-control" type={'number'} placeholder="e.g 0746451952" required />
-                    </div>
                 </div>
 
                 <div className="mb-3">
@@ -39,7 +39,7 @@ export default function SignUp(){
                     <input type="password" required className="form-control" placeholder="Repeat Password" />
                 </div>
 
-                <input type="checkbox" />     <label className="form-text">I have read and agreed to the Terms & Conditions.</label>
+                <input type="checkbox" />  <label className="form-text">I agree to the Terms & Conditions.</label>
 
                 <div style={{textAlign: 'center'}} className="mt-3">
                     <button className="border-1 border-black" id='create-button'>Create Account</button>
