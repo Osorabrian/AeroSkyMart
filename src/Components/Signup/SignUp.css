@@ -1,5 +1,5 @@
 #signup-form{
-    max-width: 500px;
+    max-width: 600px;
 }
 
 #create-button{
@@ -9,4 +9,9 @@
 #create-button:hover{
     background-color: black;
     color: white;
+}
+
+#email-input{
+    max-width: 200px;
+    margin-right: 5px;
 }

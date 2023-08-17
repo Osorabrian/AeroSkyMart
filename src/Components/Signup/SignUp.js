@@ -18,16 +18,19 @@ export default function SignUp(){
                     </div>
                 </div>
 
-                <div className="mb-3">
+                <div className="mb-3 flex flex-wrap">
+                    <div className="col-6">
                         <label className="form-label">Email</label>
-                        <input placeholder="email@domain.com" required className="form-control" type="text" />
+                        <input placeholder="email@domain.com" required className="form-control" type="email" id={'email-input'}/>
+                    </div>
+                    <div className="col-6">
+                        <label className="form-label">Telephone</label>
+                        <input className="form-control" type={'tel'} placeholder="0746451952" required />
+                    </div>  
                 </div>
                     
 
-                <div className="mb-3">
-                        <label className="form-label">TelePhone</label>
-                        <input className="form-control" type={'number'} placeholder="e.g 0746451952" required />
-                </div>
+                
 
                 <div className="mb-3">
                     <label className="form-label">Enter Password</label>
@@ -39,7 +42,8 @@ export default function SignUp(){
                     <input type="password" required className="form-control" placeholder="Repeat Password" />
                 </div>
 
-                <input type="checkbox" className="me-2" /><label className="form-text">I agree to the <a href="https://www.amazon.com/">Terms & Conditions.</a></label>
+                <input type="checkbox" className="me-2" />
+                <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[rgb(0,0,255)]">Terms & Conditions.</a></label>
 
                 <div style={{textAlign: 'center'}} className="mt-3">
                     <button className="border-1 border-black" id='create-button'>Create Account</button>
