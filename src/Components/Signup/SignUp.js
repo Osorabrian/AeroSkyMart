@@ -18,7 +18,7 @@ export default function SignUp(){
                     </div>
                 </div>
 
-                <div className="row mb-3">
+                <div className="row mb-3 flex-wrap">
                     <div className="col-6">
                         <label className="form-label">Email</label>
                         <input placeholder="email@domain.com" required className="form-control" type="text" />
