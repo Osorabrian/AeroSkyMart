@@ -8,6 +8,8 @@ export default function SignUp(){
 
     const [value, setValue] = useState()
 
+    console.log(value)
+
     return(
         <>
             <form id="signup-form" className="text-left mt-3">
@@ -31,7 +33,7 @@ export default function SignUp(){
                                             
                     <div className="col-6">
                             <label className="form-label">Telephone</label>
-                            <PhoneInput type={'tel'} className='form-control' value={value} onChange={setValue} placeholder="0712345678" required defaultCountry="KE" id='phone-input'/>
+                            <PhoneInput limitMaxLength={14} type={'tel'} className='form-control' value={value} onChange={setValue} placeholder="0712345678" required defaultCountry="KE" id='phone-input'/>
                     </div>  
                 </div>
                     
@@ -47,7 +49,7 @@ export default function SignUp(){
                     <input type="password" required className="form-control" placeholder="Confirm Password" />
                 </div>
 
-                <input type="checkbox" className="me-2" />
+                <input type="checkbox" className="me-2 ms-3" />
                 <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[#ff9800]">Terms & Conditions.</a></label>
 
                 <div style={{textAlign: 'center'}} className="mt-3">

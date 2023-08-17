@@ -19,5 +19,29 @@
 }
 
 #phone-input{
-    max-width: 320px
+    max-width: 320px;
+    border: 1px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0px;
+    border-color: black;
+    outline: 0px;
+}
+
+.form-control, phoneput{
+    border: 1px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0px;
+    border-color: black;
+    outline: 0px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: none;
+    border-bottom: 1px solid black;
 }
