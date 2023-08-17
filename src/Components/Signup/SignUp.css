@@ -1,0 +1,12 @@
+#signup-form{
+    max-width: 500px;
+}
+
+#create-button{
+    padding: 10px;
+}
+
+#create-button:hover{
+    background-color: black;
+    color: white;
+}
