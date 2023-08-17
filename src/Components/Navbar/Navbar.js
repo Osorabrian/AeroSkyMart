@@ -9,37 +9,38 @@ export default function Navbar(){
     return(
         <nav className='bg-[rgb(0,0,0)] text-light navbar' id='nav-bar'>
 
-            <NavLink className='navbar-brand text-light text-2xl' to='/'>AeroSkyMart</NavLink>
+            <NavLink className='navbar-brand text-light text-2xl me-auto' to='/'>AeroSkyMart</NavLink>
 
-            <div className='d-flex ms-auto' id='nav-content'>
-
+            <div className='mx-auto d-flex nav-content text-xl'>
                     <ul className='d-flex'>
-                        <li className='nav-item me-4 row'>
-                            <FaHome className='col-6'/>
+                        <li className='nav-item row'>
+                            <FaHome className='col-6 mt-1'/>
                             <NavLink to='/' className={'nav-link col-6'}>Home</NavLink>
                         </li>
-                        <li className='nav-item me-4 row'>
-                            <BiStore className='col-6'/>
+                        <li className='nav-item ms-4 row'>
+                            <BiStore className='col-6 mt-1'/>
                             <NavLink to='/store' className={'nav-link col-6'}>Store</NavLink>
                         </li>
-                        <li className='nav-item me-4 row'>
-                            <AiOutlineShoppingCart className='col-6'/>
+                        <li className='nav-item ms-4 row'>
+                            <AiOutlineShoppingCart className='col-6 mt-1'/>
                             <NavLink to='/cart' className={'nav-link col-6'}>Cart</NavLink>
                         </li>
-                    </ul>             
+                    </ul>            
+            </div>
 
+            <div className='ms-auto d-flex nav-content text-xl'>
                     <ul className='d-flex'>
-                        <li className='nav-item me-4 row'>
+                        <li className='nav-item row'>
                             <NavLink to='/login' className={'nav-link col-6'}>LogIn</NavLink>
-                            <AiOutlineLogin className='col-6'/>
+                            <AiOutlineLogin className='col-6 mt-1'/>
                         </li>
-                        <li className='nav-item me-4 row'>
-                            <NavLink to='/signup' className={'nav-link col-6'}>SignUp</NavLink>
-                            <AiOutlineUserAdd className='col-6'/>
+                        <li className='nav-item  ms-4 row'>
+                            <NavLink to='/signup' className={'nav-link col-7'}>SignUp</NavLink>
+                            <AiOutlineUserAdd className='col-5 mt-1'/>
                         </li>
                     </ul>
-                
             </div>
+
         </nav>
     )
 }
