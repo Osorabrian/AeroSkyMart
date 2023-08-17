@@ -33,7 +33,7 @@ export default function SignUp(){
                                             
                     <div className="col-6">
                             <label className="form-label">Telephone</label>
-                            <PhoneInput limitMaxLength={14} type={'tel'} className='form-control' value={value} onChange={setValue} placeholder="0712345678" required defaultCountry="KE" id='phone-input'/>
+                            <PhoneInput maxlength={'11'} type={'tel'} className='form-control' value={value} onChange={setValue} placeholder="0712345678" required defaultCountry="KE" id='phone-input'/>
                     </div>  
                 </div>
                     
@@ -52,7 +52,7 @@ export default function SignUp(){
                 <input type="checkbox" className="me-2 ms-3" />
                 <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[#ff9800]">Terms & Conditions.</a></label>
 
-                <div style={{textAlign: 'center'}} className="mt-3">
+                <div style={{textAlign: 'center'}} className="mt-4">
                     <button className="border-1 border-black row mx-auto" id='create-button'>
                        <span className='col-9'>Sign Up</span>   
                         <BsPersonFillAdd className="col-3 -ml-5 text-xl "/>
