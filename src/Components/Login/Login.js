@@ -19,11 +19,11 @@ export default function Login(){
 
         return(
 
-            <form onSubmit={logInFunction} className='w-9/12 mx-auto text-left mt-5 p-4' id='login-form'>
+            <form onSubmit={logInFunction} className='mx-auto text-left mt-3 p-4' id='login-form'>
 
-                <GiPlanePilot className='text-6xl mx-auto' />
+                <GiPlanePilot className='text-8xl mx-auto' />
 
-                <div className='mt-3 mb-3'>
+                <div className='mt-3 mb-4'>
                     <label className={'form-label'}>Username:</label>
                     <input type='text' placeholder='Enter Username' className='form-control' onChange={e => setUserName(e.target.value)} required/>
                 </div>
@@ -33,12 +33,12 @@ export default function Login(){
                     <input type='password' placeholder='Enter Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
                 </div>
 
-                <div className='mb-3 text-right'>
+                <div className='mb-4 text-right'>
                     <NavLink className='form-text text-[#ff9800]'>Forgot Password ?</NavLink>
                 </div>
 
                 <div className='text-center'>
-                    <button type='submit' className='p-2 border-1 border-black' id='login-button'>
+                    <button type='submit' className='w-10/12 p-2 border-1 border-black' id='login-button'>
                         <div className='row'>
                             <span className='col-9'>Log In</span>
                             <FaFighterJet className='col-3 mt-1 -ml-8'/>
@@ -46,7 +46,7 @@ export default function Login(){
                     </button>
                 </div>
 
-                <div className='mt-3 text-center'>
+                <div className='mt-4 text-center'>
                     <p>Don't have an acount ? <NavLink to='/signup' className='text-[#ff9800]'>Sign Up.</NavLink></p>
                 </div>
                
