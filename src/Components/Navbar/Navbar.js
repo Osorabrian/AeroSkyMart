@@ -2,14 +2,18 @@ import React from 'react'
 import {FaHome} from 'react-icons/fa'
 import {BiStore} from 'react-icons/bi'
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
+import logo from '../images/plane.png'
 import {NavLink} from 'react-router-dom'
 import './Navbar.css'
 
 export default function Navbar(){
     return(
-        <nav className='bg-[rgb(0,0,0)] text-light navbar' id='nav-bar'>
+        <nav className='bg-[rgb(0,0,0)] text-light navbar font-roboto' id='nav-bar'>
 
-            <NavLink className='navbar-brand text-light text-2xl me-auto' to='/'>AeroSkyMart</NavLink>
+            <NavLink className='navbar-brand text-light text-2xl me-auto row' to='/'>
+                <img src={logo} alt='logo'id='logo' className='col-6 -mt-1'/>
+                <span className='col-6 -ml-4 font-roboto'>AeroSkyMart</span>
+            </NavLink>
 
             <div className='mx-auto d-flex nav-content text-xl'>
                     <ul className='d-flex'>

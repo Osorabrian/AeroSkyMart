@@ -6,7 +6,8 @@ module.exports = {
   theme:{
     fontFamily: {
       lato: ['Lato', 'sans-serif'],
-      raleway: ['Raleway', 'sans-serif']
+      raleway: ['Raleway', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif']
     },
   },
   plugins: [],
