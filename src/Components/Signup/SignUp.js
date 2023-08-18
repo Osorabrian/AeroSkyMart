@@ -12,7 +12,7 @@ export default function SignUp(){
 
     return(
         <>
-            <form id="signup-form" className="text-left mt-3">
+            <form id="signup-form" className="text-left mt-3 font-lato">
 
                 <div className="row mb-3 flex flex-wrap">
                     <div className="col-6">

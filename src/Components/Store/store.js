@@ -5,7 +5,7 @@ import './store.css'
 export default function Store(){
 
     return(
-        <>
+        <div className="font-lato">
             <div className=" mt-3">
                 <h1 className="text-4xl">Our Products</h1>
             </div>
@@ -24,6 +24,6 @@ export default function Store(){
                 <ProductCard />
             </div>
 
-        </>
+        </div>
     )
 }
