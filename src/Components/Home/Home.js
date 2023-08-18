@@ -11,14 +11,14 @@ export default function Home() {
 
                 <div id='headline-message' className="text-left">
 
-                   <h1 className="text-6xl text-light font-semibold leading-normal mt-4">Elevate Your Aviation Experience!</h1>
+                   <h1 className="text-6xl text-light font-semibold font-raleway leading-normal mt-4">Elevate Your Aviation Experience!</h1>
 
                     <Link type="button" id='store-button' className="mt-5 mb-5 ms-3" to='/store'>
-                        <div className="row">
+                        <div className="row font-lato font-4xl">
                             <span className="col-9">
                             Go To Store  
                             </span>
-                            <FaOpencart className="col-3 mt-1"/>
+                            <FaOpencart className="col-3 mt-1 -ml-1"/>
                         </div>
                     </Link> 
 
