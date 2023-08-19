@@ -9,4 +9,8 @@
         max-width: 160px;
         margin: auto;
     }
+
+    .icon{
+        margin-left: 1px;
+    }
 }
