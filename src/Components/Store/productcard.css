@@ -1,5 +1,12 @@
 #product-card{
-    min-width: 150px;
+    min-width: 160px;
     max-width: 250px;
     margin: auto;
+}
+
+@media screen and (max-width: 600px){
+    #product-card{
+        max-width: 160px;
+        margin: auto;
+    }
 }
