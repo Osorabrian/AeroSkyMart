@@ -1,9 +1,13 @@
 #search-row{
-    max-width: 330px;
+    max-width: 100%;
 }
 
 #search{
     border-top: 1px solid;
     border-left: 1px solid;
     border-right: 1px solid;
+}
+
+#search-bar{
+    max-width: 350px;
 }
