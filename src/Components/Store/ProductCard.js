@@ -5,13 +5,13 @@ import {GiCargoShip} from 'react-icons/gi'
 import './productcard.css'
 import gulf from '../images/gulfstream.jpg'
 
-export default function ProjectCard(){
+export default function ProjectCard({name}){
 
     return(
         <div className="card mb-4 px-0 rounded-0" id='product-card'>
             <img src={gulf} alt='lt' className="card-img-top px-0 flex-0"/>
             <div className="card-body text-left">
-                <p className='card-text mb-2 font-semibold'>Wall Art</p>
+                <p className='card-text mb-2 font-semibold'>{name}</p>
                 <div className="row mb-2">
                     {/* <BsCheck2 className="fill-[#4caf50] col-3 mt-1 -ml-3 icon"/><p className="col-9 -ml-6 card-text stock">5 in Stock</p> */}
                     <HiOutlineX className="text-[rgb(255,0,0)] col-3 mt-1 -ml-3 icon"/> <p className="col-9 -ml-6 card-text">Sold Out</p>
