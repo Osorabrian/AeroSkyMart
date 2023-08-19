@@ -15,7 +15,7 @@ export default function Store(){
                 <p className="text-right me-3 col-3"><i className="fa-solid fa-filter mt-3" style={{color: "#e96f0c"}}></i>   Filter</p>
             </div> */}
 
-            <div className="row mx-auto mt-4" id='cards'>
+            <div className="row grid grid-cols-5 mx-auto mt-5" id='cards'>
                 <ProductCard />
                 <ProductCard />
                 <ProductCard />
