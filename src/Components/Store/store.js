@@ -39,20 +39,23 @@ export default function Store(){
                 <h1 className="text-4xl">Our Products</h1>
             </div>
              
-            <div className="row mt-3 mb-3" id='search-row'>
-                <div className="row ms-auto" id='search-bar'>
-                    <input placeholder="Search..." type="search" className="form-control w-50 rounded-0 col-9 ms-11" id='search' onChange={e => setSearch(e.target.value)}/>
-                    <button className="text-right col-3 -mt-1" onClick={handleFilter}><i className="fa-solid fa-filter mt-3" style={{color: "#e96f0c"}}></i>   Filter</button>
+            { !filter && (
+                <div className="row mt-3 mb-3" id='search-row'>
+                    <div className="row ms-auto" id='search-bar'>
+                        <input placeholder="Search..." type="search" className="form-control w-50 rounded-0 col-9 ms-11" id='search' onChange={e => setSearch(e.target.value)}/>
+                        <button className="text-right col-3 -mt-1" onClick={handleFilter}><i className="fa-solid fa-filter mt-3" style={{color: "#e96f0c"}}></i>   Filter</button>
+                    </div>
                 </div>
-            </div>
+            )}
 
-                <div className="row mx-auto" id='filter-div'>
+            {filter &&    (
+            <div className="row mx-auto mt-3 mb-3" id='filter-div'>
 
-                    <div className="col-4" id='search-bar'>
+                    <div className="col-3" id='search-bar'>
                         <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => setSearch(e.target.value)}/>
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-3">
                         <select name='category' id='category-select' className="form-select search">
                             <option value=''>Select a category</option>
                             <option>Books</option>
@@ -62,13 +65,23 @@ export default function Store(){
                         </select>
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-3">
                         <label className="form-label">Price</label>
-                        <input type='number' placeholder="Min" classname='form-control' id={'min-price'}/>
+                        <input type='number' placeholder="Min" min='0.00' classname='form-control' id={'min-price'}/>
                         <input type='number' placeholder="Max" classname='form-control' id={'max-price'}/>
                     </div>
 
+                     <div className="col-3">
+                        <button className="btn" onClick={handleFilter} id='close-filter'>
+                            <span id='close-text'>Close Filter</span>
+                        </button>
+                    </div>
+
                 </div>
+
+               
+
+                )}
 
             <div className="row mx-auto" id='cards'>
                 {dataList}

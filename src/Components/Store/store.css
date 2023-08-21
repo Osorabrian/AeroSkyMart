@@ -27,5 +27,15 @@
 }
 
 #filter-div{
-    max-width: 900px;
+    max-width: 1200px;
+}
+
+#close-filter{
+    border: 1px solid #e96f0c;
+    color: #e96f0c;
+}
+
+#close-filter:hover{
+    background-color: #e96f0c;
+    color: white;
 }
