@@ -43,7 +43,7 @@ export default function Store(){
                 <div className="row mt-3 mb-3" id='search-row'>
                     <div className="row ms-auto" id='search-bar'>
                         <input placeholder="Search..." type="search" className="form-control w-50 rounded-0 col-9 ms-11" id='search' onChange={e => setSearch(e.target.value)}/>
-                        <button className="text-right col-3 -mt-1" onClick={handleFilter}><i className="fa-solid fa-filter mt-3" style={{color: "#e96f0c"}}></i>   Filter</button>
+                        <button className="text-right col-3 -mt-1" onClick={handleFilter}><i className="fa-solid fa-filter mt-3" style={{color: "#e96f0c"}}> </i>   Filter</button>
                     </div>
                 </div>
             )}
@@ -51,13 +51,13 @@ export default function Store(){
             {filter &&    (
             <div className="row mx-auto mt-3 mb-3" id='filter-div'>
 
-                    <div className="col-3" id='search-bar'>
+                    <div className="col-3 mb-3" id='search-bar-filter'>
                         <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => setSearch(e.target.value)}/>
                     </div>
 
                     <div className="col-3">
                         <select name='category' id='category-select' className="form-select search">
-                            <option value=''>Select a category</option>
+                            <option value=''>Select category</option>
                             <option>Books</option>
                             <option>Accessories</option>
                             <option>Clothes</option>
@@ -65,13 +65,12 @@ export default function Store(){
                         </select>
                     </div>
 
-                    <div className="col-3">
-                        <label className="form-label">Price</label>
-                        <input type='number' placeholder="Min" min='0.00' classname='form-control' id={'min-price'}/>
-                        <input type='number' placeholder="Max" classname='form-control' id={'max-price'}/>
+                    <div className="col-4">
+                        <input type='number' placeholder="Min Price" min='0.00' classname='form-control' id={'min-price'}/>
+                        <input type='number' placeholder="Max Price" classname='form-control' id={'max-price'}/>
                     </div>
 
-                     <div className="col-3">
+                     <div className="col-2">
                         <button className="btn" onClick={handleFilter} id='close-filter'>
                             <span id='close-text'>Close Filter</span>
                         </button>

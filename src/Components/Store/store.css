@@ -12,17 +12,22 @@
 #category-select{
     border: 1px solid;
     border-radius: 0px;
-    max-width: 200px;
+    width: 200px;
 }
 
 #min-price, #max-price{
     border: 1px solid;
     border-radius: 0px;
-    max-width: 100px;
+    width: 100px;
+    max-width: 200px;
     margin: 10px;
 }
 
 #search-bar{
+    max-width: 350px;
+}
+
+#search-bar-filter{
     max-width: 350px;
 }
 
@@ -38,4 +43,33 @@
 #close-filter:hover{
     background-color: #e96f0c;
     color: white;
+}
+
+@media  screen and (max-width: 600px) {
+
+    #search-bar-filter{
+        width: 250px;
+    }
+
+    #filter-div{
+        display: grid;
+        margin: 50px auto;
+    }
+
+    #category-select{
+        border: 1px solid;
+        border-radius: 0px;
+        max-width: 180px;
+    }
+    
+    #min-price, #max-price{
+        border: 1px solid;
+        border-radius: 0px;
+        max-width: 100px;
+        margin: 10px;
+    }
+
+    #close-filter{
+        width: 200px;
+    }
 }
