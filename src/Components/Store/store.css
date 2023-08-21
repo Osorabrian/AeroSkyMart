@@ -6,8 +6,26 @@
     border-top: 1px solid;
     border-left: 1px solid;
     border-right: 1px solid;
+    border-radius: 0px;
+}
+
+#category-select{
+    border: 1px solid;
+    border-radius: 0px;
+    max-width: 200px;
+}
+
+#min-price, #max-price{
+    border: 1px solid;
+    border-radius: 0px;
+    max-width: 100px;
+    margin: 10px;
 }
 
 #search-bar{
     max-width: 350px;
+}
+
+#filter-div{
+    max-width: 900px;
 }
