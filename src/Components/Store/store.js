@@ -105,21 +105,30 @@ export default function Store(){
                 )}
 
             <div className="row mx-auto" id='cards'>
-                {posts}
+
+                {posts.length > 0 ?
+                    <>
+                    {posts}
+
+                    <div className="row mx-auto" id='pagination'>
+                        <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
+                            {`<< Prev.`}
+                        </button>
+                        <p className="col-4">
+                            { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
+                        </p>
+                        <button className="btn btn-dark col-4" disabled={!canNext} onClick={goToNext}>
+                            {`Next >>`}
+                        </button>
+                    </div>
+                    </>
+                 :
+                    <p>No Search Results.</p>
+                }
+                
             </div>
 
-            <div className="row mx-auto" id='pagination'>
-                <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
-                    {`<< Prev.`}
-                </button>
-                <p className="col-4">
-                    { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
-                </p>
-                <button className="btn btn-dark col-4" disabled={!canNext} onClick={goToNext}>
-                    {`Next >>`}
-                </button>
-            </div>
-
+            
         </div>
     )
 }

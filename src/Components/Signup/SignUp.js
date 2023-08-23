@@ -52,7 +52,7 @@ export default function SignUp(){
                 <input type="checkbox" className="me-2 ms-3" />
                 <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[#ff9800]">Terms & Conditions.</a></label>
 
-                <div style={{textAlign: 'center'}} className="mt-4">
+                <div style={{textAlign: 'center'}} className="mt-4" >
                     <button className="border-1 border-black row mx-auto" id='create-button'>
                        <span className='col-9'>Sign Up</span>   
                         <BsPersonFillAdd className="col-3 -ml-5 text-xl "/>
