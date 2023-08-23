@@ -7,6 +7,7 @@ export default function Store(){
     const [data, setData] = useState([])
     const [search, setSearch] = useState('')
     const [filter, setFilter] = useState(false)
+    let [currentPage, setCurrentPage] = useState(1)
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/albums')
@@ -22,15 +23,36 @@ export default function Store(){
         }
     }
 
-    console.log(filter)
+    function goToPrev(){
+        const prevPage = Math.max(currentPage - 1, 1)
+        setCurrentPage(prevPage)
+    }
+
+    function goToNext(){
+        const nextPage = Math.min(currentPage + 1, pages)
+        setCurrentPage(nextPage)
+    }
 
     const filteredData = data.filter((item) => {
         return item.title.toLowerCase().includes(search.toLowerCase())
     })
 
+    const postsPerPage = 20
+    const totalData = filteredData.length 
+    const pages = Math.ceil(totalData/postsPerPage)
+
+    const start = postsPerPage * (( currentPage > pages ? currentPage = 1 : currentPage) - 1)
+    const end = postsPerPage * currentPage
+    
+    const canPrev = currentPage > 1
+    const canNext = currentPage < pages 
+    
     const dataList = filteredData.map((data) => {
         return <ProductCard key={data.id} name={data.title}/>
-    })
+    }) 
+    
+    const posts = dataList.slice(start, end)
+    console.log(dataList)
 
     return(
         <div className="font-lato">
@@ -54,7 +76,12 @@ export default function Store(){
                     
                     <div className="row col-5">
                         <div className="col-6 mb-3" id='search-bar-filter'>
-                            <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => setSearch(e.target.value)}/>
+                            <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" 
+                            id='search' 
+                            onChange={e => {
+                                setCurrentPage(1)
+                                setSearch(e.target.value)}}
+                        />
                         </div>
 
                         <div className="col-6">
@@ -84,7 +111,19 @@ export default function Store(){
                 )}
 
             <div className="row mx-auto" id='cards'>
-                {dataList}
+                {posts}
+            </div>
+
+            <div className="flex">
+                <button disabled={!canPrev} onClick={goToPrev}>
+                    Previous
+                </button>
+                <p>
+                    { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
+                </p>
+                <button disabled={!canNext} onClick={goToNext}>
+                    Next
+                </button>
             </div>
 
         </div>
