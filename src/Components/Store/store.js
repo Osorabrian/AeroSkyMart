@@ -49,23 +49,26 @@ export default function Store(){
             )}
 
             {filter &&    (
+            <div id='filter'>
             <div className="row mx-auto mt-3 mb-3" id='filter-div'>
+                    
+                    <div className="row col-5">
+                        <div className="col-6 mb-3" id='search-bar-filter'>
+                            <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => setSearch(e.target.value)}/>
+                        </div>
 
-                    <div className="col-3 mb-3" id='search-bar-filter'>
-                        <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => setSearch(e.target.value)}/>
+                        <div className="col-6">
+                            <select name='category' id='category-select' className="form-select search">
+                                <option value=''>Select category</option>
+                                <option>Books</option>
+                                <option>Accessories</option>
+                                <option>Clothes</option>
+                                <option>Souvenior</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div className="col-3">
-                        <select name='category' id='category-select' className="form-select search">
-                            <option value=''>Select category</option>
-                            <option>Books</option>
-                            <option>Accessories</option>
-                            <option>Clothes</option>
-                            <option>Souvenior</option>
-                        </select>
-                    </div>
-
-                    <div className="col-4">
+                    <div className="col-4 mb-2" id='price-div'>
                         <input type='number' placeholder="Min Price" min='0.00' classname='form-control' id={'min-price'}/>
                         <input type='number' placeholder="Max Price" classname='form-control' id={'max-price'}/>
                     </div>
@@ -77,9 +80,7 @@ export default function Store(){
                     </div>
 
                 </div>
-
-               
-
+                </div>
                 )}
 
             <div className="row mx-auto" id='cards'>

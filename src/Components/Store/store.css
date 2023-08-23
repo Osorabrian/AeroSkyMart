@@ -49,27 +49,43 @@
 
     #search-bar-filter{
         width: 250px;
+        margin-left: 30px;
     }
 
     #filter-div{
         display: grid;
-        margin: 50px auto;
+        width: auto;
+        margin: 150px auto;
     }
 
     #category-select{
         border: 1px solid;
         border-radius: 0px;
         max-width: 180px;
+        margin-top: -54px;
+        margin-left: 150px;
     }
     
-    #min-price, #max-price{
+    #min-price{
         border: 1px solid;
         border-radius: 0px;
         max-width: 100px;
-        margin: 10px;
+    }
+
+    #max-price{
+        border: 1px solid;
+        border-radius: 0px;
+        max-width: 100px;
+        margin: -230px;
     }
 
     #close-filter{
         width: 200px;
+        margin-left: 80px;
+    }
+
+    #filter{
+        width: 100%;
+        margin: auto;
     }
 }
