@@ -114,15 +114,15 @@ export default function Store(){
                 {posts}
             </div>
 
-            <div className="flex">
-                <button disabled={!canPrev} onClick={goToPrev}>
-                    Previous
+            <div className="row mx-auto" id='pagination'>
+                <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
+                    {`<< Prev.`}
                 </button>
-                <p>
+                <p className="col-4">
                     { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
                 </p>
-                <button disabled={!canNext} onClick={goToNext}>
-                    Next
+                <button className="btn btn-dark col-4" disabled={!canNext} onClick={goToNext}>
+                    {`Next >>`}
                 </button>
             </div>
 
