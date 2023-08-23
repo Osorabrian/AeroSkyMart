@@ -33,7 +33,7 @@ export default function SignUp(){
                                             
                     <div className="col-6">
                             <label className="form-label">Telephone</label>
-                            <PhoneInput maxlength={'11'} type={'tel'} className='form-control' value={value} onChange={setValue} placeholder="0712345678" required defaultCountry="KE" id='phone-input'/>
+                            <PhoneInput maxLength={'11'} type={'tel'} className='form-control' value={value} onChange={setValue} placeholder="0712345678" required defaultCountry="KE" id='phone-input'/>
                     </div>  
                 </div>
                     

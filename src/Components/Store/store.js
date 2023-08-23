@@ -52,7 +52,6 @@ export default function Store(){
     }) 
     
     const posts = dataList.slice(start, end)
-    console.log(dataList)
 
     return(
         <div className="font-lato">
