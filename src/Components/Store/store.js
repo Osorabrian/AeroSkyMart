@@ -76,12 +76,7 @@ export default function Store(){
                     
                     <div className="row col-5">
                         <div className="col-6 mb-3" id='search-bar-filter'>
-                            <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" 
-                            id='search' 
-                            onChange={e => {
-                                setCurrentPage(1)
-                                setSearch(e.target.value)}}
-                        />
+                            <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => {setSearch(e.target.value)}}/>
                         </div>
 
                         <div className="col-6">
