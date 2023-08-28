@@ -69,6 +69,10 @@ export default function Store(){
                 </div>
             )}
 
+            <div className="mb-2 ms-4">
+                <p style={{textAlign: 'left'}} className="font-semibold">Showing {start + 1} to {end} of {totalData} results</p>
+            </div>
+
             {filter &&    (
             <div id='filter'>
             <div className="row mx-auto mt-3 mb-3" id='filter-div'>
@@ -104,27 +108,31 @@ export default function Store(){
                 </div>
                 )}
 
-            <div className="row mx-auto" id='cards'>
+            <div className="mx-auto" id='cards'>
 
                 {posts.length > 0 ?
                     <>
-                    {posts}
+                        <div className="row">
+                            {posts}
+                        </div>
 
-                    <div className="row mx-auto" id='pagination'>
-                        <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
-                            {`<< Prev.`}
-                        </button>
-                        <p className="col-4">
-                            { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
-                        </p>
-                        <button className="btn btn-dark col-4" disabled={!canNext} onClick={goToNext}>
-                            {`Next >>`}
-                        </button>
-                    </div>
+                        <div className="row mx-auto" id='pagination'>
+                            <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
+                                {`<< Prev.`}
+                            </button>
+                            <p className="col-4">
+                                { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
+                            </p>
+                            <button className = 'btn btn-dark col-4' disabled={!canNext} onClick={goToNext}>
+                                {`Next >>`}
+                            </button>
+                        </div>
                     </>
+                    
                  :
                     <p>No Search Results.</p>
                 }
+
                 
             </div>
 
