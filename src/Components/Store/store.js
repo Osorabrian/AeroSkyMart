@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, Suspense, lazy} from "react";
 import ProductCard from './ProductCard'
 import './store.css'
 
@@ -7,12 +7,16 @@ export default function Store(){
     const [data, setData] = useState([])
     const [search, setSearch] = useState('')
     const [filter, setFilter] = useState(false)
+    const [loading, setLoading] = useState(true)
     let [currentPage, setCurrentPage] = useState(1)
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/albums')
         .then(res => res.json())
-        .then(data => setData(data))
+        .then(data => {
+            setData(data)
+            setLoading(false)    
+        })
     },[])
 
     function handleFilter(){
@@ -69,76 +73,81 @@ export default function Store(){
                 </div>
             )}
 
-            {posts.length > 0 && (
-                <div className="mb-2 ms-4">
-                    <p style={{textAlign: 'left'}} className="font-semibold">
-                        Showing {start + 1} to {end > totalData ? totalData: end} of {totalData} results</p>
-                </div>
-            )}
-           
-
-            {filter &&    (
-            <div id='filter'>
-            <div className="row mx-auto mt-3 mb-3" id='filter-div'>
-                    
-                    <div className="row col-5">
-                        <div className="col-6 mb-3" id='search-bar-filter'>
-                            <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => {setSearch(e.target.value)}}/>
+            {!loading ? (
+                <>
+                    {posts.length > 0 && (
+                        <div className="mb-2 ms-4">
+                            <p style={{textAlign: 'left'}} className="font-semibold">
+                                Showing {start + 1} to {end > totalData ? totalData: end} of {totalData} results</p>
                         </div>
-
-                        <div className="col-6">
-                            <select name='category' id='category-select' className="form-select search">
-                                <option value=''>Select category</option>
-                                <option>Books</option>
-                                <option>Accessories</option>
-                                <option>Clothes</option>
-                                <option>Souvenior</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div className="col-4 mb-2" id='price-div'>
-                        <input type='number' placeholder="Min Price" min='0.00' classname='form-control' id={'min-price'}/>
-                        <input type='number' placeholder="Max Price" classname='form-control' id={'max-price'}/>
-                    </div>
-
-                     <div className="col-2">
-                        <button className="btn" onClick={handleFilter} id='close-filter'>
-                            <span id='close-text'>Close Filter</span>
-                        </button>
-                    </div>
-
-                </div>
-                </div>
-                )}
-
-            <div className="row mx-auto" id='cards'>
-
-                {posts.length > 0 ?
-                    <>
-                        {posts}
-                    </>                     
-                 :
-                    <p>No Search Results.</p>
-                }
+                    )}
                 
-            </div>
 
-            {posts.length > 0 && (
-                    <div className="row mx-auto" id='pagination'>
-                        <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
-                            {`<< Prev.`}
-                        </button>
-                        <p className="col-4">
-                            { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
-                        </p>
-                        <button className = 'btn btn-dark col-4' disabled={!canNext} onClick={goToNext}>
-                            {`Next >>`}
-                        </button>
+                    {filter &&    (
+                    <div id='filter'>
+                    <div className="row mx-auto mt-3 mb-3" id='filter-div'>
+                            
+                            <div className="row col-5">
+                                <div className="col-6 mb-3" id='search-bar-filter'>
+                                    <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => {setSearch(e.target.value)}}/>
+                                </div>
+
+                                <div className="col-6">
+                                    <select name='category' id='category-select' className="form-select search">
+                                        <option value=''>Select category</option>
+                                        <option>Books</option>
+                                        <option>Accessories</option>
+                                        <option>Clothes</option>
+                                        <option>Souvenior</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div className="col-4 mb-2" id='price-div'>
+                                <input type='number' placeholder="Min Price" min='0.00' classname='form-control' id={'min-price'}/>
+                                <input type='number' placeholder="Max Price" classname='form-control' id={'max-price'}/>
+                            </div>
+
+                            <div className="col-2">
+                                <button className="btn" onClick={handleFilter} id='close-filter'>
+                                    <span id='close-text'>Close Filter</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        </div>
+                        )}
+
+                    <div className="row mx-auto" id='cards'>
+
+                        {posts.length > 0 ?
+                            <>
+                                {posts}
+                            </>                     
+                        :
+                            <p>No Search Results.</p>
+                        }
+                        
                     </div>
+
+                    {posts.length > 0 && (
+                            <div className="row mx-auto" id='pagination'>
+                                <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
+                                    {`<< Prev.`}
+                                </button>
+                                <p className="col-4">
+                                    { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
+                                </p>
+                                <button className = 'btn btn-dark col-4' disabled={!canNext} onClick={goToNext}>
+                                    {`Next >>`}
+                                </button>
+                            </div>
+                    )}
+                </>
+            ) : (
+            <p> Loading ...</p>
             )}
 
-            
         </div>
     )
 }
