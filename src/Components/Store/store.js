@@ -76,7 +76,7 @@ export default function Store(){
             {!loading ? (
                 <>
                     {posts.length > 0 && (
-                        <div className="mb-2 ms-4">
+                        <div className="mb-3 ms-3">
                             <p style={{textAlign: 'left'}} className="font-semibold">
                                 Showing {start + 1} to {end > totalData ? totalData: end} of {totalData} results</p>
                         </div>
