@@ -145,7 +145,7 @@ export default function Store(){
                     )}
                 </>
             ) : (
-            <p className="text-5xl font-semibold"> Loading ...</p>
+            <p className=" mt-5 text-5xl font-semibold"> Loading ...</p>
             )}
 
         </div>
