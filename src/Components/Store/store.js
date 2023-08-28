@@ -69,9 +69,13 @@ export default function Store(){
                 </div>
             )}
 
-            <div className="mb-2 ms-4">
-                <p style={{textAlign: 'left'}} className="font-semibold">Showing {start + 1} to {end} of {totalData} results</p>
-            </div>
+            {posts.length > 0 && (
+                <div className="mb-2 ms-4">
+                    <p style={{textAlign: 'left'}} className="font-semibold">
+                        Showing {start + 1} to {end > totalData ? totalData: end} of {totalData} results</p>
+                </div>
+            )}
+           
 
             {filter &&    (
             <div id='filter'>
@@ -108,33 +112,31 @@ export default function Store(){
                 </div>
                 )}
 
-            <div className="mx-auto" id='cards'>
+            <div className="row mx-auto" id='cards'>
 
                 {posts.length > 0 ?
                     <>
-                        <div className="row">
-                            {posts}
-                        </div>
-
-                        <div className="row mx-auto" id='pagination'>
-                            <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
-                                {`<< Prev.`}
-                            </button>
-                            <p className="col-4">
-                                { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
-                            </p>
-                            <button className = 'btn btn-dark col-4' disabled={!canNext} onClick={goToNext}>
-                                {`Next >>`}
-                            </button>
-                        </div>
-                    </>
-                    
+                        {posts}
+                    </>                     
                  :
                     <p>No Search Results.</p>
                 }
-
                 
             </div>
+
+            {posts.length > 0 && (
+                    <div className="row mx-auto" id='pagination'>
+                        <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
+                            {`<< Prev.`}
+                        </button>
+                        <p className="col-4">
+                            { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
+                        </p>
+                        <button className = 'btn btn-dark col-4' disabled={!canNext} onClick={goToNext}>
+                            {`Next >>`}
+                        </button>
+                    </div>
+            )}
 
             
         </div>
