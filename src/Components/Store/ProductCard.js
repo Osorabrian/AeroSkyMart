@@ -6,10 +6,10 @@ import './productcard.css'
 import {Link} from 'react-router-dom'
 import gulf from '../images/gulfstream.jpg'
 
-export default function ProjectCard({name}){
+export default function ProjectCard({name,id}){
 
     return(
-        <Link className="card mb-4 px-0 rounded-0" id='product-card' to='id'>
+        <Link className="card mb-4 px-0 rounded-0" id='product-card' to ={`${id}`} >
             <img src={gulf} alt='lt' className="card-img-top px-0 flex-0"/>
             <div className="card-body text-left">
                 <p className='card-text mb-2 font-semibold'>{name}</p>
