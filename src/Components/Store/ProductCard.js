@@ -3,12 +3,13 @@ import {BsCheck2} from 'react-icons/bs'
 import {HiOutlineX} from 'react-icons/hi'
 import {GiCargoShip} from 'react-icons/gi'
 import './productcard.css'
+import {Link} from 'react-router-dom'
 import gulf from '../images/gulfstream.jpg'
 
 export default function ProjectCard({name}){
 
     return(
-        <div className="card mb-4 px-0 rounded-0" id='product-card'>
+        <Link className="card mb-4 px-0 rounded-0" id='product-card' to='id'>
             <img src={gulf} alt='lt' className="card-img-top px-0 flex-0"/>
             <div className="card-body text-left">
                 <p className='card-text mb-2 font-semibold'>{name}</p>
@@ -19,6 +20,6 @@ export default function ProjectCard({name}){
                 </div>
                 <h1 className='card-text font-semibold text-[#e65100]'>Kshs. 20,000</h1>
             </div>
-        </div>
+        </Link>
     )
 }
