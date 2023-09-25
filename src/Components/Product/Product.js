@@ -32,10 +32,12 @@ export default function Product(){
                     <button type='button' className="prev-button" onClick={() => setCurrentImage(currentImage - 1)}>
                         <FcPrevious className="text-4xl hover:scale-150"/>
                     </button>
+                    
+                    <p className='image-numbers'>{currentImage + 1}/{images.length}</p>
                 </div>
                 
 
-                <p>{currentImage + 1}/{images.length}</p>
+                
             </div>
 
             <h1>Microsoft Simulator</h1>
