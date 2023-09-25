@@ -1,0 +1,20 @@
+#carousel{
+    max-width: 650px;
+}
+
+.carousel-image{
+    position: relative;
+    display: inline-block;
+}
+
+.carousel-image .prev-button{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.carousel-image .next-button{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
