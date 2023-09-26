@@ -12,7 +12,7 @@ export default function Navbar(){
             <div className='container-fluid'>
 
             <NavLink className='navbar-brand text-light text-2xl me-auto row' to='/'>
-                <img src={logo} alt='logo'id='logo' className='col-6 -mt-2'/>
+                <img src={logo} alt='logo'id='logo' className='col-6 -mt-1'/>
                 <span className='col-6 -ml-4 font-roboto'>AeroSkyMart</span>
             </NavLink>
 
@@ -20,34 +20,31 @@ export default function Navbar(){
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-                <div className="collapse navbar-collapse" id="navbarNav">
-
-                            <ul className='navbar-nav mx-auto d-flex nav-content text-xl text-light'>
+                            <nav className='navbar mx-auto d-flex text-xl text-light'>
                                 <li className='nav-item row'>
-                                    <FaHome className='col-6 mt-2'/>
+                                    <FaHome className='col-6 mt-1'/>
                                     <NavLink to='/' className={'nav-link col-6'}>Home</NavLink>
                                 </li>
                                 <li className='nav-item ms-4 row'>
-                                    <BiStore className='col-6 mt-2'/>
+                                    <BiStore className='col-6 mt-1'/>
                                     <NavLink to='/store' className={'nav-link col-6'}>Store</NavLink>
                                 </li>
                                 <li className='nav-item ms-4 row'>
-                                    <AiOutlineShoppingCart className='col-6 mt-2'/>
+                                    <AiOutlineShoppingCart className='col-6 mt-1'/>
                                     <NavLink to='/cart' className={'nav-link col-6'}>Cart</NavLink>
                                 </li> 
-                            </ul>  
+                            </nav>  
 
-                            <ul className='navbar-nav d-flex ms-auto'>
-                                        <li className='nav-item row'>
-                                            <NavLink to='/login' className={'nav-link col-6'}>LogIn</NavLink>
-                                            <AiOutlineLogin className='col-6 mt-2'/>
-                                        </li>
-                                        <li className='nav-item  ms-4 row'>
-                                            <NavLink to='/signup' className={'nav-link col-7'}>SignUp</NavLink>
-                                            <AiOutlineUserAdd className='col-5 mt-2'/>
-                                        </li>
-                            </ul>
-                </div>
+                            <nav className='navbar d-flex ms-auto text-xl'>
+                                <li className='nav-item ms-4 row'>
+                                    <AiOutlineLogin className='col-5 mt-1'/>
+                                    <NavLink to='/login' className={'nav-link col-6'}>Login</NavLink>
+                                </li>   
+                                <li className='nav-item ms-4 row'>
+                                    <AiOutlineUserAdd className='col-5 mt-1'/>
+                                    <NavLink to='/signup' className={'nav-link col-6'}>SignUp</NavLink>
+                                </li>    
+                            </nav>
             </div>          
         </nav>
     )
