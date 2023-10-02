@@ -20,13 +20,14 @@
 }
 
 #side-nav{
-    float: right;
     background-color: black;
-    padding: 0px;
-    min-width: 200px;
+    max-width: 250px;
+    margin-right: 0px;
     z-index: 2;
 }
 
 #side-nav li{
-    padding: 20px;
+    padding: 25px;
 }
+
+
