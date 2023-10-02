@@ -45,9 +45,9 @@ export default function Navbar(){
 
            
             <button>
-                <CiMenuKebab/>   
+                <CiMenuKebab className='text-2xl'/>   
             </button>
-                       
+
             </div>          
         </nav>
     )
