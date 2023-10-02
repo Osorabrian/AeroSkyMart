@@ -2,6 +2,7 @@ import React from 'react'
 import {FaHome} from 'react-icons/fa'
 import {BiStore} from 'react-icons/bi'
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
+import {CiMenuKebab} from 'react-icons/ci'
 import logo from '../images/plane.png'
 import {NavLink} from 'react-router-dom'
 import './Navbar.css'
@@ -16,35 +17,37 @@ export default function Navbar(){
                 <span className='col-6 -ml-4 font-roboto'>AeroSkyMart</span>
             </NavLink>
 
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+            {/* <nav className='navbar mx-auto d-flex text-xl text-light'>
+                <li className='nav-item row'>
+                    <FaHome className='col-6 mt-1'/>
+                    <NavLink to='/' className={'nav-link col-6 -ms-2'}>Home</NavLink>
+                </li>
+                <li className='nav-item ms-4 row'>
+                    <BiStore className='col-6 mt-1'/>
+                    <NavLink to='/store' className={'nav-link col-6 -ms-2'}>Store</NavLink>
+                </li>
+                <li className='nav-item ms-4 row'>
+                    <AiOutlineShoppingCart className='col-6 mt-1 text-3xl'/>
+                    <NavLink to='/cart' className={'nav-link col-6 -ms-2 mt-1'}>Cart</NavLink>
+                </li> 
+            </nav>  
+
+            <nav className='navbar d-flex ms-auto text-xl'>
+                <li className='nav-item ms-4 row'>
+                    <AiOutlineLogin className='col-5 mt-1 text-3xl'/>
+                    <NavLink to='/login' className={'nav-link col-6 -ms-2 mt-1'}>Login</NavLink>
+                </li>   
+                <li className='nav-item ms-4 row'>
+                    <AiOutlineUserAdd className='col-5 mt-1'/>
+                    <NavLink to='/signup' className={'nav-link col-6 -ms-2'}>SignUp</NavLink>
+                </li>    
+            </nav>   */}
+
+           
+            <button>
+                <CiMenuKebab/>   
             </button>
-
-                            <nav className='navbar mx-auto d-flex text-xl text-light'>
-                                <li className='nav-item row'>
-                                    <FaHome className='col-6 mt-1'/>
-                                    <NavLink to='/' className={'nav-link col-6'}>Home</NavLink>
-                                </li>
-                                <li className='nav-item ms-4 row'>
-                                    <BiStore className='col-6 mt-1'/>
-                                    <NavLink to='/store' className={'nav-link col-6'}>Store</NavLink>
-                                </li>
-                                <li className='nav-item ms-4 row'>
-                                    <AiOutlineShoppingCart className='col-6 mt-1'/>
-                                    <NavLink to='/cart' className={'nav-link col-6'}>Cart</NavLink>
-                                </li> 
-                            </nav>  
-
-                            <nav className='navbar d-flex ms-auto text-xl'>
-                                <li className='nav-item ms-4 row'>
-                                    <AiOutlineLogin className='col-5 mt-1'/>
-                                    <NavLink to='/login' className={'nav-link col-6'}>Login</NavLink>
-                                </li>   
-                                <li className='nav-item ms-4 row'>
-                                    <AiOutlineUserAdd className='col-5 mt-1'/>
-                                    <NavLink to='/signup' className={'nav-link col-6'}>SignUp</NavLink>
-                                </li>    
-                            </nav>
+                       
             </div>          
         </nav>
     )
