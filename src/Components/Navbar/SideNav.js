@@ -12,18 +12,22 @@ export default function SideNav(){
                     <FaHome className='col-6 mt-1'/>
                     <NavLink to='/' className={'nav-link col-6 -ms-2'}>Home</NavLink>
                 </li>
+                <hr></hr>
                 <li className='nav-item row'>
                     <BiStore className='col-6 mt-1'/>
                     <NavLink to='/store' className={'nav-link col-6 -ms-2'}>Store</NavLink>
                 </li>
+                <hr></hr>
                 <li className='nav-item row'>
                     <AiOutlineShoppingCart className='col-6 mt-1 text-3xl'/>
                     <NavLink to='/cart' className={'nav-link col-6 -ms-2 mt-1'}>Cart</NavLink>
                 </li>
+                <hr></hr>
                 <li className='nav-item row'>
                     <AiOutlineLogin className='col-5 mt-1 text-3xl'/>
                     <NavLink to='/login' className={'nav-link col-6 -ms-2 mt-1'}>Login</NavLink>
                 </li>   
+                <hr></hr>
                 <li className='nav-item row'>
                     <AiOutlineUserAdd className='col-5 mt-1'/>
                     <NavLink to='/signup' className={'nav-link col-6 -ms-2'}>SignUp</NavLink>
