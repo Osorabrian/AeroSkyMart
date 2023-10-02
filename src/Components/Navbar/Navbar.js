@@ -2,7 +2,7 @@ import React from 'react'
 import {FaHome} from 'react-icons/fa'
 import {BiStore} from 'react-icons/bi'
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
-import {CiMenuKebab} from 'react-icons/ci'
+import {CiMenuFries} from 'react-icons/ci'
 import logo from '../images/plane.png'
 import {NavLink} from 'react-router-dom'
 import './Navbar.css'
@@ -45,7 +45,7 @@ export default function Navbar(){
 
            
             <button>
-                <CiMenuKebab className='text-2xl'/>   
+                <CiMenuFries className='text-2xl'/>   
             </button>
 
             </div>          
