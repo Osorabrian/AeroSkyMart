@@ -30,4 +30,18 @@
     padding: 25px;
 }
 
+#side-menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #side-menu{
+        display: initial;
+    }
+
+    .horizontal-nav{
+        display: none;
+    }
+} 
+
 
