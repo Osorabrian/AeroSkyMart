@@ -18,3 +18,14 @@
 .nav-link{
     color: white;
 }
+
+#side-nav{
+    z-index: 2;
+    float: right;
+    background-color: black;
+    padding: 20px;
+}
+
+#side-nav li{
+    padding: 20px;
+}
