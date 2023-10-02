@@ -2,6 +2,10 @@
     max-width: 100%;
 }
 
+#store{
+    z-index: 0;
+}
+
 #search{
     border-top: 1px solid;
     border-left: 1px solid;

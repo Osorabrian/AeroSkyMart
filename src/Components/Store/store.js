@@ -58,7 +58,7 @@ export default function Store(){
     const posts = dataList.slice(start, end)
 
     return(
-        <div className="font-lato">
+        <div className="font-lato" id='store'>
 
             <div className=" mt-3">
                 <h1 className="text-4xl">Our Products</h1>

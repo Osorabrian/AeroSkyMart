@@ -22,7 +22,9 @@
 #side-nav{
     float: right;
     background-color: black;
-    padding: 20px;
+    padding: 30px;
+    min-width: 250px;
+    z-index: 2;
 }
 
 #side-nav li{

@@ -7,7 +7,6 @@ import './Navbar.css'
 
 export default function SideNav(){
     return(
-        <div>
             <ul id='side-nav' className="text-light text-xl">
                 <li className='nav-item row'>
                     <FaHome className='col-6 mt-1'/>
@@ -30,6 +29,5 @@ export default function SideNav(){
                     <NavLink to='/signup' className={'nav-link col-6 -ms-2'}>SignUp</NavLink>
                 </li>
             </ul>
-        </div>
     )
 }
