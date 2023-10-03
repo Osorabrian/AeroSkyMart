@@ -21,8 +21,8 @@
 
 #side-nav{
     background-color: black;
-    max-width: 250px;
-    margin-right: 0px;
+    max-width: 650px;
+    position: absolute;
     z-index: 2;
 }
 
