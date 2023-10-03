@@ -24,8 +24,8 @@ export default function Login(){
                 <GiPlanePilot className='text-8xl mx-auto' />
 
                 <div className='mt-3 mb-4'>
-                    <label className={'form-label'}>Username:</label>
-                    <input type='text' placeholder='Enter Username' className='form-control' onChange={e => setUserName(e.target.value)} required/>
+                    <label className={'form-label'}>Email:</label>
+                    <input type='email' placeholder='example@gmail.com' className='form-control' onChange={e => setUserName(e.target.value)} required/>
                 </div>
                 
                 <div>
