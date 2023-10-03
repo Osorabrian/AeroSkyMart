@@ -40,7 +40,7 @@ export default function Product(){
                 
             </div>
 
-            <h1>Microsoft Simulator</h1>
+            <h1 className="text-3xl font-bold">Microsoft Flight Simulator 2020</h1>
         </>
     )
 }
