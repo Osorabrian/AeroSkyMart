@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <div id='headline'>
 
-                <div id='headline-message' className="text-left">
+                <div id='headline-message' className="text-left animate__animated animate__fadeInUp" >
 
                    <h1 className="text-6xl text-light font-semibold font-raleway leading-normal mt-4">Elevate Your Aviation Experience!</h1>
 

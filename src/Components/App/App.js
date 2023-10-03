@@ -6,7 +6,6 @@ import Store from '../Store/store';
 import SignUp from '../Signup/SignUp';
 import Product from '../Product/Product'
 import {Routes, Route} from 'react-router-dom'
-import SideNav from '../Navbar/SideNav';
 
 function App() {
   return (
