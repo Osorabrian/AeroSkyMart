@@ -47,7 +47,7 @@ export default function Login(){
                     </button>
                 </div>
 
-                <div className='row mt-2'>
+                <div className='row mt-2 p-4'>
                     <hr className='col-5 my-auto'></hr>
                     <div className='col-2 text-center'>or</div>
                     <hr className='col-5 my-auto'></hr>
