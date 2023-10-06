@@ -24,6 +24,7 @@
     width: 230px;
     position: absolute;
     z-index: 2;
+    display: none;
 }
 
 #side-nav li{
@@ -41,6 +42,10 @@
 
     .horizontal-nav{
         display: none;
+    }
+
+    #side-nav{
+        display:block;
     }
 } 
 
