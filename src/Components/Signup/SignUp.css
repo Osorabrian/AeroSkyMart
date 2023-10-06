@@ -29,7 +29,7 @@
     outline: 0px;
 }
 
-.form-control, phoneput{
+.form-control, phoneInput{
     border: 1px solid;
     border-top: none;
     border-right: none;
