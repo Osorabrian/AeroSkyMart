@@ -44,3 +44,7 @@
     border-color: none;
     border-bottom: 1px solid black;
 }
+
+.signup-div{
+    max-width: 500px;
+}
