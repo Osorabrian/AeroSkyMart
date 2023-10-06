@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import PhoneInput from 'react-phone-number-input'
 import {BsPersonFillAdd} from 'react-icons/bs'
+import {FaApple} from 'react-icons/fa' 
+import {FcGoogle} from 'react-icons/fc'
+import {TfiEmail} from 'react-icons/tfi'
 import 'react-phone-number-input/style.css'
 import './SignUp.css'
 
@@ -11,9 +14,9 @@ export default function SignUp(){
     console.log(value)
 
     return(
-        <>
-            <form id="signup-form" className="text-left mt-3 font-lato">
+        <div className="px-3 py-2 font-lato">
 
+            <form id="signup-form" className="text-left">
                 <div className="row mb-3 flex flex-wrap">
                     <div className="col-6">
                         <label className="form-label">First Name</label>
@@ -37,8 +40,6 @@ export default function SignUp(){
                     </div>  
                 </div>
                     
-                
-                
                 <div className="mb-3">
                     <label className="form-label">Enter Password</label>
                     <input type="password" required className="form-control" placeholder="Enter Password" />
@@ -52,14 +53,49 @@ export default function SignUp(){
                 <input type="checkbox" className="me-2 ms-3" />
                 <label className="form-text">I agree to the <a href="https://www.amazon.com/" className="text-[#ff9800]">Terms & Conditions.</a></label>
 
-                <div style={{textAlign: 'center'}} className="mt-4" >
+                <div style={{textAlign: 'center'}} className='mt-4' >
                     <button className="border-1 border-black row mx-auto" id='create-button'>
                        <span className='col-9'>Sign Up</span>   
                         <BsPersonFillAdd className="col-3 -ml-5 text-xl "/>
                     </button>
                 </div>
-
             </form>
-        </>
+
+            <div className='row mx-auto mt-1 p-1 login-div'>
+                    <hr className='col-5 my-auto'></hr>
+                    <div className='col-2 text-center'>or</div>
+                    <hr className='col-5 my-auto'></hr>
+            </div>
+            
+            <div className='mx-auto login-div'>
+                <div className='text-center mt-2'>
+                    <button className='w-9/12 p-2 border-1 border-black'>
+                        <div className='row'>
+                            <FaApple className='col-3 my-auto'/>
+                            <span className='col-9 -ms-6'>Sign Up with Apple</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div className='text-center mt-1'>
+                    <button className='w-9/12 p-2 border-1 border-black'>
+                        <div className='row'>
+                            <FcGoogle className='col-3 my-auto'/>
+                            <span className='col-9 -ms-6'>Sign Up with Google</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div className='text-center mt-2 mb-4'>
+                    <button className='w-9/12 p-2 border-1 border-black'>
+                        <div className='row'>
+                            <TfiEmail className='col-3 my-auto'/>
+                            <span className='col-9 -ms-6'>Sign Up with Email</span>
+                        </div>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
     )
 }
