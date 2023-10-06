@@ -61,7 +61,7 @@ export default function SignUp(){
                 </div>
             </form>
 
-            <div className='row mx-auto mt-1 p-1 signup-div'>
+            <div className='row mx-auto mt-1 p-2 signup-div'>
                     <hr className='col-5 my-auto'></hr>
                     <div className='col-2 text-center'>or</div>
                     <hr className='col-5 my-auto'></hr>
