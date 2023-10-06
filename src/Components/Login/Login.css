@@ -26,3 +26,7 @@
     border-color: none;
     border-bottom: 1px solid black;
 }
+
+.login-div{
+    max-width: 400px;
+}
