@@ -47,7 +47,7 @@ export default function Login(){
                     </button>
                 </div>
 
-                <div className='row mt-2 p-4'>
+                <div className='row mt-2 p-3'>
                     <hr className='col-5 my-auto'></hr>
                     <div className='col-2 text-center'>or</div>
                     <hr className='col-5 my-auto'></hr>
@@ -66,7 +66,7 @@ export default function Login(){
                     <button className='w-8/12 p-2 border-1 border-black'>
                         <div className='row'>
                             <FcGoogle className='col-3 my-auto'/>
-                            <span className='col-9 -ms-6'>Continue with Google</span>
+                            <span className='col-9 -ms-7'>Continue with Google</span>
                         </div>
                     </button>
                 </div>
