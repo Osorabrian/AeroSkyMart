@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { useNavigate, NavLink } from 'react-router-dom'
-import {FaFighterJet} from 'react-icons/fa'
-import {GiPlanePilot} from 'react-icons/gi'
+import {FaFighterJet, FaApple} from 'react-icons/fa' 
+import {FcGoogle} from 'react-icons/fc'
+import {TfiEmail} from 'react-icons/tfi'
 import './Login.css'
 
 export default function Login(){
@@ -19,9 +20,9 @@ export default function Login(){
 
         return(
 
-            <form onSubmit={logInFunction} className='mx-auto text-left mt-3 p-4 font-lato' id='login-form'>
+            <form onSubmit={logInFunction} className='mx-auto text-left p-2 font-lato' id='login-form'>
 
-                <GiPlanePilot className='text-8xl mx-auto' />
+                {/* <GiPlanePilot className='text-6xl mx-auto mt-1' /> */}
 
                 <div className='mt-3 mb-4'>
                     <label className={'form-label'}>Email:</label>
@@ -33,11 +34,11 @@ export default function Login(){
                     <input type='password' placeholder='Enter Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
                 </div>
 
-                <div className='mb-4 text-right'>
+                <div className='mb-3 text-right'>
                     <NavLink className='form-text text-[#ff9800]'>Forgot Password ?</NavLink>
                 </div>
 
-                <div className='text-center'>
+                <div className='text-center mb-2'>
                     <button type='submit' className='w-10/12 p-2 border-1 border-black' id='login-button'>
                         <div className='row'>
                             <span className='col-9'>Log In</span>
@@ -46,10 +47,42 @@ export default function Login(){
                     </button>
                 </div>
 
+                <div className='row mt-2'>
+                    <hr className='col-5 my-auto'></hr>
+                    <span className='col-1 -ms-2'>or</span>
+                    <hr className='col-6 my-auto'></hr>
+                </div>
+                
+                <div className='text-center mt-2'>
+                    <button className='w-8/12 p-2 border-1 border-black'>
+                        <div className='row'>
+                            <FaApple className='col-3 my-auto'/>
+                            <span className='col-9 -ms-6'>Continue with Apple</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div className='text-center mt-2'>
+                    <button className='w-8/12 p-2 border-1 border-black'>
+                        <div className='row'>
+                            <FcGoogle className='col-3 my-auto'/>
+                            <span className='col-9 -ms-6'>Continue with Google</span>
+                        </div>
+                    </button>
+                </div>
+
+                <div className='text-center mt-2'>
+                    <button className='w-8/12 p-2 border-1 border-black'>
+                        <div className='row'>
+                            <TfiEmail className='col-3 my-auto'/>
+                            <span className='col-9 -ms-6'>Continue with Email</span>
+                        </div>
+                    </button>
+                </div>
+                               
                 <div className='mt-4 text-center'>
                     <p>Don't have an acount ? <NavLink to='/signup' className='text-[#ff9800]'>Sign Up.</NavLink></p>
                 </div>
-               
 
             </form>
         )
