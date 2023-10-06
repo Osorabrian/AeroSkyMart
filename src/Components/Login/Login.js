@@ -26,7 +26,7 @@ export default function Login(){
 
                 <div className='mt-3 mb-4'>
                     <label className={'form-label'}>Email:</label>
-                    <input type='email' placeholder='example@gmail.com' className='form-control' onChange={e => setUserName(e.target.value)} required/>
+                    <input type='email' placeholder='example@gmail.com' className='form-control' onChange={e => setUserName(e.target.value)} required />
                 </div>
                 
                 <div>
@@ -49,8 +49,8 @@ export default function Login(){
 
                 <div className='row mt-2'>
                     <hr className='col-5 my-auto'></hr>
-                    <span className='col-1 -ms-2'>or</span>
-                    <hr className='col-6 my-auto'></hr>
+                    <div className='col-2 text-center'>or</div>
+                    <hr className='col-5 my-auto'></hr>
                 </div>
                 
                 <div className='text-center mt-2'>
