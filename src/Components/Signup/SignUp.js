@@ -14,7 +14,7 @@ export default function SignUp(){
     console.log(value)
 
     return(
-        <div className="px-3 py-2 font-lato">
+        <div className="px-1 py-2 font-lato">
 
             <form id="signup-form" className="text-left">
                 <div className="row mb-3 flex flex-wrap">
