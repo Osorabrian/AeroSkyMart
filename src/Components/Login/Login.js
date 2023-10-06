@@ -25,7 +25,7 @@ export default function Login(){
 
                     {/* <GiPlanePilot className='text-6xl mx-auto mt-1' /> */}
 
-                    <div className='mt-3 mb-4'>
+                    <div className='mt-3 mb-3'>
                         <label className={'form-label'}>Email:</label>
                         <input type='email' placeholder='example@gmail.com' className='form-control' onChange={e => setUserName(e.target.value)} required />
                     </div>
@@ -35,7 +35,7 @@ export default function Login(){
                         <input type='password' placeholder='Enter Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
                     </div>
 
-                    <div className='mb-2 text-right'>
+                    <div className='mb-1 text-right'>
                         <NavLink className='form-text text-[#ff9800]'>Forgot Password ?</NavLink>
                     </div>
 
@@ -56,7 +56,7 @@ export default function Login(){
                 </div>
                 
                 <div className='mx-auto login-div'>
-                    <div className='text-center mt-2'>
+                    <div className='text-center mt-1'>
                         <button className='w-9/12 p-2 border-1 border-black'>
                             <div className='row'>
                                 <FaApple className='col-3 my-auto'/>
@@ -65,7 +65,7 @@ export default function Login(){
                         </button>
                     </div>
 
-                    <div className='text-center mt-1'>
+                    <div className='text-center mt-3'>
                         <button className='w-9/12 p-2 border-1 border-black'>
                             <div className='row'>
                                 <FcGoogle className='col-3 my-auto'/>
@@ -74,7 +74,7 @@ export default function Login(){
                         </button>
                     </div>
 
-                    <div className='text-center mt-2'>
+                    <div className='text-center mt-3'>
                         <button className='w-9/12 p-2 border-1 border-black'>
                             <div className='row'>
                                 <TfiEmail className='col-3 my-auto'/>

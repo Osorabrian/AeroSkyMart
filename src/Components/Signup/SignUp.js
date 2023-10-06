@@ -77,7 +77,7 @@ export default function SignUp(){
                     </button>
                 </div>
 
-                <div className='text-center mt-1'>
+                <div className='text-center mt-3'>
                     <button className='w-9/12 p-2 border-1 border-black'>
                         <div className='row'>
                             <FcGoogle className='col-3 my-auto'/>
@@ -86,7 +86,7 @@ export default function SignUp(){
                     </button>
                 </div>
 
-                <div className='text-center mt-2 mb-4'>
+                <div className='text-center mt-3 mb-4'>
                     <button className='w-9/12 p-2 border-1 border-black'>
                         <div className='row'>
                             <TfiEmail className='col-3 my-auto'/>
