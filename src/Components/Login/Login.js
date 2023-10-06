@@ -20,7 +20,7 @@ export default function Login(){
 
         return(
 
-            <form onSubmit={logInFunction} className='mx-auto text-left p-2 font-lato' id='login-form'>
+            <form onSubmit={logInFunction} className='mx-auto text-left px-3 py-3 font-lato' id='login-form'>
 
                 {/* <GiPlanePilot className='text-6xl mx-auto mt-1' /> */}
 
