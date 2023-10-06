@@ -54,7 +54,7 @@ export default function Login(){
                 </div>
                 
                 <div className='text-center mt-2'>
-                    <button className='w-8/12 p-2 border-1 border-black'>
+                    <button className='w-9/12 p-2 border-1 border-black'>
                         <div className='row'>
                             <FaApple className='col-3 my-auto'/>
                             <span className='col-9 -ms-6'>Continue with Apple</span>
@@ -63,16 +63,16 @@ export default function Login(){
                 </div>
 
                 <div className='text-center mt-2'>
-                    <button className='w-8/12 p-2 border-1 border-black'>
+                    <button className='w-9/12 p-2 border-1 border-black'>
                         <div className='row'>
                             <FcGoogle className='col-3 my-auto'/>
-                            <span className='col-9 -ms-7'>Continue with Google</span>
+                            <span className='col-9 -ms-6'>Continue with Google</span>
                         </div>
                     </button>
                 </div>
 
                 <div className='text-center mt-2'>
-                    <button className='w-8/12 p-2 border-1 border-black'>
+                    <button className='w-9/12 p-2 border-1 border-black'>
                         <div className='row'>
                             <TfiEmail className='col-3 my-auto'/>
                             <span className='col-9 -ms-6'>Continue with Email</span>
