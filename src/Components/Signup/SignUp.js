@@ -3,7 +3,6 @@ import PhoneInput from 'react-phone-number-input'
 import {BsPersonFillAdd} from 'react-icons/bs'
 import {FaApple} from 'react-icons/fa' 
 import {FcGoogle} from 'react-icons/fc'
-import {TfiEmail} from 'react-icons/tfi'
 import 'react-phone-number-input/style.css'
 import './SignUp.css'
 
@@ -16,7 +15,7 @@ export default function SignUp(){
     return(
         <div className="px-1 py-2 font-lato">
 
-            <form id="signup-form" className="text-left">
+            <form id="signup-form mt-3" className="text-left">
                 <div className="row mb-3 flex flex-wrap">
                     <div className="col-6">
                         <label className="form-label">First Name</label>
