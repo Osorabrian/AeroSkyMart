@@ -9,11 +9,11 @@ import gulf from '../images/gulfstream.jpg'
 export default function ProjectCard({name,id}){
 
     return(
-        <Link className="card mb-4 px-0 rounded-0" id='product-card' to ={`${id}`} >
+        <Link className="card mb-4 px-0" id='product-card' to ={`${id}`} >
             <img src={gulf} alt='lt' className="card-img-top px-0 flex-0"/>
-            <div className="card-body text-left">
-                <p className='card-text mb-2 font-semibold'>{name}</p>
-                <div className="row mb-2">
+            <div className="card-body text-left -ms-4 -mt-2">
+                <p className='card-text mb-1 font-semibold'>{name}</p>
+                <div className="row mb-1">
                     {/* <BsCheck2 className="fill-[#4caf50] col-3 mt-1 -ml-3 icon"/><p className="col-9 -ml-6 card-text stock">5 in Stock</p> */}
                     <HiOutlineX className="text-[rgb(255,0,0)] col-3 mt-1 -ml-3 icon"/> <p className="col-9 -ml-6 card-text">Sold Out</p>
                     {/* <GiCargoShip className="text-[#448aff] col-3 mt-1 -ml-3 icon"/><p className="col-9 -ml-6 card-text">Shipping</p> */}
