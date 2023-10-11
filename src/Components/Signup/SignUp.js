@@ -15,7 +15,7 @@ export default function SignUp(){
     return(
         <div className="px-1 py-2 font-lato">
 
-            <form id="signup-form mt-3" className="text-left">
+            <form id="signup-form" className="text-left mt-4">
                 <div className="row mb-3 flex flex-wrap">
                     <div className="col-6">
                         <label className="form-label">First Name</label>
