@@ -35,7 +35,7 @@ export default function Login(){
                         <input type='password' placeholder='Enter Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
                     </div>
 
-                    <div className='mb-1 text-right'>
+                    <div className='mb-3 text-right'>
                         <NavLink className='form-text text-[#ff9800]'>Forgot Password ?</NavLink>
                     </div>
 
