@@ -68,33 +68,23 @@ export default function SignUp(){
             </div>
             
             <div className='mx-auto signup-div'>
-                <div className='text-center mt-2'>
-                    <button className='w-9/12 p-2 border-1 border-black'>
-                        <div className='row'>
-                            <FaApple className='col-3 my-auto'/>
-                            <span className='col-9 -ms-6'>Sign Up with Apple</span>
-                        </div>
-                    </button>
-                </div>
+                    <div className='text-center mt-1'>
+                        <button className='w-9/12 p-2 border-1' id='apple-btn'>
+                            <div className='row'>
+                                <FaApple className='col-3 my-auto' id='apple-logo'/>
+                                <span className='col-9 -ms-6'>Continue with Apple</span>
+                            </div>
+                        </button>
+                    </div>
 
-                <div className='text-center mt-3'>
-                    <button className='w-9/12 p-2 border-1 border-black'>
-                        <div className='row'>
-                            <FcGoogle className='col-3 my-auto'/>
-                            <span className='col-9 -ms-6'>Sign Up with Google</span>
-                        </div>
-                    </button>
-                </div>
-
-                <div className='text-center mt-3 mb-4'>
-                    <button className='w-9/12 p-2 border-1 border-black'>
-                        <div className='row'>
-                            <TfiEmail className='col-3 my-auto'/>
-                            <span className='col-9 -ms-6'>Sign Up with Email</span>
-                        </div>
-                    </button>
-                </div>
-                
+                    <div className='text-center mt-3'>
+                        <button className='w-9/12 p-2 border-1 border-[#4285F4]' id='google-btn'>
+                            <div className='row'>
+                                <FcGoogle className='col-3 my-auto'/>
+                                <span className='col-9 -ms-6'>Continue with Google</span>
+                            </div>
+                        </button>
+                    </div>
             </div>
         </div>
     )
