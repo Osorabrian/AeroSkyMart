@@ -12,6 +12,10 @@ export default function Navbar(){
 
     const [sideMenu, setSideMenu] = useState(false)
 
+    function closeSideNav(){
+        setSideMenu(false)
+    }
+
     return(
         <>
             <nav className='bg-[rgb(0,0,0)] text-light navbar font-roboto navbar-expand-lg' id='nav-bar'>
@@ -55,7 +59,7 @@ export default function Navbar(){
             </nav>
 
            { sideMenu && (
-            <SideNav/> )
+            <SideNav closeSideNav={closeSideNav}/> )
            }
         </>
     )
