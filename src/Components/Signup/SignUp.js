@@ -54,7 +54,7 @@ export default function SignUp(){
 
                 <div style={{textAlign: 'center'}} className='mt-4' >
                     <button className="border-1 border-black row mx-auto" id='create-button'>
-                       <span className='col-9'>Sign Up</span>   
+                       <span className='col-9'>Create Account</span>   
                         <BsPersonFillAdd className="col-3 -ml-5 text-xl "/>
                     </button>
                 </div>
