@@ -57,16 +57,16 @@ export default function Login(){
                 
                 <div className='mx-auto login-div'>
                     <div className='text-center mt-1'>
-                        <button className='w-9/12 p-2 border-1 border-black'>
+                        <button className='w-9/12 p-2 border-1' id='apple-btn'>
                             <div className='row'>
-                                <FaApple className='col-3 my-auto'/>
+                                <FaApple className='col-3 my-auto' id='apple-logo'/>
                                 <span className='col-9 -ms-6'>Continue with Apple</span>
                             </div>
                         </button>
                     </div>
 
                     <div className='text-center mt-3'>
-                        <button className='w-9/12 p-2 border-1 border-black'>
+                        <button className='w-9/12 p-2 border-1 border-[#4285F4]' id='google-btn'>
                             <div className='row'>
                                 <FcGoogle className='col-3 my-auto'/>
                                 <span className='col-9 -ms-6'>Continue with Google</span>

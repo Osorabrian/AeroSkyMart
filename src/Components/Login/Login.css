@@ -30,3 +30,17 @@
 .login-div{
     max-width: 400px;
 }
+
+#google-btn{
+    background-color: #4285F4;
+    color: white;
+}
+
+#apple-logo{
+    fill: white;
+}
+
+#apple-btn{
+    background-color: black;
+    color: white;
+}
