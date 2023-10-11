@@ -15,7 +15,7 @@ export default function Login(){
     function logInFunction(e){
         e.preventDefault()
         console.log({userName, password})
-        navigate('/home')
+        navigate('/')
     }
 
         return(
