@@ -19,9 +19,9 @@ export default function Login(){
     }
 
         return(
-            <div className='px-3 py-2 font-lato'>
+            <div className='px-3 py-5 font-lato'>
 
-                <form onSubmit={logInFunction} className='mx-auto text-left' id='login-form'>
+                <form onSubmit={logInFunction} className='mx-auto mt-3 text-left' id='login-form'>
 
                     {/* <GiPlanePilot className='text-6xl mx-auto mt-1' /> */}
 
@@ -70,15 +70,6 @@ export default function Login(){
                             <div className='row'>
                                 <FcGoogle className='col-3 my-auto'/>
                                 <span className='col-9 -ms-6'>Continue with Google</span>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div className='text-center mt-3'>
-                        <button className='w-9/12 p-2 border-1 border-black'>
-                            <div className='row'>
-                                <TfiEmail className='col-3 my-auto'/>
-                                <span className='col-9 -ms-6'>Continue with Email</span>
                             </div>
                         </button>
                     </div>
