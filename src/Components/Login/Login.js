@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { useNavigate, NavLink } from 'react-router-dom'
 import {FaFighterJet, FaApple} from 'react-icons/fa' 
 import {FcGoogle} from 'react-icons/fc'
-import {TfiEmail} from 'react-icons/tfi'
 import './Login.css'
 
 export default function Login(){
