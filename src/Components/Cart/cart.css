@@ -8,5 +8,9 @@ input:focus {
     background-color: black;
     border-radius: 0%;
     color: white;
-    padding: 10px;
+    padding: 10px 30px;
+}
+
+#price-div{
+    max-width: 300px;
 }
