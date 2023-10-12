@@ -14,3 +14,8 @@ input:focus {
 #price-div{
     max-width: 300px;
 }
+
+#thumbnail{
+    max-width: 200px;
+    max-height: 200px
+}

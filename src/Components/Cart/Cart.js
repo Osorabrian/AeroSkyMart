@@ -1,6 +1,6 @@
 import { React } from "react";
 import {AiOutlineDelete} from 'react-icons/ai'
-import {IoBagCheckOutline} from 'react-icons/io'
+import img from '../images/msfs/msfs_cover.jpg'
 import './cart.css'
 
 export default function Cart(){
@@ -18,7 +18,10 @@ export default function Cart(){
                     <th></th>
                 </tr>
                 <tr className="border-b dark:border-gray-900">
-                    <td className="px-6 py-3">Microsoft Flight Simulator</td>
+                    <td className="px-6 py-3 row">
+                        <img src={img} alt={'cover'} id="thumbnail" className="col-6"/>
+                        <span className="col-6 my-auto">Microsoft Flight Simulator</span>
+                    </td>
                     <td className="px-6 py-3">100</td>
                     <td className="px-6 py-3">
                         <input type="number" min={1}  className="border-1 border-black w-11 text-center" id="quantity-input"/>
