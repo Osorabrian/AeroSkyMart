@@ -2,3 +2,11 @@ input:focus {
    border-radius: 0%;
    border: 0px;
 }
+
+#checkout-btn{
+    border: 1px black;
+    background-color: black;
+    border-radius: 0%;
+    color: white;
+    padding: 10px;
+}

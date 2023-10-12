@@ -1,5 +1,6 @@
 import { React } from "react";
 import {AiOutlineDelete} from 'react-icons/ai'
+import {IoBagCheckOutline} from 'react-icons/io'
 import './cart.css'
 
 export default function Cart(){
@@ -43,8 +44,9 @@ export default function Cart(){
             </table>
 
             <div>
-                <button className="btn">
+                <button className="btn" id="checkout-btn">
                     Check Out
+                    <i className="fa-solid fa-bag-shopping ms-4 my-auto" style={{color: "#ffffff"}}></i>
                 </button>
 
             </div>
