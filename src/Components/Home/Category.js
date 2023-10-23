@@ -18,19 +18,17 @@ export default function Category(){
         "Wall Decor": wall_decor
     }
 
-    console.log(categories_images)
-
     return(
         <div className="mt-4">
 
             <h1 className="text-4xl font-semibold">Popular Categories</h1>
 
-            <div className="row mt-3">
+            <div className="flex flex-wrap m-3">
                 { Object.keys(categories_images).map((category) => {
                     return(
-                        <div className="col-2" key={category}>
+                        <div className="mx-auto mt-3 shadow-2xl" key={category}>
                             <img src={categories_images[category]} alt={`${category} thumbnail`} className="category-image mx-auto"/>
-                            <p>{category}</p>
+                            <p className="mt-2">{category}</p>
                         </div>
                     )
                 })}
