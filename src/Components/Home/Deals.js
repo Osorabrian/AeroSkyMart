@@ -6,7 +6,7 @@ export default function Deals(){
         <>
             <h1 className='text-4xl font-semibold'>Hot Deals</h1>
 
-            <div className='row mt-5'>
+            <div className='row mt-5 m-2'>
                 <ProductCard/>
                 <ProductCard/>
             </div>
