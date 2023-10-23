@@ -2,13 +2,14 @@ import React from "react";
 import {FaOpencart} from 'react-icons/fa'
 import './home.css'
 import { Link } from "react-router-dom";
+import Category from './Category'
 
 export default function Home() {
 
     return(
         <>
+        
             <div id='headline'>
-
                 <div id='headline-message' className="text-left animate__animated animate__fadeInUp animate__slow" >
 
                    <h1 className="text-6xl text-light font-semibold font-raleway leading-normal mt-4">Elevate Your Aviation Experience!</h1>
@@ -22,9 +23,11 @@ export default function Home() {
                         </div>
                     </Link> 
 
-                </div>
-                
+                </div>                
             </div>
+
+            <Category />
+            
         </>
         
     )

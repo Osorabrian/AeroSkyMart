@@ -8,7 +8,7 @@ export default function Cart(){
     return(
         <>
             <h1>CART</h1>
-            <table className="text-left">
+            <table className="text-left mb-4 mx-auto">
                 <tr>
                     <th scope="col" className="px-6 py-3">Product</th>
                     <th scope="col" className="px-6 py-3">Price</th>
@@ -49,9 +49,9 @@ export default function Cart(){
             <div className="mx-auto" id='price-div'>
 
                 <div className="mx-auto mb-3">
-                    <p><span className="text-l text-left me-3">Sub Total:</span><span className="text-gray">300</span></p>
-                    <p><span className="text-l me-4">Shipping:</span>30</p>
-                    <p><span className="text-2xl me-4">Total:</span>330</p>
+                    <p><span className="text-l text-left me-3">Sub Total:</span><span className="text-gray">$300</span></p>
+                    <p><span className="text-l me-4">Shipping:</span>$30</p>
+                    <p><span className="text-2xl me-4">Total:</span>$330</p>
                 </div>
                 
                 <div className="mx-auto">
