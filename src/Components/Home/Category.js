@@ -27,7 +27,7 @@ export default function Category(){
                 { Object.keys(categories_images).map((category) => {
                     return(
                         <div className="mx-auto mt-3 shadow-md rounded-md" key={category}>
-                            <img src={categories_images[category]} alt={`${category} thumbnail`} className="category-image mx-auto m-3"/>
+                            <img src={categories_images[category]} alt={`${category} thumbnail`} className="category-image mx-auto"/>
                             <p className="mt-2">{category}</p>
                         </div>
                     )
