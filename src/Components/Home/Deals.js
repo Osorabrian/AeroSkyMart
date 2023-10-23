@@ -9,8 +9,6 @@ export default function Deals(){
             <div className='row mt-5'>
                 <ProductCard/>
                 <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
             </div>
         </>
     )
