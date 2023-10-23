@@ -9,17 +9,28 @@ import wall_decor from '../images/categories/wall decor.webp'
 
 export default function Category(){
 
-    const categories_images = [merchandise, simulator, books, uniform, collectables, wall_decor]
+    const categories_images = {
+        "Merchandise": merchandise,
+        "Simulator": simulator,
+        "Books": books,
+        "Uniform": uniform,
+        "Collectables":collectables,
+        "Wall Decor": wall_decor
+    }
+
+    console.log(categories_images)
 
     return(
-        <div className="mt-5">
-            <h1>Categories</h1>
+        <div className="mt-4">
 
-            <div className="row">
-                { categories_images.map((category) => {
+            <h1 className="text-4xl font-semibold">Popular Categories</h1>
+
+            <div className="row mt-3">
+                { Object.keys(categories_images).map((category) => {
                     return(
-                        <div className="col-2">
-                            <img src={category} alt={`${category} thumbnail`} className="category-image"/>
+                        <div className="col-2" key={category}>
+                            <img src={categories_images[category]} alt={`${category} thumbnail`} className="category-image mx-auto"/>
+                            <p>{category}</p>
                         </div>
                     )
                 })}
