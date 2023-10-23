@@ -23,10 +23,10 @@ export default function Category(){
 
             <h1 className="text-4xl font-semibold">Popular Categories</h1>
 
-            <div className="flex flex-wrap m-3">
+            <div className="flex flex-wrap mb-5">
                 { Object.keys(categories_images).map((category) => {
                     return(
-                        <div className="mx-auto mt-3 shadow-md" key={category}>
+                        <div className="mx-auto mt-3 shadow-md rounded-md" key={category}>
                             <img src={categories_images[category]} alt={`${category} thumbnail`} className="category-image mx-auto m-3"/>
                             <p className="mt-2">{category}</p>
                         </div>
