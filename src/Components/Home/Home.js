@@ -3,6 +3,7 @@ import {FaOpencart} from 'react-icons/fa'
 import './home.css'
 import { Link } from "react-router-dom";
 import Category from './Category'
+import Deals from "./Deals";
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
             </div>
 
             <Category />
+            <Deals/>
             
         </>
         
