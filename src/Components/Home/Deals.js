@@ -14,19 +14,21 @@ export default function Deals(){
     },[])
 
     return(
-        <>
-            <h1 className='text-4xl font-semibold'>Hot Deals</h1>
+        <div className='bg-[#a8acab] mt-5'>
 
-            <div className='row mt-5 m-2'>
+            <div className='row mt-3 m-2'>
+                <h1 className='text-4xl font-semibold mt-4 mb-4'>Hot Deals</h1>
+
                 {cardList.slice(0,4).map((product) => {
                     return <ProductCard key={product.id} name={product.title} id={product.id}/>
                 })}
-            </div>
 
-            <Link to='/store' className='flex text-[rgb(0,0,255)] font-semibold me-5 mb-5 m-2' style={{float: 'right'}}>
-                View All 
-                <BsArrowRight className='my-auto ms-2'/> 
-            </Link>
-        </>
+                <Link to='/store' className='flex text-[rgb(0,0,255)] font-semibold text-right m-3'>
+                    View All 
+                    <BsArrowRight className='my-auto ms-2'/> 
+                </Link>
+            </div>
+  
+        </div>
     )
 }
