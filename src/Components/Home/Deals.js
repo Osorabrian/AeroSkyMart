@@ -16,7 +16,7 @@ export default function Deals(){
     return(
         <div className='bg-[#a8acab] mt-5'>
 
-                <div className='row m-2 mb-5'>
+                <div className='row m-2 mb-4'>
 
                 <h1 className='text-4xl font-semibold mt-4 mb-4'>Hot Deals</h1>
 
