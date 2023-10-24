@@ -18,14 +18,14 @@ export default function Deals(){
 
                 <div className='row m-2 mb-4'>
 
-                <h1 className='text-4xl font-semibold mt-4 mb-4'>Hot Deals</h1>
+                <h1 className='text-4xl font-semibold mt-4 mb-4 text-[#ff9800]'>Hot Deals</h1>
 
                     {cardList.slice(0,4).map((product) => {
                         return <ProductCard key={product.id} name={product.title} id={product.id}/>
                     })}
                 </div>
                 
-                <Link className='flex text-[rgb(0,0,255)] font-semibold justify-center'>
+                <Link to={'/store'} className='flex text-[rgb(0,0,255)] font-semibold justify-center'>
                     <div className='m-4 flex'>
                         <span className='-mt-6'>View More</span> 
                         <BsArrowRight className='-mt-5 ms-2 '/> 
