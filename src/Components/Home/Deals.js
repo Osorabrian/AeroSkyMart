@@ -23,7 +23,7 @@ export default function Deals(){
                 })}
             </div>
 
-            <Link to='/store' className='flex text-[rgb(0,0,255)] font-semibold me-5 mb-5' style={{float: 'right'}}>
+            <Link to='/store' className='flex text-[rgb(0,0,255)] font-semibold me-5 mb-5 m-2' style={{float: 'right'}}>
                 View All 
                 <BsArrowRight className='my-auto ms-2'/> 
             </Link>
