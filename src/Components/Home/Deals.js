@@ -26,7 +26,7 @@ export default function Deals(){
                 </div>
                 
                 <Link className='flex text-[rgb(0,0,255)] font-semibold justify-center'>
-                    <div className='m-2 flex'>
+                    <div className='m-4 flex'>
                         <span className='-mt-6'>View More</span> 
                         <BsArrowRight className='-mt-5 ms-2 '/> 
                     </div>
