@@ -6,6 +6,9 @@ export default function Footer(){
         <div id="footer-div">
             <div>
                 <h1>This is the footer</h1>
+                <div className="flex">
+                    
+                </div>
             </div>
         </div>
     )
