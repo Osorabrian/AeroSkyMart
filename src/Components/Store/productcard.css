@@ -5,10 +5,24 @@
     border: 0px;
 }
 
+#card-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
 @media screen and (max-width: 600px){
     #product-card{
         max-width: 160px;
         margin: auto;
+    }
+
+    #card-title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 160px;
     }
 
     .icon{
