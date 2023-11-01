@@ -45,6 +45,13 @@ export default function Footer(){
 
                     <div className="m-3">
                         <h1>About</h1>
+
+                        <div className="flex-wrap">
+                            <div className="flex m-2">
+                                <BsBoxArrowUpRight className="my-auto"/>
+                                <span className='my-auto ms-2'>About Us Page</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="m-3">
@@ -62,9 +69,6 @@ export default function Footer(){
 
                     </div>
 
-                    <div>
-                        <h1></h1>
-                    </div>
                 </div>
             
         </div>
