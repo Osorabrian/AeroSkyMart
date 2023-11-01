@@ -5,24 +5,25 @@ import {PiPhoneCallThin} from 'react-icons/pi'
 import {BsBoxArrowUpRight} from 'react-icons/bs'
 import {BsMeta} from 'react-icons/bs'
 import {BsYoutube} from 'react-icons/bs'
-import {PiInstagramLogoLight} from 'react-icons/pi'
+import {BsInstagram} from 'react-icons/bs'
 import {BsTwitter} from 'react-icons/bs'
+import {Link} from "react-router-dom";
 
 export default function Footer(){
 
-    const socials = [{logo: BsMeta, color: '#0081FB'},
-                    {logo: BsYoutube, color: 'rgb(255,0,0)'},
-                    {logo: BsTwitter, color: '#1DA1F2'}, 
-                    {logo: PiInstagramLogoLight, color: '#C13584'}
+    const socials = [{logo: BsMeta, color: '#0081FB', link: 'https://www.facebook.com/'},
+                    {logo: BsYoutube, color: 'rgb(255,0,0)', link: 'https://www.youtube.com/'},
+                    {logo: BsTwitter, color: '#1DA1F2', link: 'https://twitter.com/'}, 
+                    {logo: BsInstagram, color: '#C13584', link: 'https://www.instagram.com/'}
                     ]
 
     return(
         <div id="footer-div">
             <div>
                 <h1>This is the footer</h1>
-                <div className="flex justify-between text-light">
+                <div className="flex flex-wrap justify-between text-light">
 
-                    <div>
+                    <div className="flex-wrap">
                         <h1>Contacts</h1>
 
                         <div className="flex m-2">
@@ -50,9 +51,13 @@ export default function Footer(){
                     <div>
                         <h1>Socials</h1>
 
-                        <div className="flex m-2">
+                        <div className="flex flex-wrap m-2">
                             {socials.map((social, index)=> {
-                                return < social.logo className={`text-[${social.color}] my-auto m-2`} key={index}/>
+                                return(
+                                    <Link to={social.link} key={index}>
+                                        <social.logo className={`text-[${social.color}] my-auto m-2`} />
+                                    </Link>
+                                )
                             })} 
                         </div>
 
