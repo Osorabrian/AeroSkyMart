@@ -19,11 +19,10 @@ export default function Footer(){
 
     return(
         <div id="footer-div">
-            <div>
-                <h1>This is the footer</h1>
-                <div className="flex flex-wrap justify-between text-light">
+            
+                <div className="flex flex-wrap justify-between text-light text-left">
 
-                    <div className="flex-wrap">
+                    <div className="flex-wrap m-3">
                         <h1>Contacts</h1>
 
                         <div className="flex m-2">
@@ -44,11 +43,11 @@ export default function Footer(){
 
                     </div>
 
-                    <div>
+                    <div className="m-3">
                         <h1>About</h1>
                     </div>
 
-                    <div>
+                    <div className="m-3">
                         <h1>Socials</h1>
 
                         <div className="flex flex-wrap m-2">
@@ -67,7 +66,7 @@ export default function Footer(){
                         <h1></h1>
                     </div>
                 </div>
-            </div>
+            
         </div>
 )
 }
