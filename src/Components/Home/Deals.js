@@ -19,7 +19,7 @@ export default function Deals(){
                 <div className='row m-2 mb-4'>
 
                 <div className='flex'>
-                    <h1 className='text-4xl font-semibold mt-4 mb-4 text-left ms-5'>Hot Deals</h1>
+                    <h1 className='text-4xl font-semibold mt-4 mb-4 text-left m-2'>Hot Deals</h1>
 
                     <Link to={'/store'} className='flex text-[#ff9800] font-semibold ms-auto'>
                         <div className='m-4 flex'>
