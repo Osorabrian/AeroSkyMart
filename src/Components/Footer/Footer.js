@@ -8,6 +8,7 @@ import {BsYoutube} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import {BsTwitter} from 'react-icons/bs'
 import {Link} from "react-router-dom";
+import Customer from "./Customer";
 
 export default function Footer(){
 
@@ -55,16 +56,7 @@ export default function Footer(){
                         
                     </div>
 
-                    <div className="flex-wrap m-3">
-                        <h1 className="text-lg font-semibold">Customer Support</h1>
-                        <div className="text-[#B2BEB5]">
-                            <p className="m-2">FAQs</p>
-                            <p className="m-2">Shipping & Handling</p>
-                            <p className="m-2">Terms & Conditions</p>
-                            <p className="m-2">Privacy Policy</p>
-                            <p className=" m-2">Contact Us</p>
-                        </div>
-                    </div>
+                    <Customer/>
 
                     <div className="m-3">
                         <h1 className="text-lg font-semibold">General</h1>
