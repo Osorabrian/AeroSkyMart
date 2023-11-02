@@ -25,7 +25,7 @@ export default function Footer(){
             
                 <div className="flex flex-wrap justify-between text-light text-left">
 
-                    <div className="flex m-3">
+                    <div className="flex m-4">
                         <img src={logo} alt='logo'id='logo' style={{width: '50px', height: '30px'}}/>
                         <span className='font-roboto text-xl font-semibold'>AeroSkyMart</span>
                     </div>
