@@ -19,10 +19,10 @@ export default function General(){
                     <Link to='/contact'>Contact Us</Link>
                 </li>
 
-                {/* <li className="flex m-2">
-                    <TfiEmail className="my-auto"/> */}
-                    <a href='mailto:thorabrian@gmail.com' className="my-auto ms-2">info@aeroskymart.com</a>
-                {/* </li> */}
+                <a href='mailto:thorabrian@gmail.com' className="flex m-2">
+                    <TfiEmail className="my-auto"/>
+                    <span className="ms-2">info@aeroskymart.com</span>
+                </a>
 
                 <a href="tel:+254746451952" className="flex m-2">
                     <PiPhoneCallThin className="my-auto"/>
