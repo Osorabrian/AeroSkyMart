@@ -46,9 +46,9 @@ export default function Footer(){
                                 <button className="m-3 btn bg-light text-dark rounded-none">
                                     Log In
                                 </button>
-                                <p>Create an Account</p>
+                                <p>Don't have an Account ?</p>
                                 <button className="m-3 btn bg-light text-dark rounded-none">
-                                    Sign Up
+                                    Create Account
                                 </button>
                             </div>
                         )}
