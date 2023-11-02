@@ -5,6 +5,7 @@ import Customer from "./Customer";
 import Account from "./Account";
 import General from "./General";
 import Socials from "./Socials";
+import {Link} from 'react-router-dom'
 
 export default function Footer(){
     return(
@@ -12,11 +13,11 @@ export default function Footer(){
             
                 <div className="flex flex-wrap justify-between text-light text-left">
 
-                    <div className="flex m-4">
+                    <Link className="flex m-4" to='/'>
                         <img src={logo} alt='logo'id='logo' style={{width: '50px', height: '30px'}}/>
-                        <span className='font-roboto text-xl font-semibold'>AeroSkyMart</span>
-                    </div>
-                    
+                        <span className='font-roboto text-xl ms-2'>AeroSkyMart</span>
+                    </Link>
+
                     <Account/>
                     <Customer/>
                     <General/>
