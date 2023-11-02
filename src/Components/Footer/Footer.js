@@ -1,23 +1,13 @@
 import React, {useState} from "react";
 import './footer.css'
 import logo from '../images/plane.png'
-import {BsMeta} from 'react-icons/bs'
-import {BsYoutube} from 'react-icons/bs'
-import {BsInstagram} from 'react-icons/bs'
-import {BsTwitter} from 'react-icons/bs'
-import {Link} from "react-router-dom";
 import Customer from "./Customer";
+import General from "./General";
+import Socials from "./Socials";
 
 export default function Footer(){
 
-    const socials = [{logo: BsMeta, color: '#0081FB', link: 'https://www.facebook.com/'},
-                    {logo: BsYoutube, color: 'rgb(255,0,0)', link: 'https://www.youtube.com/'},
-                    {logo: BsTwitter, color: '#1DA1F2', link: 'https://twitter.com/'}, 
-                    {logo: BsInstagram, color: '#C13584', link: 'https://www.instagram.com/'}
-                    ]
-
     const [user, setUser] = useState(false)
-
 
     return(
         <div id="footer-div">
@@ -55,21 +45,8 @@ export default function Footer(){
                     </div>
 
                     <Customer/>
-
-                    <div className="m-3">
-                        <h1 className="text-lg font-semibold">Socials</h1>
-
-                        <div className="flex flex-wrap m-2">
-                            {socials.map((social, index)=> {
-                                return(
-                                    <Link to={social.link} key={index}>
-                                        <social.logo className={`text-[${social.color}] my-auto m-2 text-xl`} />
-                                    </Link>
-                                )
-                            })} 
-                        </div>
-
-                    </div>
+                    <General/>
+                    <Socials/>
 
                 </div>
             
