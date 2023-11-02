@@ -8,6 +8,7 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact';
+import About from '../About/About'
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
       <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='about' element={<About/>} />
           <Route path='store' element={<Store/>} />
           <Route path='login' element={<Login/>} /> 
           <Route path='signup' element={<SignUp/>} />
