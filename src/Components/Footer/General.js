@@ -1,26 +1,35 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import {TfiEmail} from 'react-icons/tfi'
 import {PiPhoneCallThin} from 'react-icons/pi'
 
 export default function General(){
+
     return(
         <div className="m-3">
             <h1 className="text-lg font-semibold">General</h1>
 
-            <div className="text-[#B2BEB5]">
-                <p className="m-2">About Us</p>
-                <p className="m-2">Contact Us</p>
+            <ul className="text-[#B2BEB5]">
 
-                <div className="flex m-2">
-                    <TfiEmail className="my-auto"/>
-                    <span className="my-auto ms-2">info@aeroskymart.com</span>
-                </div>
+                <li className="m-2">
+                    <Link to='/about'>About Us</Link>
+                </li>
 
-                <div className="flex m-2">
+                <li className="m-2">
+                    <Link to='/contact'>Contact Us</Link>
+                </li>
+
+                {/* <li className="flex m-2">
+                    <TfiEmail className="my-auto"/> */}
+                    <a href='mailto:thorabrian@gmail.com' className="my-auto ms-2">info@aeroskymart.com</a>
+                {/* </li> */}
+
+                <a href="tel:+254746451952" className="flex m-2">
                     <PiPhoneCallThin className="my-auto"/>
                     <span className="my-auto ms-2">+254712345678</span>
-                </div>
-            </div>
+                </a>
+
+            </ul>
 
         </div>
     )
