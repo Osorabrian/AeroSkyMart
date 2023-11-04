@@ -8,6 +8,9 @@ import Socials from "./Socials";
 import {Link} from 'react-router-dom'
 
 export default function Footer(){
+
+    const date = new Date()
+
     return(
         <div id="footer-div">
             
@@ -24,6 +27,8 @@ export default function Footer(){
                     <Socials/>
 
                 </div>
+
+                <p className="bg-[rgb(0,0,0)] text-light">(c) Copyright {date.getFullYear()},  AeroSkyMart | All Rights Reserved.</p>
             
         </div>
 )
