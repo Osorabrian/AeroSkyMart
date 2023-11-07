@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import ProductCard from './ProductCard'
 import './store.css'
+import ProductTile from "./ProductTile";
 
 export default function Store(){
 
@@ -117,6 +118,8 @@ export default function Store(){
                         </div>
                         </div>
                         )}
+
+                    <ProductTile/>
 
                     <div className="row mx-auto" id='cards'>
 
