@@ -60,10 +60,6 @@ export default function Store(){
 
     return(
         <div className="font-lato" id='store'>
-
-            <div className=" mt-3">
-                <h1 className="text-4xl">Our Products</h1>
-            </div>
              
             { !filter && (
                 <div className="row mt-3 mb-3" id='search-row'>
