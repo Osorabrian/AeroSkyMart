@@ -28,7 +28,7 @@ export default function Footer(){
 
                 </div>
 
-                <p className="bg-[rgb(0,0,0)] text-light">(c) Copyright {date.getFullYear()},  AeroSkyMart | All Rights Reserved.</p>
+                <p className="bg-[rgb(0,0,0)] text-light">&copy; Copyright {date.getFullYear()},  AeroSkyMart | All Rights Reserved.</p>
             
         </div>
 )
