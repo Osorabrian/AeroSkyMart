@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import ProductCard from './ProductCard'
+import {BiSort} from 'react-icons/bi'
+import {FcFilledFilter} from 'react-icons/fc'
 import './store.css'
 import ProductTile from "./ProductTile";
 
@@ -61,8 +63,7 @@ export default function Store(){
     return(
         <div className="font-lato" id='store'>
              
-            { !filter && (
-                    <div className="flex mx-auto m-3" id='search-section'>
+                    <div className="flex m-2 justify-center mx-auto" id='search-section'>
 
                         <input
                          placeholder="Search..."
@@ -72,59 +73,54 @@ export default function Store(){
                          onChange={e => setSearch(e.target.value)}
                         />
 
-                        <button className="flex my-auto m-3" onClick={handleFilter}>
-                            <i className="fa-solid fa-filter me-1 my-auto" style={{color: "#e96f0c"}}></i>   
-                            Filter
-                        </button>
+                        <select name='category' id='category-select' className="form-select">
+                                <option value=''>category</option>
+                                <option>Books</option>
+                                <option>Accessories</option>
+                                <option>Clothes</option>
+                                <option>Souvenior</option>
+                            </select>
 
                     </div>
+
+            {filter &&    (
+                <div className="flex flex-wrap justify-center">
+
+                    <input type='number' placeholder="Min Price" min='0.00' classname='form-control' id={'min-price'}/>
+                                
+                    <input type='number' placeholder="Max Price" min='1' classname='form-control' id={'max-price'}/>
+
+                    <button className="btn" onClick={handleFilter} id='close-filter'>
+                        <span id='close-text'>Close Filter</span>
+                    </button>
+
+                </div>
             )}
 
             {!loading ? (
                 <>
                     {posts.length > 0 && (
-                        <div className="mb-3 ms-3">
-                            <p style={{textAlign: 'left'}} className="font-semibold">
-                                Showing {start + 1} to {end > totalData ? totalData: end} of {totalData} results</p>
-                        </div>
-                    )}
-                
+                        <div className="flex mb-3 ms-2">
 
-                    {filter &&    (
-                    <div id='filter'>
-                    <div className="row mx-auto mt-3 mb-3" id='filter-div'>
-                            
-                            <div className="row col-5">
-                                <div className="col-6 mb-3" id='search-bar-filter'>
-                                    <input placeholder="Keyword" type="search" className="form-control w-50 rounded-0" id='search' onChange={e => {setSearch(e.target.value)}}/>
-                                </div>
+                            <p style={{textAlign: 'left'}} className="font-semibold m-3">
+                                {start + 1} to {end > totalData ? totalData: end} of {totalData} results 
+                            </p>
 
-                                <div className="col-6">
-                                    <select name='category' id='category-select' className="form-select search">
-                                        <option value=''>Select category</option>
-                                        <option>Books</option>
-                                        <option>Accessories</option>
-                                        <option>Clothes</option>
-                                        <option>Souvenior</option>
-                                    </select>
-                                </div>
-                            </div>
+                            <div className="flex ms-auto m-3">
+                                <button className="flex me-3" onClick={handleFilter}>
+                                    <FcFilledFilter className="my-auto"/>   
+                                    Filter
+                                </button>
 
-                            <div className="col-4 mb-2" id='price-div'>
-                                <input type='number' placeholder="Min Price" min='0.00' classname='form-control' id={'min-price'}/>
-                                <input type='number' placeholder="Max Price" classname='form-control' id={'max-price'}/>
-                            </div>
-
-                            <div className="col-2">
-                                <button className="btn" onClick={handleFilter} id='close-filter'>
-                                    <span id='close-text'>Close Filter</span>
+                                <button className='flex'>
+                                    <BiSort className="my-auto fill-[#e96f0c]"/>
+                                    Sort
                                 </button>
                             </div>
 
                         </div>
-                        </div>
-                        )}
-
+                    )}
+                
                     <ProductTile/>
 
                     <div className="row mx-auto" id='cards'>
