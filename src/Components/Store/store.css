@@ -1,9 +1,5 @@
-#search-row{
-    max-width: 100%;
-}
-
-#store{
-    z-index: 0;
+#search-section{
+    max-width: 700px;
 }
 
 #thumbnail{
@@ -35,14 +31,6 @@
     width: 100px;
     max-width: 200px;
     margin: 10px;
-}
-
-#search-bar{
-    max-width: 350px;
-}
-
-#search-bar-filter{
-    max-width: 350px;
 }
 
 #filter-div{
