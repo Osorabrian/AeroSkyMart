@@ -63,7 +63,7 @@ export default function Store(){
     return(
         <div className="font-lato" id='store'>
              
-                    <div className="flex m-2 justify-center mx-auto" id='search-section'>
+                    <div className="flex m-3 justify-center mx-auto" id='search-section'>
 
                         <input
                          placeholder="Search..."
@@ -86,11 +86,11 @@ export default function Store(){
             {filter &&    (
                 <div className="flex flex-wrap justify-center">
 
-                    <input type='number' placeholder="Min Price" min='0.00' classname='form-control' id={'min-price'}/>
+                    <input type='number' placeholder="Min Price" min='0.00' classname='form-control m-1' id={'min-price'}/>
                                 
-                    <input type='number' placeholder="Max Price" min='1' classname='form-control' id={'max-price'}/>
+                    <input type='number' placeholder="Max Price" min='1' classname='form-control m-1' id={'max-price'}/>
 
-                    <button className="btn" onClick={handleFilter} id='close-filter'>
+                    <button className="btn m-1" onClick={handleFilter} id='close-filter'>
                         <span id='close-text'>Close Filter</span>
                     </button>
 
