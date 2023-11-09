@@ -1,5 +1,5 @@
 #search-section{
-    max-width: 600px;
+    max-width: 630px;
 }
 
 #thumbnail{
@@ -24,7 +24,7 @@
     border-right: 1px solid;
     border-bottom: 1px solid;
     border-radius: 0px;
-    max-width: 120px;
+    max-width: 150px;
 }
 
 #min-price, #max-price{
@@ -49,17 +49,35 @@
     margin: 10px;
 }
 
+@media  screen and (max-width: 650px) {
+    #search{
+        max-width: 300px;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    #thumbnail{
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
 @media  screen and (max-width: 480px) {
 
     #search{
-        max-width: 230px;
+        max-width: 200px;
     }
+
+    #search-section{
+    max-width: 350px;
+}
 
     #category-select{
         border-top: 1px solid;
         border-right: 1px solid;
         border-bottom: 1px solid;
-        max-width: 120px;
+        max-width: 130px;
     }
     
     #min-price{
@@ -78,3 +96,4 @@
         width: 200px;
     }
 }
+
