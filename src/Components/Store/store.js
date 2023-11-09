@@ -55,7 +55,7 @@ export default function Store(){
     const canNext = currentPage < pages 
     
     const dataList = filteredData.map((data) => {
-        return <ProductCard key={data.id} name={data.title} id={data.id}/>
+        return <ProductTile key={data.id} name={data.title} id={data.id}/>
     }) 
     
     const posts = dataList.slice(start, end)
@@ -121,8 +121,6 @@ export default function Store(){
                         </div>
                     )}
                 
-                    <ProductTile/>
-
                     <div className="row mx-auto" id='cards'>
 
                         {posts.length > 0 ?
