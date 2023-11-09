@@ -9,7 +9,7 @@ export default function ProductTile(){
             <div className="flex">
                 <img src={thumbnail} alt={'gulfstream'} id='thumbnail'/>
                 <div className="m-3 text-left">
-                    <h2 className="text-xl font-semibold flex flex-wrap tile-text">vgngcncvbbv bncbnbvnb</h2>
+                    <h2 className="text-xl font-semibold flex flex-wrap tile-text">gulfstream wall decor</h2>
                     <div className="flex">
                         <div className="flex my-auto">
                             <AiFillStar className="checked" />
@@ -19,7 +19,7 @@ export default function ProductTile(){
                             <AiFillStar className="unchecked"/>
                         </div>
                         <div>
-                            <em className="ms-2 tile-text">(96)</em>
+                            <em className="ms-2 tile-text">(96 reviews)</em>
                         </div>
                     </div>
                     <p className='text-lg text-[#e65100] tile-text'>Kshs. 25,000</p>
