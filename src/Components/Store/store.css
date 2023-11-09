@@ -64,7 +64,17 @@
         width: 135px;
         height: 125px;
         object-fit: contain;
-        background-color: black;
+        background-color: white;
+    }
+
+    #tile-title{
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 
     .tile-text{
