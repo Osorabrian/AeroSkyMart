@@ -8,7 +8,7 @@ export default function ProductTile(){
         <div className="m-2" id='tile'>
             <div className="flex">
                 <img src={thumbnail} alt={'gulfstream'} id='thumbnail'/>
-                <div className="ms-3 text-left">
+                <div className="m-3 text-left">
                     <h2 className="text-xl font-semibold flex flex-wrap tile-text">vgngcncvbbv bncbnbvnb</h2>
                     <div className="flex">
                         <div className="flex my-auto">
