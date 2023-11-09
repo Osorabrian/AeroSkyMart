@@ -61,9 +61,10 @@
 
 @media  screen and (max-width: 500px) {
     #thumbnail{
-        max-width: 20px;
-        max-height: 20px;
-        object-fit: cover;
+        width: 140px;
+        height: 130px;
+        object-fit: contain;
+        background-color: black;
     }
 
     .tile-text{
