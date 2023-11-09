@@ -57,8 +57,8 @@
 
 @media  screen and (max-width: 500px) {
     #thumbnail{
-        width: 10px;
-        height: 10px;
+        width: 130px;
+        height: 130px;
     }
 
 }
@@ -71,7 +71,11 @@
 
     #search-section{
     max-width: 350px;
-}
+    }
+
+    .tile-text{
+        font-size: 10px;
+    }
 
     #category-select{
         border-top: 1px solid;

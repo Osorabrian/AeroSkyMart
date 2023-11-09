@@ -5,12 +5,12 @@ import './store.css'
 
 export default function ProductTile(){
     return(
-        <div className="m-4">
-            <div className="flex m-4">
+        <div className="m-2" id='tile'>
+            <div className="flex">
                 <img src={thumbnail} alt={'gulfstream'} id='thumbnail'/>
-                <div className="ms-5 text-left">
-                    <h2 className="text-xl font-semibold">vgngcncvbbvbncbnbvnb</h2>
-                    <div className="flex mt-2">
+                <div className="ms-3 text-left">
+                    <h2 className="text-xl font-semibold flex flex-wrap tile-text">vgngcncvbbv bncbnbvnb</h2>
+                    <div className="flex">
                         <div className="flex my-auto">
                             <AiFillStar className="checked" />
                             <AiFillStar className="checked"/>
@@ -19,13 +19,12 @@ export default function ProductTile(){
                             <AiFillStar className="unchecked"/>
                         </div>
                         <div>
-                            <em className="ms-2">(96 reviews)</em>
+                            <em className="ms-2 tile-text">(96)</em>
                         </div>
                     </div>
-                    <p className='text-lg mt-2 text-[#e65100]'>Kshs. 25,000</p>
+                    <p className='text-lg text-[#e65100] tile-text'>Kshs. 25,000</p>
                 </div>
             </div>
-            <hr className="m-3"></hr>
         </div>
     )
 }
