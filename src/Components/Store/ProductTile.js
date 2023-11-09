@@ -12,7 +12,7 @@ export default function ProductTile({name, id}){
                 <div className="flex">
                     <img src={thumbnail} alt={'gulfstream'} id='thumbnail'/>
                     <div className="ms-3 text-left">
-                        <h2 className="text-xl font-semibold flex flex-wrap tile-text" id='tile-title'>{name}</h2>
+                        <h2 className="text-xl font-bold flex flex-wrap tile-text" id='tile-title'>{name}</h2>
                         <div className="flex flex-wrap m-2">
                             <div className="flex my-auto">
                                 <AiFillStar className="checked" />
