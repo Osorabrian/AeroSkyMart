@@ -61,8 +61,8 @@
 
 @media  screen and (max-width: 500px) {
     #thumbnail{
-        width: 140px;
-        height: 130px;
+        width: 135px;
+        height: 125px;
         object-fit: contain;
         background-color: black;
     }
