@@ -22,7 +22,7 @@ export default function ProductTile(){
                             <em className="ms-2 tile-text">(96 reviews)</em>
                         </div>
                     </div>
-                    <p className='text-lg text-[#e65100] tile-text'>Kshs. 25,000</p>
+                    <p className='text-lg text-[#e65100] tile-text font-semibold'>Kshs. 25,000</p>
                 </div>
             </div>
         </div>
