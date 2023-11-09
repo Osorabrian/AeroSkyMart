@@ -100,13 +100,13 @@ export default function Store(){
             {!loading ? (
                 <>
                     {posts.length > 0 && (
-                        <div className="flex mb-3 ms-2">
+                        <div className="flex mb-2 ms-2">
 
-                            <p style={{textAlign: 'left'}} className="font-semibold m-3">
+                            <p style={{textAlign: 'left'}} className="font-semibold m-2">
                                 {start + 1} to {end > totalData ? totalData: end} of {totalData} results 
                             </p>
 
-                            <div className="flex ms-auto m-3">
+                            <div className="flex ms-auto m-2">
                                 <button className="flex me-3" onClick={handleFilter}>
                                     <FcFilledFilter className="my-auto"/>   
                                     Filter
