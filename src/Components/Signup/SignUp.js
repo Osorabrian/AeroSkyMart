@@ -67,21 +67,21 @@ export default function SignUp(){
             </div>
             
             <div className='mx-auto signup-div mb-5'>
-                        <button className='mx-auto w-7/12 p-2 border-1 border-[#4285F4] m-2' id='google-btn'>
+                        <button className='mx-auto w-8/12 p-2 border-1 border-[#4285F4] m-2' id='google-btn'>
                             <div className='justify-center flex'>
                                 <FcGoogle className='my-auto me-2'/>
                                 Continue with Google
                             </div>
                         </button>
 
-                        <button className='mx-auto w-7/12 p-2 border-1 m-2' id='apple-btn'>
+                        <button className='mx-auto w-8/12 p-2 border-1 m-2' id='apple-btn'>
                             <div className='justify-center flex'>
                                 <FaApple className='my-auto me-2'/>
                                 Continue with Apple
                             </div>
                         </button>
 
-                        <button className='mx-auto w-7/12 p-2 border-1 border-[#1877F2] m-2' id='facebook-btn'>
+                        <button className='mx-auto w-8/12 p-2 border-1 border-[#1877F2] m-2' id='facebook-btn'>
                             <div className='justify-center flex'>
                                 <FaFacebookF className='my-auto me-2'/>
                                 Continue with Facebook
