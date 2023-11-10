@@ -14,32 +14,49 @@ export default function SideNav({closeSideNav}){
 
     return(
             <ul id='side-nav' className="text-light text-xl">
+
                 <hr></hr>
-                <li className='nav-item row'>
-                    <FaHome className='col-6 mt-1'/>
-                    <NavLink to='/' className={'nav-link col-6 -ms-14'} onClick={closeNav}>Home</NavLink>
+
+                <li className='nav-item'>
+                    <NavLink to='/' className={'nav-link flex'} onClick={closeNav}>
+                        <FaHome className='my-auto me-1'/>
+                        Home
+                    </NavLink>
                 </li>
                 <hr></hr>
-                <li className='nav-item row'>
-                    <BiStore className='col-6 mt-1'/>
-                    <NavLink to='/store' className={'nav-link col-6 -ms-14'} onClick={closeNav}>Store</NavLink>
+
+                <li className='nav-item'>
+                    <NavLink to='/store' className={'nav-link flex'} onClick={closeNav}>
+                        <BiStore className='my-auto me-1'/>
+                        Store
+                    </NavLink>
                 </li>
                 <hr></hr>
-                <li className='nav-item row'>
-                    <AiOutlineShoppingCart className='col-6 mt-1 text-3xl'/>
-                    <NavLink to='/cart' className={'nav-link col-6 -ms-14 mt-1'} onClick={closeNav}>Cart</NavLink>
+
+                <li className='nav-item'>
+                    <NavLink to='/cart' className={'nav-link flex'} onClick={closeNav}>
+                        <AiOutlineShoppingCart className='my-auto me-1'/>
+                        Cart
+                    </NavLink>
                 </li>
                 <hr></hr>
-                <li className='nav-item row'>
-                    <AiOutlineLogin className='col-5 mt-1 text-3xl ms-1'/>
-                    <NavLink to='/login' className={'nav-link col-6 -ms-12 mt-1'} onClick={closeNav}>Login</NavLink>
+
+                <li className='nav-item'>
+                    <NavLink to='/login' className={'nav-link flex'} onClick={closeNav}>
+                        <AiOutlineLogin className='my-auto me-1'/>
+                        Login
+                    </NavLink>
                 </li> 
                 <hr></hr>  
-                <li className='nav-item row'>
-                    <AiOutlineUserAdd className='col-5 mt-1 ms-1'/>
-                    <NavLink to='/signup' className={'nav-link col-6 -ms-12'} onClick={closeNav}>SignUp</NavLink>
+
+                <li className='nav-item'>
+                    <NavLink to='/signup' className={'nav-link flex'} onClick={closeNav}>
+                        <AiOutlineUserAdd className='my-auto me-1'/>
+                        SignUp
+                    </NavLink>
                 </li>
                 <hr></hr>
+
             </ul>
     )
 }
