@@ -118,12 +118,12 @@ export default function Store(){
                                         Sort
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li className="divider m-3">Best Rated</li>
-                                        <li className="divider m-3">Best Selling</li>
-                                        <li className="divider m-3">Price - High to Low</li>
-                                        <li className="divider m-3">Price - Low to High</li>
-                                        <li className="divider m-3">Newest to Oldest</li>
-                                        <li className="divider m-3">Oldest to Newest</li>
+                                        <li className="divider m-2">Best Rated</li>
+                                        <li className="divider m-2">Best Selling</li>
+                                        <li className="divider m-2">Price (High to Low)</li>
+                                        <li className="divider m-2">Price (Low to High)</li>
+                                        <li className="divider m-2">Newest to Oldest</li>
+                                        <li className="divider m-2">Oldest to Newest</li>
                                     </ul>
                                 </div>
                             </div>
