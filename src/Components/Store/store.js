@@ -134,7 +134,7 @@ export default function Store(){
                     </div>
 
                     {posts.length > 0 && (
-                            <div className="row mx-auto" id='pagination'>
+                            <div className="row mx-auto mb-5" id='pagination'>
                                 <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
                                     {`<< Prev.`}
                                 </button>
