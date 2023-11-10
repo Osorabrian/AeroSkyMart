@@ -67,24 +67,24 @@ export default function SignUp(){
             </div>
             
             <div className='mx-auto signup-div mb-5'>
-                        <button className='w-9/12 p-2 border-1 border-[#4285F4] m-2' id='google-btn'>
-                            <div className='flex'>
-                                <FcGoogle className='my-auto ms-5 me-2'/>
-                                <span className='justify-center'>Continue with Google</span>
+                        <button className='mx-auto w-7/12 p-2 border-1 border-[#4285F4] m-2' id='google-btn'>
+                            <div className='justify-center flex'>
+                                <FcGoogle className='my-auto me-2'/>
+                                Continue with Google
                             </div>
                         </button>
 
-                        <button className='w-9/12 p-2 border-1 m-2' id='apple-btn'>
-                            <div className='flex'>
-                                <FaApple className='my-auto ms-5 me-2'/>
-                                <span className='justify-center'>Continue with Apple</span>
+                        <button className='mx-auto w-7/12 p-2 border-1 m-2' id='apple-btn'>
+                            <div className='justify-center flex'>
+                                <FaApple className='my-auto me-2'/>
+                                Continue with Apple
                             </div>
                         </button>
 
-                        <button className='w-9/12 p-2 border-1 border-[#1877F2] m-2' id='facebook-btn'>
-                            <div className='flex'>
-                                <FaFacebookF className='my-auto ms-5 me-2'/>
-                                <span className='justify-center'>Continue with Facebook</span>
+                        <button className='mx-auto w-7/12 p-2 border-1 border-[#1877F2] m-2' id='facebook-btn'>
+                            <div className='justify-center flex'>
+                                <FaFacebookF className='my-auto me-2'/>
+                                Continue with Facebook
                             </div>
                         </button>
             </div>
