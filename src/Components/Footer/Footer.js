@@ -16,7 +16,7 @@ export default function Footer(){
             
                 <div className="flex flex-wrap justify-between text-light text-left">
 
-                    <Link className="flex mt-3 ms-1 mb-2" to='/'>
+                    <Link className="flex mt-4 ms-1 mb-2" to='/'>
                         <img src={logo} alt='logo'id='logo' style={{padding: '0px 12px'}} className="my-auto"/>
                         <span className='font-roboto text-xl'>AeroSkyMart</span>
                     </Link>
