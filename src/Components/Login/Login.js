@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { useNavigate, NavLink } from 'react-router-dom'
-import {FaFighterJet, FaApple} from 'react-icons/fa' 
+import {FaFighterJet, FaApple, FaFacebookF} from 'react-icons/fa' 
 import {FcGoogle} from 'react-icons/fc'
 import './Login.css'
 
@@ -55,23 +55,27 @@ export default function Login(){
                 </div>
                 
                 <div className='mx-auto login-div'>
-                    <div className='text-center mt-1'>
-                        <button className='w-9/12 p-2 border-1' id='apple-btn'>
-                            <div className='row'>
-                                <FaApple className='col-3 my-auto' id='apple-logo'/>
-                                <span className='col-9 -ms-6'>Continue with Apple</span>
-                            </div>
-                        </button>
-                    </div>
 
-                    <div className='text-center mt-3'>
-                        <button className='w-9/12 p-2 border-1 border-[#4285F4]' id='google-btn'>
-                            <div className='row'>
-                                <FcGoogle className='col-3 my-auto'/>
-                                <span className='col-9 -ms-6'>Continue with Google</span>
+                        <button className='w-9/12 p-2 border-1 border-[#4285F4] m-2' id='google-btn'>
+                            <div className='flex'>
+                                <FcGoogle className='my-auto ms-5 me-2'/>
+                                <span className='justify-center'>Continue with Google</span>
                             </div>
                         </button>
-                    </div>
+
+                        <button className='w-9/12 p-2 border-1 m-2' id='apple-btn'>
+                            <div className='flex'>
+                                <FaApple className='my-auto ms-5 me-2'/>
+                                <span className='justify-center'>Continue with Apple</span>
+                            </div>
+                        </button>
+
+                        <button className='w-9/12 p-2 border-1 border-[#1877F2] m-2' id='facebook-btn'>
+                            <div className='flex'>
+                                <FaFacebookF className='my-auto ms-5 me-2'/>
+                                <span className='justify-center'>Continue with Facebook</span>
+                            </div>
+                        </button>
                                 
                     <div className='mt-4 text-center'>
                         <p>Don't have an account ? <NavLink to='/signup' className='text-[#ff9800]'>Sign Up.</NavLink></p>

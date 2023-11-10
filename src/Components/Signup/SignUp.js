@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import PhoneInput from 'react-phone-number-input'
 import {BsPersonFillAdd} from 'react-icons/bs'
-import {FaApple} from 'react-icons/fa' 
+import {FaApple, FaFacebookF} from 'react-icons/fa' 
 import {FcGoogle} from 'react-icons/fc'
 import 'react-phone-number-input/style.css'
 import './SignUp.css'
@@ -66,24 +66,27 @@ export default function SignUp(){
                     <hr className='col-5 my-auto'></hr>
             </div>
             
-            <div className='mx-auto signup-div'>
-                    <div className='text-center mt-1'>
-                        <button className='w-9/12 p-2 border-1' id='apple-btn'>
-                            <div className='row'>
-                                <FaApple className='col-3 my-auto' id='apple-logo'/>
-                                <span className='col-9 -ms-6'>Continue with Apple</span>
+            <div className='mx-auto signup-div mb-5'>
+                        <button className='w-9/12 p-2 border-1 border-[#4285F4] m-2' id='google-btn'>
+                            <div className='flex'>
+                                <FcGoogle className='my-auto ms-5 me-2'/>
+                                <span className='justify-center'>Continue with Google</span>
                             </div>
                         </button>
-                    </div>
 
-                    <div className='text-center mt-3'>
-                        <button className='w-9/12 p-2 border-1 border-[#4285F4]' id='google-btn'>
-                            <div className='row'>
-                                <FcGoogle className='col-3 my-auto'/>
-                                <span className='col-9 -ms-6'>Continue with Google</span>
+                        <button className='w-9/12 p-2 border-1 m-2' id='apple-btn'>
+                            <div className='flex'>
+                                <FaApple className='my-auto ms-5 me-2'/>
+                                <span className='justify-center'>Continue with Apple</span>
                             </div>
                         </button>
-                    </div>
+
+                        <button className='w-9/12 p-2 border-1 border-[#1877F2] m-2' id='facebook-btn'>
+                            <div className='flex'>
+                                <FaFacebookF className='my-auto ms-5 me-2'/>
+                                <span className='justify-center'>Continue with Facebook</span>
+                            </div>
+                        </button>
             </div>
         </div>
     )

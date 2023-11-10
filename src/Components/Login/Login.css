@@ -32,8 +32,7 @@
 }
 
 #google-btn{
-    background-color: #4285F4;
-    color: white;
+    background-color: white;
 }
 
 #apple-logo{
@@ -42,5 +41,10 @@
 
 #apple-btn{
     background-color: black;
+    color: white;
+}
+
+#facebook-btn{
+    background-color: #1877F2;
     color: white;
 }
