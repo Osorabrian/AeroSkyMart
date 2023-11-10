@@ -25,35 +25,42 @@ export default function Navbar(){
                     <CiMenuBurger className='text-2xl me-5'/>   
                 </button>
 
-                <NavLink className='navbar-brand text-light text-2xl me-auto row' to='/'>
-                    <img src={logo} alt='logo'id='logo' className='col-6 -mt-1'/>
-                    <span className='col-6 -ml-4 font-roboto'>AeroSkyMart</span>
+                <NavLink className='navbar-brand text-light text-2xl me-auto flex' to='/'>
+                    <img src={logo} alt='logo'id='logo' style={{padding:'0px 12px'}}/>
+                    <span className='font-roboto'>AeroSkyMart</span>
                 </NavLink>
 
                     <div className='horizontal-nav navbar mx-auto flex text-xl text-light'>
-                        <li className='nav-item row'>
-                            <FaHome className='col-6 mt-1'/>
-                            <NavLink to='/' className={'nav-link col-6 -ms-2'}>Home</NavLink>
-                        </li>
-                        <li className='nav-item ms-4 row'>
-                            <BiStore className='col-6 mt-1'/>
-                            <NavLink to='/store' className={'nav-link col-6 -ms-2'}>Store</NavLink>
-                        </li>
-                        <li className='nav-item ms-4 row'>
-                            <AiOutlineShoppingCart className='col-6 mt-1 text-3xl'/>
-                            <NavLink to='/cart' className={'nav-link col-6 -ms-2 mt-1'}>Cart</NavLink>
-                        </li> 
+
+                            <NavLink to='/' className={'nav-link flex me-5'}>
+                                <FaHome className='my-auto me-1'/>
+                                Home
+                            </NavLink>
+
+                            <NavLink to='/store' className={'nav-link flex me-5'}>
+                                <BiStore className='my-auto me-1'/>
+                                Store
+                            </NavLink>
+
+                            <NavLink to='/cart' className={'nav-link flex me-5'}>
+                                <AiOutlineShoppingCart className='my-auto me-1'/>
+                                Cart
+                            </NavLink>
+
                     </div>  
 
                     <div className='horizontal-nav navbar flex ms-auto text-xl'>
-                        <li className='nav-item ms-4 row'>
-                            <AiOutlineLogin className='col-5 mt-1 text-3xl'/>
-                            <NavLink to='/login' className={'nav-link col-6 -ms-2 mt-1'}>Login</NavLink>
-                        </li>   
-                        <li className='nav-item ms-4 row'>
-                            <AiOutlineUserAdd className='col-5 mt-1'/>
-                            <NavLink to='/signup' className={'nav-link col-6 -ms-2'}>SignUp</NavLink>
-                        </li>    
+
+                            <NavLink to='/login' className={'nav-link flex me-5'}>
+                                <AiOutlineLogin className='my-auto me-1'/>
+                                Login
+                            </NavLink>
+
+                            <NavLink to='/signup' className={'nav-link flex me-2'}>
+                                <AiOutlineUserAdd className='my-auto me-1'/>
+                                SignUp
+                            </NavLink>
+                            
                     </div>
                 </div>          
             </nav>
