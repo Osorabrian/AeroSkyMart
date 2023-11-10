@@ -112,10 +112,17 @@ export default function Store(){
                                     Filter
                                 </button>
 
-                                <button className='flex'>
-                                    <BiSort className="my-auto fill-[#e96f0c]"/>
-                                    Sort
-                                </button>
+                                <div className="dropdown">
+                                    <button className='flex' type="button" data-bs-toggle='dropdown'>
+                                        <BiSort className="my-auto fill-[#e96f0c]"/>
+                                        Sort
+                                    </button>
+                                    <ul className="dropdown-menu">
+                                        <li>Price</li>
+                                        <li>Newest to Oldest</li>
+                                        <li>Oldest to Newest</li>
+                                    </ul>
+                                </div>
                             </div>
 
                         </div>
