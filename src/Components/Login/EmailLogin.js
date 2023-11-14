@@ -22,11 +22,11 @@ export default function EmailLogin(){
             <form className="mx-auto text-left login-form" onSubmit={logIn}>
 
                     <div>
-                        <label className='form-label'>Password:</label>
-                        <input type='password' placeholder='Enter Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
+                        <label className='form-label'>Enter Password to proceed</label>
+                        <input type='password' placeholder='Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
                     </div>
 
-                    <div className='mb-4 mt-1 text-right'>
+                    <div className='mb-5 mt-1 text-right'>
                         <NavLink className='form-text text-[#ff9800]'>Forgot Password ?</NavLink>
                     </div>
 
