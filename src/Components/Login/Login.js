@@ -9,12 +9,12 @@ export default function Login(){
 
     const navigate = useNavigate()
 
-    const [userName, setUserName] = useState('')
+    const [email, setEmail] = useState('')
 
-    function logInFunction(e){
+    function emailLogIn(e){
         e.preventDefault()
-        console.log({userName})
-        navigate('/email_login')
+        console.log({email})
+        navigate(`${email}`)
     }
 
         return(
@@ -22,15 +22,15 @@ export default function Login(){
 
                 <h1 className='text-6xl'>Log In</h1>
 
-                <form onSubmit={logInFunction} className='mx-auto mt-3 text-left' id='login-form'>
+                <form onSubmit={emailLogIn} className='mx-auto mt-3 text-left login-form'>
 
                     <div className='mt-3 mb-4'>
                         <label className={'form-label'}>Email:</label>
-                        <input type='email' placeholder='example@gmail.com' className='form-control' onChange={e => setUserName(e.target.value)} required />
+                        <input type='email' placeholder='example@gmail.com' className='form-control' onChange={e => setEmail(e.target.value)} required />
                     </div>
 
                     <div className='text-center'>
-                        <button className='mx-auto w-8/12 p-2 border-1 border-[black] m-2' id='login-button' onClick={logInFunction}>
+                        <button className='mx-auto w-8/12 p-2 border-1 border-[black] m-2' id='login-button' typeof='submit'>
                                 <div className='justify-center flex'>
                                     <IoIosMail className='my-auto me-2'/>
                                     Continue with Email
