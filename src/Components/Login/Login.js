@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { useNavigate, NavLink } from 'react-router-dom'
-import {FaFighterJet, FaApple, FaFacebookF} from 'react-icons/fa' 
+import {FaApple, FaFacebookF} from 'react-icons/fa' 
+import { IoIosMail } from "react-icons/io";
 import {FcGoogle} from 'react-icons/fc'
 import './Login.css'
 
@@ -9,43 +10,34 @@ export default function Login(){
     const navigate = useNavigate()
 
     const [userName, setUserName] = useState('')
-    const [password, setPassword] = useState('')
 
     function logInFunction(e){
         e.preventDefault()
-        console.log({userName, password})
-        navigate('/')
+        console.log({userName})
+        navigate('/email_login')
     }
 
         return(
-            <div className='px-3 py-5 font-lato'>
+            <div className='px-3 mb-5 mt-3 font-lato'>
+
+                <h1 className='text-6xl'>Log In</h1>
 
                 <form onSubmit={logInFunction} className='mx-auto mt-3 text-left' id='login-form'>
-
-                    {/* <GiPlanePilot className='text-6xl mx-auto mt-1' /> */}
 
                     <div className='mt-3 mb-4'>
                         <label className={'form-label'}>Email:</label>
                         <input type='email' placeholder='example@gmail.com' className='form-control' onChange={e => setUserName(e.target.value)} required />
                     </div>
-                    
-                    <div>
-                        <label className='form-label'>Password:</label>
-                        <input type='password' placeholder='Enter Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
-                    </div>
 
-                    <div className='mb-3 text-right'>
-                        <NavLink className='form-text text-[#ff9800]'>Forgot Password ?</NavLink>
-                    </div>
-
-                    <div className='text-center mb-1'>
-                        <button type='submit' className='w-10/12 p-2 border-1 border-black' id='login-button'>
-                            <div className='row'>
-                                <span className='col-9'>Log In</span>
-                                <FaFighterJet className='col-3 mt-1 -ml-8'/>
-                            </div>
+                    <div className='text-center'>
+                        <button className='mx-auto w-8/12 p-2 border-1 border-[black] m-2' id='login-button' onClick={logInFunction}>
+                                <div className='justify-center flex'>
+                                    <IoIosMail className='my-auto me-2'/>
+                                    Continue with Email
+                                </div>
                         </button>
                     </div>
+
                 </form>
 
                 <div className='row mx-auto mt-1 p-3 login-div'>

@@ -9,6 +9,7 @@ import Product from '../Product/Product'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact';
 import About from '../About/About'
+import EmailLogin from '../Login/EmailLogin';
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='about' element={<About/>} />
           <Route path='store' element={<Store/>} />
+          <Route path='email_login' element={<EmailLogin/>} />
           <Route path='login' element={<Login/>} /> 
           <Route path='signup' element={<SignUp/>} />
           <Route path='store/:id' element={<Product/>} />
