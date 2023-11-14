@@ -18,11 +18,11 @@ export default function Login(){
     }
 
         return(
-            <div className='px-3 mb-5 mt-3 font-lato'>
+            <div className='px-3 mb-5 mt-4 font-lato'>
 
                 <h1 className='text-6xl'>Log In</h1>
 
-                <form onSubmit={emailLogIn} className='mx-auto mt-3 text-left login-form'>
+                <form onSubmit={emailLogIn} className='mx-auto mt-4 text-left login-form'>
 
                     <div className='mt-3 mb-4'>
                         <label className={'form-label'}>Email:</label>
