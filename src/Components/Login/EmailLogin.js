@@ -15,7 +15,7 @@ export default function EmailLogin(){
     }
 
     return(
-        <div className="mb-5 px-3">
+        <div className="mb-5 px-5">
 
             <h1 className="justify-center text-5xl flex m-4 flex-wrap">Hello! Osora,</h1>
 
