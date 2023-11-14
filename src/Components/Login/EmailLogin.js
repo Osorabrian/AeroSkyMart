@@ -9,7 +9,8 @@ export default function EmailLogin(){
     const {email} = useParams()
     const navigate = useNavigate()
 
-    const logIn = function(){
+    const logIn = function(e){
+        e.preventDefault()
         console.log({email, password})
         navigate('/')
     }
@@ -17,12 +18,12 @@ export default function EmailLogin(){
     return(
         <div className="mb-5 px-4">
 
-            <h1 className="justify-center text-5xl flex m-4 flex-wrap">Hello! Osora,</h1>
+            <h1 className="justify-center text-5xl flex m-4 flex-wrap">Hello! Osora.</h1>
 
             <form className="mx-auto text-left login-form" onSubmit={logIn}>
 
                     <div>
-                        <label className='form-label'>Enter Password to proceed</label>
+                        <label className='form-label'>Enter password to proceed :</label>
                         <input type='password' placeholder='Password' className='form-control' onChange={e => setPassword(e.target.value)} required/>
                     </div>
 
