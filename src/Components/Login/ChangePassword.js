@@ -6,9 +6,14 @@ export default function ChangePassword(){
     return(
         <div className="mb-5">
 
-            <h1 className="text-4xl my-4">Reset Password</h1>
+            <h1 className="text-4xl my-4">Change Password</h1>
 
             <form className="mx-auto text-left login-form px-4">
+
+            <div className="mb-4">
+                    <label className="form-label">Enter Current Password</label>
+                    <input className="form-control" placeholder='Password' type="password" required/>
+                </div>
                 
                 <div className="mb-4">
                     <label className="form-label">Enter New Password</label>
@@ -20,7 +25,7 @@ export default function ChangePassword(){
                     <input className="form-control" type="password" placeholder='Password' required/>
                 </div>
 
-                <div className="text-center">
+                <div className="text-center mt-3">
                     <button className="w-7/12  border-1 border-[black] p-2" type="submit">
                         <div className="justify-center flex">
                             Continue

@@ -11,6 +11,7 @@ import Contact from '../Contact/Contact';
 import About from '../About/About'
 import EmailLogin from '../Login/EmailLogin';
 import ResetPassword from '../Login/ResetPassword';
+import ChangePassword from '../Login/ChangePassword';
 import ForgotPassword from '../Login/Forgot Password';
 import {Routes, Route} from 'react-router-dom'
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='login/:email' element={<EmailLogin/>}/>
           <Route path='login/:email/forgot_password/:firstName' element={<ForgotPassword/>}/>
           <Route path='reset_password' element={<ResetPassword/>} /> 
+          <Route path='change_password' element={<ChangePassword/>} /> 
           <Route path='login' element={<Login/>} /> 
           <Route path='signup' element={<SignUp/>} />
           <Route path='store/:id' element={<Product/>} />
