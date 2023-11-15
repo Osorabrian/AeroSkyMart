@@ -25,7 +25,7 @@ export default function ChangePassword(){
                     <input className="form-control" type="password" placeholder='Password' required/>
                 </div>
 
-                <div className="text-center mt-3">
+                <div className="text-center mt-4">
                     <button className="w-7/12  border-1 border-[black] p-2" type="submit">
                         <div className="justify-center flex">
                             Continue
