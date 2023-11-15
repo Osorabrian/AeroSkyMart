@@ -33,7 +33,7 @@ export default function EmailLogin(){
                     </div>
 
                     <div className="text-center">
-                        <button type='submit' className='w-8/12 p-2 border-1 border-black' id='login-button' typeof="submit">
+                        <button type='submit' className='w-8/12 p-2 border-1 border-black' id='login-button'>
                             <div className='justify-center flex'>
                                 Log In
                                 <FaFighterJet className='my-auto ms-3'/>

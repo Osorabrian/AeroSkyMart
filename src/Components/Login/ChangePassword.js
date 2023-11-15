@@ -2,7 +2,7 @@ import React from "react";
 import './Login.css'
 import { GoArrowRight } from "react-icons/go";
 
-export default function ResetPassword(){
+export default function ChangePassword(){
     return(
         <div className="mb-5">
 
