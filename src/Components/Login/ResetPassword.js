@@ -10,7 +10,7 @@ export default function ResetPassword(){
 
             <form className="mx-auto text-left login-form px-4">
                 
-                <div className="mb-4">
+                <div className="mb-5">
                     <label className="form-label">Enter New Password</label>
                     <input className="form-control" placeholder='Password' type="password" required/>
                 </div>
@@ -20,7 +20,7 @@ export default function ResetPassword(){
                     <input className="form-control" type="password" placeholder='Password' required/>
                 </div>
 
-                <div className="text-center mt-4">
+                <div className="text-center mt-5">
                     <button className="w-7/12  border-1 border-[black] p-2" type="submit">
                         <div className="justify-center flex">
                             Continue
