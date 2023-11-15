@@ -1,11 +1,12 @@
 import React, {useState} from "react";
-import { NavLink, useParams, useNavigate } from "react-router-dom";
+import {Link, useParams, useNavigate } from "react-router-dom";
 import {FaFighterJet} from 'react-icons/fa' 
 import './Login.css'
 
 export default function EmailLogin(){
 
     const [password, setPassword] = useState('')
+    const [firstName, setFirstName] = useState('osora')
     const {email} = useParams()
     const navigate = useNavigate()
 
@@ -18,7 +19,7 @@ export default function EmailLogin(){
     return(
         <div className="mb-5 px-4">
 
-            <h1 className="justify-center text-5xl flex m-4 flex-wrap">Hello! Osora.</h1>
+            <h1 className="justify-center text-5xl flex m-4 flex-wrap">Hello! {firstName}.</h1>
 
             <form className="mx-auto text-left login-form" onSubmit={logIn}>
 
@@ -28,7 +29,7 @@ export default function EmailLogin(){
                     </div>
 
                     <div className='mb-5 mt-1 text-right'>
-                        <NavLink className='form-text text-[#ff9800]'>Forgot Password ?</NavLink>
+                        <Link className='form-text text-[#ff9800]' to={`forgot_password/${firstName}`}>Forgot Password ?</Link>
                     </div>
 
                     <div className="text-center">

@@ -10,6 +10,7 @@ import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact';
 import About from '../About/About'
 import EmailLogin from '../Login/EmailLogin';
+import ForgotPassword from '../Login/Forgot Password';
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
     <div className="App">
       <Navbar/>
       <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='about' element={<About/>} />
-          <Route path='store' element={<Store/>} />
-          <Route path='login/:email' element={<EmailLogin/>} />
+          <Route path='/' element={<Home/>}/>
+          <Route path='about' element={<About/>}/>
+          <Route path='store' element={<Store/>}/>
+          <Route path='login/:email' element={<EmailLogin/>}/>
+          <Route path='login/:email/forgot_password/:firstName' element={<ForgotPassword/>}/>
           <Route path='login' element={<Login/>} /> 
           <Route path='signup' element={<SignUp/>} />
           <Route path='store/:id' element={<Product/>} />
