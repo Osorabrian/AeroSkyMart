@@ -9,14 +9,16 @@
 
 .carousel-image .prev-button{
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 40%;
+    left: 1%;
+    fill: white;
 }
 
 .carousel-image .next-button{
     position: absolute;
-    top: 50%;
-    right: 5%;
+    top: 40%;
+    right: 1%;
+    fill: white;
 }
 
 .carousel-image .image-numbers{
@@ -26,6 +28,12 @@
     left: 50%;
 }
 
-.next-button, .prev-button{
-    fill: white;
+@media screen and (max-width: 480px) {
+    #title{
+        font-size: x-large;
+    }
+
+    .next-button, .prev-button{
+        font-size: x-large;
+    }
 }

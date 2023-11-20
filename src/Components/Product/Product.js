@@ -20,23 +20,27 @@ export default function Product(){
     
     return(
         <>
-            <div id="carousel">
+            <div className="flex flex-wrap py-4 px-3">
 
-                <div className="carousel-image">
-                    <img src={images[currentImage]} alt="msfs" className="mt-4 p-3"/>
+                <div id="carousel">
 
-                    <BsChevronRight className="next-button text-6xl cursor-pointer" onClick={() => {setCurrentImage(currentImage + 1)}}/>
+                    <div className="carousel-image">
+                        <img src={images[currentImage]} alt="msfs"/>
 
-                    <BsChevronLeft className="prev-button text-6xl cursor-pointer" onClick={() => setCurrentImage(currentImage - 1)}/>
+                        <BsChevronRight className="next-button text-6xl cursor-pointer" onClick={() => {setCurrentImage(currentImage + 1)}}/>
+
+                        <BsChevronLeft className="prev-button text-6xl cursor-pointer" onClick={() => setCurrentImage(currentImage - 1)}/>
+                        
+                        <p className='image-numbers'>{currentImage + 1}/{images.length}</p>
+                    </div>
                     
-                    <p className='image-numbers'>{currentImage + 1}/{images.length}</p>
                 </div>
-                
 
-                
+                <div className="m-3">
+                    <h1 className="text-3xl text-left font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
+                </div>
+
             </div>
-
-            <h1 className="text-3xl font-bold">Microsoft Flight Simulator 2020</h1>
         </>
     )
 }
