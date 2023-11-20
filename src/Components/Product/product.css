@@ -25,3 +25,7 @@
     color: white;
     left: 50%;
 }
+
+.next-button, .prev-button{
+    fill: white;
+}
