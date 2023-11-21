@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './product.css'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { FaCartPlus } from "react-icons/fa";
+import { PiBookmarksThin } from "react-icons/pi";
 import img1 from '../images/msfs/msfs_cover.jpg'
 import img2 from '../images/msfs/msfs_cockpit.jpg'
 import img3 from '../images/msfs/msfs_2.jpg'
@@ -38,6 +40,21 @@ export default function Product(){
 
                 <div className="m-3">
                     <h1 className="text-3xl text-left font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
+
+                        <button className="w-7/12 border-1 border-[black] p-2 m-2">
+                            <div className="justify-center flex">
+                                <FaCartPlus className="my-auto me-2" />
+                                Add to Cart
+                            </div>
+                        </button>
+
+                        <button className="w-7/12 border-1 border-[black] p-2 m-2">
+                            <div className="justify-center flex">
+                                <PiBookmarksThin className="my-auto me-2"/>
+                                Add to Wish List
+                            </div>
+                        </button>
+
                 </div>
 
             </div>
