@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './product.css'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { GiMoneyStack } from "react-icons/gi";
 import { FaCartPlus } from "react-icons/fa";
 import { PiBookmarksThin } from "react-icons/pi";
 import img1 from '../images/msfs/msfs_cover.jpg'
@@ -38,22 +39,39 @@ export default function Product(){
                     
                 </div>
 
-                <div className="m-3">
-                    <h1 className="text-3xl text-left font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
+                <div className="m-3 text-left">
+                    <h1 className="text-3xl font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
 
-                        <button className="w-7/12 border-1 border-[black] p-2 m-2">
+                    <p className="text-xl text-[#ff9800] font-semibold my-2">Kshs. 28000</p>
+
+                    <div className="flex">
+                        <p>Quantity:</p>
+                        <input type="number" min={1} className="w-11 border-1 border-[black] ms-2 ps-2 focus:outline"/>
+                    </div>
+                    
+                    <div className="text-center mt-3">
+
+                        <button className="w-6/12 border-1 border-[black] p-2 m-2 bg-black text-white">
+                            <div className="justify-center flex">
+                                <GiMoneyStack className="my-auto me-2" />
+                                Buy It Now
+                            </div>
+                        </button>
+
+                        <button className="w-6/12 border-1 border-[black] p-2 m-2 bg-black text-white">
                             <div className="justify-center flex">
                                 <FaCartPlus className="my-auto me-2" />
                                 Add to Cart
                             </div>
                         </button>
 
-                        <button className="w-7/12 border-1 border-[black] p-2 m-2">
+                        <button className="w-6/12 border-1 border-[black] p-2 m-2 bg-black text-white">
                             <div className="justify-center flex">
                                 <PiBookmarksThin className="my-auto me-2"/>
                                 Add to Wish List
                             </div>
                         </button>
+                    </div>
 
                 </div>
 
