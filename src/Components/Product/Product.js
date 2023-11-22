@@ -12,7 +12,9 @@ import img4 from '../images/msfs/msfs_3.jpeg'
 export default function Product(){
 
     const [currentImage, setCurrentImage] = useState(0)
+    const [quantity, setQuantity] = useState(1)
     const images = [img1, img2, img3, img4]
+    const sellingPrice = 28000
 
     if(currentImage > images.length - 1){
         setCurrentImage(0)
@@ -42,11 +44,11 @@ export default function Product(){
                 <div className="m-3 text-left">
                     <h1 className="text-3xl font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
 
-                    <p className="text-xl text-[#ff9800] font-semibold my-2">Kshs. 28000</p>
+                    <p className="text-xl text-[#ff9800] font-semibold my-2">Kshs. {sellingPrice * quantity}</p>
 
                     <div className="flex">
                         <p>Quantity:</p>
-                        <input type="number" min={1} className="w-11 border-1 border-[black] ms-2 ps-2 focus:outline"/>
+                        <input type="number" min={1} className="w-11 border-1 border-[black] ms-2 ps-2 focus:outline" onChange={e => setQuantity(e.target.value)}/>
                     </div>
                     
                     <div className="text-center mt-3">
