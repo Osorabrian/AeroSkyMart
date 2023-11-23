@@ -11,7 +11,7 @@ export default function ProjectCard({name,id}){
         <Link className="card mb-4 px-0" id='product-card' to ={`${id}`} >
             <img src={gulf} alt='lt' className="card-img-top px-0 flex-0"/>
             <div className="card-body text-left -ms-3 -mt-2">
-                <p className='card-text mb-1 font-semibold' id='card-title'>{name}</p>
+                <p className='card-text mb-1 font-semibold hover:text-[#ff9800]' id='card-title'>{name}</p>
                 <div className="flex flex-wrap my-2">
                             <div className="flex my-auto">
                                 <AiFillStar className="checked" />
