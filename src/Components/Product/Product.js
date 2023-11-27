@@ -1,11 +1,9 @@
 import React, { useState } from "react";
+import RatesAndReviews from "./RatesAndReviews";
 import './product.css'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { GiMoneyStack } from "react-icons/gi";
 import { FaCartPlus } from "react-icons/fa";
-import { RxAvatar } from "react-icons/rx";
-import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
-import {BsStarHalf} from 'react-icons/bs'
 import { PiBookmarksThin } from "react-icons/pi";
 import img1 from '../images/msfs/msfs_cover.jpg'
 import img2 from '../images/msfs/msfs_cockpit.jpg'
@@ -79,56 +77,7 @@ export default function Product(){
                     </div>
 
                 </div>
-
-            </div>
-
-            <div>
-
-                <div className='flex ms-3'>
-                    <RxAvatar className="text-6xl my-auto"/>
-                    <div className="flex-wrap ms-2 text-left my-auto">
-                        <p className="text-xl font-semibold">Brian Osora</p>
-                        <div className="flex my-auto">
-                                <AiFillStar className="checked my-auto" />
-                                <AiFillStar className="checked my-auto"/>
-                                <BsStarHalf className="checked my-auto"/>
-                                <AiOutlineStar className="unchecked my-auto"/>
-                                <AiOutlineStar className="unchecked my-auto"/>
-                                <div>
-                                    <em className="ms-1 tile-text">(4.4 rating)</em>
-                                </div>
-                        </div>   
-                    </div>
-                </div> 
-
-                <div>
-                    <p className="m-2 text-2xl font-semibold">100,000 Reviews</p>
-
-                    <div>
-                        <div className='flex ms-3'>
-                            <RxAvatar className="text-6xl my-auto"/>
-                            <div className="flex-wrap ms-2 text-left my-auto">
-                                <p className="text-lg font-semibold">Brian Osora</p>
-                                <div className="flex my-auto">
-                                        <AiFillStar className="checked my-auto" />
-                                        <AiFillStar className="checked my-auto"/>
-                                        <BsStarHalf className="checked my-auto"/>
-                                        <AiOutlineStar className="unchecked my-auto"/>
-                                        <AiOutlineStar className="unchecked my-auto"/>
-                                </div>   
-                            </div>
-                            <p className="ms-auto tile-text my-auto me-3">11/23/2023</p>
-                        </div>
-
-                        <p className="flex-wrap text-left ms-3 mt-1">
-                            sdfvbdvsdfnv mdfsnvdfjvd fjvhbvjhhdsv iueheiuhevbe uvierrbeb hbevebjhve vehrbefehbfer hbejhebf hejrbfehjferf hjebrfer
-                        </p>
-
-                        <hr className="m-3"></hr>
-                    </div>
-
-
-                </div>
+            <RatesAndReviews/>            
             </div>
         </>
     )
