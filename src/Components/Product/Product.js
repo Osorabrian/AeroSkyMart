@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RatesAndReviews from "./RatesAndReviews";
-import ProductCard from '../Store/ProductCard'
+import SimilarProducts from './SimilarProducts'
 import './product.css'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { GiMoneyStack } from "react-icons/gi";
@@ -80,13 +80,7 @@ export default function Product(){
                 </div>
 
             <RatesAndReviews/>  
-
-            <div>
-                <h1 className="text-4xl font-semibold mt-3">Similar Products</h1>
-                <div>
-                    <ProductCard/>
-                </div>
-            </div>  
+            <SimilarProducts/>
 
             </div>
         </>
