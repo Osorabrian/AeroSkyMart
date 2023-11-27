@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import RatesAndReviews from "./RatesAndReviews";
 import SimilarProducts from './SimilarProducts'
+import PreviouslyViewed from "./PreviouslyViewed";
 import './product.css'
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { GiMoneyStack } from "react-icons/gi";
@@ -81,6 +82,7 @@ export default function Product(){
 
             <RatesAndReviews/>  
             <SimilarProducts/>
+            <PreviouslyViewed/>
 
             </div>
         </>
