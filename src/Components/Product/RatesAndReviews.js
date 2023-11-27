@@ -3,6 +3,7 @@ import Review from './Review'
 import { RxAvatar } from "react-icons/rx";
 import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
 import {BsStarHalf} from 'react-icons/bs'
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function RatesAndReviews(){
     return(
@@ -32,8 +33,12 @@ export default function RatesAndReviews(){
                 <Review/>
 
                 <button className='p-1 border-1 border-[grey] rounded-xl'>
-                    Show More
+                    <div className='justify-center flex'>
+                        Show More
+                        <MdKeyboardArrowDown className='my-auto ms-2'/>
+                    </div>
                 </button>
+
         </div>
     )
 }
