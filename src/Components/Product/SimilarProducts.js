@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ProductCard from '../Store/ProductCard'
+import './product.css'
 
 export default function SimilarProducts(){
 
@@ -14,9 +15,9 @@ export default function SimilarProducts(){
     return(
             <div>
                 <h1 className="text-4xl text-left font-semibold mt-4">Similar Products</h1>
-                <div className="flex flex-row space-x-5 w-11/12 my-4 overflow-x-scroll">
+                <div className="flex flex-row space-x-5 w-screen mt-4 overflow-x-scroll no-scrollbar">
                     {
-                        cardList.slice(0,6).map((card) => {
+                        cardList.slice(0,5).map((card) => {
                             return( 
                                 <div key={card.id}>
                                     <ProductCard name={card.title} id={card.id}/>

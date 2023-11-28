@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ProductCard from '../Store/ProductCard'
+import './product.css'
 
 export default function PreviouslyViewed(){
 
@@ -12,10 +13,10 @@ export default function PreviouslyViewed(){
     },[])
     return(
         <div>
-                <h1 className="text-4xl text-left font-semibold mt-4">Previously Viewed</h1>
-                <div className="flex flex-row overflow-x-scroll space-x-5 m-2 my-4 w-screen">
+                <h1 className="text-4xl text-left font-semibold">Previously Viewed</h1>
+                <div className="flex flex-row overflow-visible overflow-x-scroll space-x-5 my-4 w-screen no-scrollbar">
                     {
-                        cards.slice(0,12).map((card) => {
+                        cards.slice(0,5).map((card) => {
                             return(
                                 <div>
                                     <ProductCard key={card.id} id={card.id} name={card.title}/>

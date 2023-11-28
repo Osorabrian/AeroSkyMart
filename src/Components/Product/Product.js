@@ -81,11 +81,8 @@ export default function Product(){
                 </div>
 
             <RatesAndReviews/>  
-            <div className="w-screen">
-                <SimilarProducts/>
-                <PreviouslyViewed/>
-            </div>
-            
+            <SimilarProducts/>
+            <PreviouslyViewed/>
 
             </div>
         </>
