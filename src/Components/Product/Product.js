@@ -56,21 +56,21 @@ export default function Product(){
                     
                     <div className="text-center mt-3">
 
-                        <button className="w-6/12 border-1 border-[black] p-2 m-2 bg-black text-white">
+                        <button className="w-7/12 border-1 border-[black] p-2 m-2 bg-black text-white">
                             <div className="justify-center flex">
                                 <GiMoneyStack className="my-auto me-2" />
                                 Buy It Now
                             </div>
                         </button>
 
-                        <button className="w-6/12 border-1 border-[black] p-2 m-2 bg-black text-white">
+                        <button className="w-7/12 border-1 border-[black] p-2 m-2 bg-black text-white">
                             <div className="justify-center flex">
                                 <FaCartPlus className="my-auto me-2" />
                                 Add to Cart
                             </div>
                         </button>
 
-                        <button className="w-6/12 border-1 border-[black] p-2 m-2 bg-black text-white">
+                        <button className="w-7/12 border-1 border-[black] p-2 m-2 bg-black text-white">
                             <div className="justify-center flex">
                                 <PiBookmarksThin className="my-auto me-2"/>
                                 Add to Wish List
