@@ -28,7 +28,7 @@ export default function Product(){
     
     return(
         <>
-            <div className="flex flex-wrap py-4">
+            <div className="flex flex-wrap py-4 px-3">
 
                 <div id="carousel">
 
