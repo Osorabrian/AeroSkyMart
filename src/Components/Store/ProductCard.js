@@ -2,12 +2,13 @@ import React, {useState} from "react";
 import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
 import {BsStarHalf} from 'react-icons/bs'
 import './productcard.css'
-import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import gulf from '../images/gulfstream.jpg'
 
 export default function ProductCard({name,id}){
 
     const[reviews, setReviews] = useState(960000)
+    const navigate = useNavigate()
 
     if(reviews >= 1000000){
         setReviews('1M+')
@@ -16,8 +17,12 @@ export default function ProductCard({name,id}){
         setReviews(`${editedReview}K+`)
     }
 
+    const openProduct = function(){
+        return navigate(`/store/${id}`)
+    }
+
     return(
-        <Link className="card mb-4 px-0" id='product-card' to ={`${id}`} >
+        <div className="card mb-4 px-0 cursor-pointer" id='product-card' onClick={openProduct}>
             <img src={gulf} alt='lt' className="card-img-top px-0 flex-0"/>
             <div className="card-body text-left -ms-3 -mt-2">
                 <p className='card-text mb-1 font-semibold hover:text-[#ff9800]' id='card-title'>{name}</p>
@@ -36,6 +41,6 @@ export default function ProductCard({name,id}){
                 </div>
                 <h1 className='card-text font-semibold text-[#e65100]'>Kshs. 20,000</h1>
             </div>
-        </Link>
+        </div>
     )
 }

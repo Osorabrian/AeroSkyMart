@@ -55,7 +55,7 @@ export default function Store(){
     const canNext = currentPage < pages 
     
     const dataList = filteredData.map((data) => {
-        return <ProductTile key={data.id} name={data.title} id={data.id}/>
+        return <ProductCard key={data.id} name={data.title} id={data.id}/>
     }) 
     
     const posts = dataList.slice(start, end)
