@@ -7,7 +7,14 @@ import gulf from '../images/gulfstream.jpg'
 
 export default function ProductCard({name,id}){
 
-    const[reviews, setReviews] = useState(1960000)
+    const[reviews, setReviews] = useState(960000)
+
+    if(reviews >= 1000000){
+        setReviews('1M+')
+    }else if(reviews >= 100000 && reviews < 1000000){
+        const editedReview = reviews.toString().split('').slice(0,3).join('')
+        setReviews(`${editedReview}K+`)
+    }
 
     return(
         <Link className="card mb-4 px-0" id='product-card' to ={`${id}`} >
@@ -25,7 +32,7 @@ export default function ProductCard({name,id}){
                             <p className="ms-1">(4.4)</p>
                 </div>
                 <div>
-                    <em className="ms-1 mb-1 tile-text">{reviews > 1000000 ? '1M+' : (reviews)} reviews</em>
+                    <em className="ms-1 mb-2 tile-text">{reviews} reviews</em>
                 </div>
                 <h1 className='card-text font-semibold text-[#e65100]'>Kshs. 20,000</h1>
             </div>
