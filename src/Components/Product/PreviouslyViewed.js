@@ -14,7 +14,7 @@ export default function PreviouslyViewed(){
     return(
         <div>
                 <h1 className="text-4xl text-left font-semibold">Previously Viewed</h1>
-                <div className="flex flex-row overflow-visible overflow-x-scroll space-x-5 my-4 w-screen no-scrollbar">
+                <div className="flex flex-row overflow-x-scroll space-x-5 my-4 w-screen no-scrollbar">
                     {
                         cards.slice(0,5).map((card) => {
                             return(

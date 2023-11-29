@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import {BsArrowRight} from 'react-icons/bs'
 import ProductCard from '../Store/ProductCard'
+import '../Home/home.css'
 
 export default function Deals(){
 
@@ -29,7 +30,7 @@ export default function Deals(){
                     </Link>
                 </div>
                 
-                <div className='flex flex-row space-x-5 overflow-x-scroll w-screen'>
+                <div className='flex flex-row space-x-5 overflow-x-scroll w-screen no-scrollbar'>
                     {cardList.slice(0,8).map((product) => {
                         return(
                             <div>
