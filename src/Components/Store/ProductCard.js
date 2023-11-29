@@ -21,7 +21,7 @@ export default function ProductCard({name,id}){
                                 <AiOutlineStar className="unchecked"/>
                             </div>
                             <div>
-                                <em className="ms-2 tile-text">(96 reviews)</em>
+                                <em className="ms-1 tile-text">(96 reviews)</em>
                             </div>
                 </div>
                 <h1 className='card-text font-semibold text-[#e65100]'>Kshs. 20,000</h1>
