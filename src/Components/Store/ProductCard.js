@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
 import {BsStarHalf} from 'react-icons/bs'
 import './productcard.css'
@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom'
 import gulf from '../images/gulfstream.jpg'
 
 export default function ProductCard({name,id}){
+
+    const[reviews, setReviews] = useState(1960000)
 
     return(
         <Link className="card mb-4 px-0" id='product-card' to ={`${id}`} >
@@ -20,9 +22,10 @@ export default function ProductCard({name,id}){
                                 <AiOutlineStar className="unchecked"/>
                                 <AiOutlineStar className="unchecked"/>
                             </div>
-                            <div>
-                                <em className="ms-1 tile-text">(96 reviews)</em>
-                            </div>
+                            <p className="ms-1">(4.4)</p>
+                </div>
+                <div>
+                    <em className="ms-1 mb-1 tile-text">{reviews > 1000000 ? '1M+' : (reviews)} reviews</em>
                 </div>
                 <h1 className='card-text font-semibold text-[#e65100]'>Kshs. 20,000</h1>
             </div>
