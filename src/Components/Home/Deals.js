@@ -29,10 +29,15 @@ export default function Deals(){
                     </Link>
                 </div>
                 
-
-                    {cardList.slice(0,4).map((product) => {
-                        return <ProductCard key={product.id} name={product.title} id={product.id}/>
+                <div className='flex flex-row space-x-5 overflow-x-scroll w-screen'>
+                    {cardList.slice(0,8).map((product) => {
+                        return(
+                            <div>
+                                <ProductCard key={product.id} name={product.title} id={product.id}/>
+                            </div>
+                        )
                     })}
+                </div>
                 </div>
                         
         </div>
