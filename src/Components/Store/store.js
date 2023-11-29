@@ -138,7 +138,7 @@ export default function Store(){
                                 {posts}
                             </>                     
                         :
-                            <p>No Search Results.</p>
+                            <p className='py-5 my-5'>No Search Results.</p>
                         }
                         
                     </div>
