@@ -30,11 +30,11 @@ export default function Deals(){
                     </Link>
                 </div>
                 
-                <div className='flex flex-row space-x-5 overflow-x-scroll w-screen no-scrollbar'>
+                <div className='flex flex-row space-x-5 overflow-x-scroll w-screen'>
                     {cardList.slice(0,8).map((product) => {
                         return(
-                            <div>
-                                <ProductCard key={product.id} name={product.title} id={product.id}/>
+                            <div key={product.id} >
+                                <ProductCard name={product.title} id={product.id}/>
                             </div>
                         )
                     })}

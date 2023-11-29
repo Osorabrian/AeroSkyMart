@@ -18,8 +18,8 @@ export default function PreviouslyViewed(){
                     {
                         cards.slice(0,5).map((card) => {
                             return(
-                                <div>
-                                    <ProductCard key={card.id} id={card.id} name={card.title}/>
+                                <div key={card.id}>
+                                    <ProductCard  id={card.id} name={card.title}/>
                                 </div>
                             )
                         })
