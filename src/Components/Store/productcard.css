@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 600px){
     #product-card{
-        max-width: 160px;
+        max-width: 150px;
         margin: auto;
     }
 

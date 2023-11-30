@@ -15,7 +15,7 @@ export default function SimilarProducts(){
     return(
         <div className="row m-2">
                 <h1 className="text-4xl text-left font-semibold mt-4">Similar Products</h1>
-                <div className="flex flex-row space-x-5 w-screen mt-4 overflow-x-scroll no-scrollbar">
+                <div className="flex flex-row space-x-5 w-screen mt-4 overflow-x-scroll">
                     {
                         cardList.slice(0,5).map((card) => {
                             return( 
