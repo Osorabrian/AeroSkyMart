@@ -15,9 +15,8 @@ export default function Deals(){
     },[])
 
     return(
-        <div className='mt-5'>
-
-                <div className='row m-2 mb-4'>
+        <div>
+                <div className='row mx-2 mb-4'>
 
                 <div className='flex'>
                     <h1 className='text-4xl font-semibold mt-4 mb-4 text-left m-2'>Hot Deals</h1>

@@ -19,14 +19,14 @@ export default function Category(){
     }
 
     return(
-        <div>
+        <div className="row m-2">
 
             <h1 className="text-4xl font-semibold mt-4 text-left m-2">Popular Categories</h1>
 
-            <div className="flex flex-wrap mt-3">
+            <div className=" justify-between flex flex-row overflow-x-scroll space-x-5 no-scrollbar">
                 { Object.keys(categories_images).map((category) => {
                     return(
-                        <div className="mx-auto mt-4 me-4 hover:shadow-lg rounded-md" key={category}>
+                        <div className="my-2 hover:shadow-lg rounded-md" key={category}>
                             <img src={categories_images[category]} alt={`${category} thumbnail`} className="category-image mx-auto"/>
                             <p className="mt-2">{category}</p>
                         </div>
