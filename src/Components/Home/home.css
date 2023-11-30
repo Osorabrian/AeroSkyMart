@@ -29,16 +29,8 @@
     max-width: 150px;
 }
 
-@media screen and (max-width: '600px') {
-    .no-scrollbar::-webkit-scrollbar{
-        display: initial;
-    }
+@media screen and (max-width: '480px') {
     
-    .no-scrollbar{
-        -ms-overflow-style: initial;
-        scrollbar-width:initial;
-    }
-
     .category-image{
         max-height: 120px;
         max-width: 120px;
