@@ -21,8 +21,8 @@ export default function Navbar(){
             <nav className='bg-[rgb(0,0,0)] text-light navbar font-roboto navbar-expand-lg' id='nav-bar'>
                 <div className='container-fluid'>
 
-                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-3'>
-                    <CiMenuBurger className='text-2xl me-5'/>   
+                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-3 w-2/12'>
+                    <CiMenuBurger className='text-2xl me-5 w-12/12'/>   
                 </button>
 
                 <NavLink className='navbar-brand text-light text-2xl me-auto flex' to='/'>
