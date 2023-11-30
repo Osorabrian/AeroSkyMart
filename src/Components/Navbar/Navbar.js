@@ -21,13 +21,13 @@ export default function Navbar(){
             <nav className='bg-[rgb(0,0,0)] text-light navbar font-roboto navbar-expand-lg' id='nav-bar'>
                 <div className='container-fluid'>
 
-                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)}>
+                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-3'>
                     <CiMenuBurger className='text-2xl me-5'/>   
                 </button>
 
                 <NavLink className='navbar-brand text-light text-2xl me-auto flex' to='/'>
                     <img src={logo} alt='logo'id='logo' style={{padding:'0px 12px'}}/>
-                    <span className='font-roboto'>AeroSkyMart</span>
+                    <span className='font-roboto -ms-2'>AeroSkyMart</span>
                 </NavLink>
 
                     <div className='horizontal-nav navbar mx-auto flex text-xl text-light'>
