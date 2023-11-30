@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {FaHome} from 'react-icons/fa'
-import {BiStore} from 'react-icons/bi'
+import {BiStore} from 'react-icons/bi';
+import { CiSearch } from "react-icons/ci";
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 import {CiMenuBurger} from 'react-icons/ci'
 import logo from '../images/plane.png'
@@ -21,7 +22,7 @@ export default function Navbar(){
             <nav className='bg-[rgb(0,0,0)] text-light navbar font-roboto navbar-expand-lg' id='nav-bar'>
                 <div className='container-fluid'>
 
-                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-3 w-2/12'>
+                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-3 w-2/12 my-auto'>
                     <CiMenuBurger className='text-3xl me-5 w-12/12'/>   
                 </button>
 
@@ -32,17 +33,17 @@ export default function Navbar(){
 
                     <div className='horizontal-nav navbar mx-auto flex text-xl text-light'>
 
-                            <NavLink to='/' className={'nav-link flex me-5'}>
+                            <NavLink to='/' className={'nav-link flex me-4'}>
                                 <FaHome className='my-auto me-1'/>
                                 Home
                             </NavLink>
 
-                            <NavLink to='/store' className={'nav-link flex me-5'}>
+                            <NavLink to='/store' className={'nav-link flex me-4'}>
                                 <BiStore className='my-auto me-1'/>
                                 Store
                             </NavLink>
 
-                            <NavLink to='/cart' className={'nav-link flex me-5'}>
+                            <NavLink to='/cart' className={'nav-link flex me-4'}>
                                 <AiOutlineShoppingCart className='my-auto me-1'/>
                                 Cart
                             </NavLink>
@@ -51,17 +52,19 @@ export default function Navbar(){
 
                     <div className='horizontal-nav navbar flex ms-auto text-xl'>
 
-                            <NavLink to='/login' className={'nav-link flex me-5'}>
+                            <NavLink to='/login' className={'nav-link flex me-3'}>
                                 <AiOutlineLogin className='my-auto me-1'/>
                                 Login
                             </NavLink>
 
-                            <NavLink to='/signup' className={'nav-link flex me-2'}>
+                            <NavLink to='/signup' className={'nav-link flex me-1'}>
                                 <AiOutlineUserAdd className='my-auto me-1'/>
                                 SignUp
                             </NavLink>
                             
                     </div>
+
+                    <CiSearch id='search-icon' className='text-3xl my-auto'/>
                 </div>          
             </nav>
 

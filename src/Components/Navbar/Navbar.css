@@ -31,12 +31,12 @@
     padding: 25px;
 }
 
-#side-menu{
+#side-menu, #search-icon{
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    #side-menu{
+    #side-menu, #search-icon{
         display: initial;
     }
 
