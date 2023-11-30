@@ -27,7 +27,7 @@ export default function Product(){
 
     
     return(
-        <>
+        <div>
             <div className="flex flex-wrap py-4 px-3">
 
                 <div id="carousel">
@@ -79,12 +79,12 @@ export default function Product(){
                     </div>
 
                 </div>
+                </div>
 
             <RatesAndReviews/>  
             <SimilarProducts/>
             <PreviouslyViewed/>
 
-            </div>
-        </>
+        </div>
     )
 }

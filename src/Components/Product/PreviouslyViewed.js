@@ -12,11 +12,11 @@ export default function PreviouslyViewed(){
         .then(data => setCards(data))
     },[])
     return(
-        <div>
+        <div className="row m-2">
                 <h1 className="text-4xl text-left font-semibold">Previously Viewed</h1>
                 <div className="flex flex-row overflow-x-scroll space-x-5 my-4 w-screen no-scrollbar">
                     {
-                        cards.slice(0,5).map((card) => {
+                        cards.slice(0,8).map((card) => {
                             return(
                                 <div key={card.id}>
                                     <ProductCard  id={card.id} name={card.title}/>
