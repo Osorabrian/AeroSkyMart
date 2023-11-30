@@ -71,6 +71,7 @@ export default function Store(){
                          className="form-control rounded-0 h-10 my-auto" 
                          id='search' 
                          onChange={e => setSearch(e.target.value)}
+                         autoFocus
                         />
 
                         <select name='category' id='category-select' className="form-select">
@@ -102,7 +103,7 @@ export default function Store(){
                     {posts.length > 0 && (
                         <div className="flex mb-2 ms-2">
 
-                            <p style={{textAlign: 'left'}} className="font-semibold m-2">
+                            <p style={{textAlign: 'left'}} className="font-semibold m-2" >
                                 {start + 1} to {end > totalData ? totalData: end} of {totalData} results 
                             </p>
 

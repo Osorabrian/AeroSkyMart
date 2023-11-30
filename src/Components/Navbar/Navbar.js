@@ -5,13 +5,14 @@ import { CiSearch } from "react-icons/ci";
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 import {CiMenuBurger} from 'react-icons/ci'
 import logo from '../images/plane.png'
-import {NavLink} from 'react-router-dom'
+import {NavLink, useNavigate} from 'react-router-dom'
 import SideNav from './SideNav'
 import './Navbar.css'
 
 export default function Navbar(){
 
     const [sideMenu, setSideMenu] = useState(false)
+    let navigate = useNavigate()
 
     function closeSideNav(){
         setSideMenu(false)
@@ -64,7 +65,7 @@ export default function Navbar(){
                             
                     </div>
 
-                    <CiSearch id='search-icon' className='text-3xl my-auto'/>
+                    <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/store')}/>
                 </div>          
             </nav>
 
