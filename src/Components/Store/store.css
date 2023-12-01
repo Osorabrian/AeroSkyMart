@@ -64,7 +64,7 @@
         width: 135px;
         height: 125px;
         object-fit: contain;
-        border: 1px #f2f2f2;
+        border: 1px solid #f2f2f2;
     }
 
     #tile-title{
