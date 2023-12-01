@@ -20,7 +20,7 @@ export default function Cart(){
                     <p className="font-semibold text-[#ff9800] text-2xl">Kshs. 112,000</p>
                 </div>
                 
-                <div className="mx-auto m-5">
+                <div className="mx-auto mb-5">
                     <button className="btn" id="checkout-btn">
                         Check Out
                         <i className="fa-solid fa-bag-shopping ms-4 my-auto" style={{color: "#ffffff"}}></i>
