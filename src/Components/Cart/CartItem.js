@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { FiMinus } from "react-icons/fi";
 import { GoPlus } from "react-icons/go";
 import img from '../images/msfs/msfs_cover.jpg'
+import './cart.css'
 
 export default function CartItem(){
 
