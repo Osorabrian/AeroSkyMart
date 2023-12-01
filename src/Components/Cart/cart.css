@@ -19,3 +19,8 @@ input:focus {
     max-width: 200px;
     max-height: 200px
 }
+
+#expandable-input{
+    display: inline-block;
+    max-width: 40px;
+}
