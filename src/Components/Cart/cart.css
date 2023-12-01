@@ -22,5 +22,5 @@ input:focus {
 
 #expandable-input{
     display: inline-block;
-    max-width: 40px;
+    max-width: 30px;
 }
