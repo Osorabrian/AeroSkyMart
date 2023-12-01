@@ -22,11 +22,11 @@ export default function CartItem(){
                                     <GoPlus className="my-auto m-1" onClick={() => setQuantity(quantity + 1)}/>
                                 </div>
 
-                            <p className="text-lg text-[#ff9800] mx-3 font-semibold">Kshs.28,0000</p>
+                            <p className="text-lg text-[#ff9800] ms-1 font-semibold">Kshs.280,000</p>
                         </div>
                     </div>
                 </div>
-                <hr className="m-2"></hr>
+                <hr className="my-2"></hr>
             </div>
     )
 }
