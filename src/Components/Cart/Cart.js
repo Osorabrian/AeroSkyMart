@@ -6,7 +6,7 @@ export default function Cart(){
 
     return(
         <>
-            <h1 className="text-xl my-2 font-bold">(20) Items</h1>
+            <h1 className="text-xl my-3 font-bold">(20) Items</h1>
                         
             <div className="mx-auto" id='price-div'>
 
