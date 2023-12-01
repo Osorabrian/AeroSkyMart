@@ -15,13 +15,12 @@ export default function Cart(){
                 <CartItem />
                 <CartItem />
 
-                <div className="mx-auto mb-3">
-                    <p><span className="text-l text-left me-3">Sub Total:</span><span className="text-gray">$300</span></p>
-                    <p><span className="text-l me-4">Shipping:</span>$30</p>
-                    <p><span className="text-2xl me-4">Total:</span>$330</p>
+                <div className="justify-between flex m-4 ">
+                    <p className="text-3xl font-bold">Total: </p>
+                    <p className="font-semibold text-[#ff9800] text-2xl">Kshs. 112,000</p>
                 </div>
                 
-                <div className="mx-auto">
+                <div className="mx-auto m-5">
                     <button className="btn" id="checkout-btn">
                         Check Out
                         <i className="fa-solid fa-bag-shopping ms-4 my-auto" style={{color: "#ffffff"}}></i>

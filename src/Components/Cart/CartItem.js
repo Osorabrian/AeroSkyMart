@@ -26,7 +26,7 @@ export default function CartItem(){
                         </div>
                     </div>
                 </div>
-                <hr></hr>
+                <hr className="m-2"></hr>
             </div>
     )
 }
