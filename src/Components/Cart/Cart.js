@@ -1,4 +1,5 @@
 import { React } from "react";
+import {Link} from 'react-router-dom'
 import CartItem from "./CartItem";
 import './cart.css'
 
@@ -21,10 +22,10 @@ export default function Cart(){
                 </div>
                 
                 <div className="mx-auto mb-5">
-                    <button className="btn" id="checkout-btn">
+                    <Link className="btn" id="checkout-btn" to={'/checkout'}>
                         Check Out
                         <i className="fa-solid fa-bag-shopping ms-4 my-auto" style={{color: "#ffffff"}}></i>
-                    </button>
+                    </Link>
                 </div>
             
             </div>

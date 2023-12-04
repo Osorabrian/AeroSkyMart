@@ -9,6 +9,7 @@ import Product from '../Product/Product'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact';
 import About from '../About/About'
+import Checkout from '../Checkout/Checkout'
 import EmailLogin from '../Login/EmailLogin';
 import ResetPassword from '../Login/ResetPassword';
 import ChangePassword from '../Login/ChangePassword';
@@ -32,6 +33,7 @@ function App() {
           <Route path='store/:id' element={<Product/>} />
           <Route path='contact' element={<Contact/>} />
           <Route path='cart' element={<Cart/>} />
+          <Route path='checkout' element={<Checkout/>} />
       </Routes>
       <Footer/>
     </div>
