@@ -19,7 +19,13 @@ export default function CartItem(){
                         <div className="flex my-1">
                             <p className="me-2">Quantity:</p>
                             <FiMinus className="my-auto m-1" onClick={() => setQuantity(quantity - 1)}/>
-                            <input placeholder={quantity} value={quantity} className="border-1 border-[black] my-auto text-center" id='expandable-input'/>
+
+                            <input placeholder={quantity} 
+                            value={quantity} 
+                            className="border-1 border-[black] my-auto text-center" 
+                            id='expandable-input'
+                            onChange={(e) => setQuantity(e.target.value)}/>
+
                             <GoPlus className="my-auto m-1" onClick={() => setQuantity(quantity + 1)}/>
                         </div>
 
