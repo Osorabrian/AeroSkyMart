@@ -7,6 +7,7 @@ import './cart.css'
 export default function CartItem(){
 
     const [quantity, setQuantity] = useState(2)
+    const   [price, setPrice] = useState(140000)
 
     return(
             <div className="mx-3">
@@ -14,7 +15,7 @@ export default function CartItem(){
                     <img src={img} alt="" id="thumbnail"/>
 
                     <div className="flex-wrap my-auto mx-2">
-                        <p className="flex flex-wrap font-semibold">Microsoft Flight Simulator 2020</p>
+                        <p className="flex flex-wrap font-semibold">Microsoft Flight Simulator 2020 shsfbsfb sfbfsb sfbgsfbsfd sfbgf</p>
 
                         <div className="flex my-1">
                             <p className="me-2">Quantity:</p>
@@ -24,12 +25,15 @@ export default function CartItem(){
                             value={quantity} 
                             className="border-1 border-[black] my-auto text-center" 
                             id='expandable-input'
-                            onChange={(e) => setQuantity(e.target.value)}/>
+                            onChange={(e) => {
+                                setQuantity(e.target.value)
+                                setPrice(e.target.value * quantity)
+                                }}/>
 
-                            <GoPlus className="my-auto m-1" onClick={() => setQuantity(quantity + 1)}/>
+                            <GoPlus className="my-auto m-1" onClick={() => {setQuantity(quantity + 1)}}/>
                         </div>
 
-                        <p className="text-lg text-[#ff9800] font-semibold">Kshs.280,000</p>
+                        <p className="text-lg text-[#ff9800] font-semibold">Kshs. {price * quantity}</p>
                     </div>
                 </div>
                 <hr className="my-2"></hr>
