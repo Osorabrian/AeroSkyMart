@@ -14,7 +14,7 @@ export default function Cart(){
                         
             <div className="flex flex-wrap" id='price-div'>
 
-                <div>
+                <div className="w-8/12">
                     <CartItem />
                     <CartItem />
                     <CartItem />
@@ -23,42 +23,74 @@ export default function Cart(){
 
                 <div className="flex-wrap">
 
-                    <div>
-                        <h1 className="font-bold">Delivery Information</h1>
+                    <div className="text-left m-3">
+                        <h1 className="font-bold text-4xl">Delivery Information</h1>
 
-                        <h2>Shipping Address</h2>
+                        <h2 className="font-semibold mt-2">Shipping Address</h2>
 
-                        <form name="shipping-address">
+                        <form name="shipping-address" className="flex-wrap">
 
-                            <input type="radio" name='shipping-address' value={'enter-address'} onClick={(e) => setAddressValue(e.target.value)}/>
-                            <label>Enter shipping address.</label>
+                            <div className="m-2">
+                                <input type="radio" name='shipping-address' value={'enter-address'} onClick={(e) => setAddressValue(e.target.value)}/>
+                                <label className="ms-2">Enter shipping address.</label>
 
-                            {addressValue === 'enter-address' && (
-                                <div>
-                                    <label>Country</label>
-                                    <input type="text" placeholder="Country"/>
-                                    <label>City</label>
-                                    <input type="text" placeholder="City"/>
-                                    <label>Postal Address</label>
-                                    <input type="text" placeholder="Postal Adress"/>
-                                    <label>House Number</label>
-                                    <input type="text" placeholder="House Number"/>
-                                    <label>Comments</label>
-                                    <textarea placeholder="Additional Comments" rows={2}/>
-                                </div>
-                            )}
+                                {addressValue === 'enter-address' && (
+                                    <div>
+                                        <label>Country</label>
+                                        <input type="text" placeholder="Country"/>
+                                        <label>City</label>
+                                        <input type="text" placeholder="City"/>
+                                        <label>Postal Address</label>
+                                        <input type="text" placeholder="Postal Adress"/>
+                                        <label>House Number</label>
+                                        <input type="text" placeholder="House Number"/>
+                                        <label>Comments</label>
+                                        <textarea placeholder="Additional Comments" rows={2}/>
+                                    </div>
+                                )}
+                            </div>
+                            
+                            <div className="m-2">
+                                <input type="radio" name="shipping-address" value={'saved-address'} onClick={(e) => setAddressValue(e.target.value)}/>
+                                <label className="ms-2">Ship to saved address.</label>   
 
-                            <input type="radio" name="shipping-address" value={'saved-address'} onClick={(e) => setAddressValue(e.target.value)}/>
-                            <label>Ship to saved address.</label>
+                                {
+                                    addressValue === 'saved-address' && (
+                                        <div>
+                                            <form>
+                                                <label>Select Address</label>
+                                                <select name="address" >
+                                                    <option value={'home'}>Home</option>
+                                                    <option value={'work'}>Work</option>
+                                                    <option value={'parents'}>Parents</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    )
+                                }
+                            </div>
 
-                            <input type="radio" name="shipping-address" value={'current-address'}onClick={(e) => setAddressValue(e.target.value)}/>
-                            <label>Ship to saved Current location.</label>
+                            <div className="m-2">
+                                <input type="radio" name="shipping-address" value={'current-address'}onClick={(e) => setAddressValue(e.target.value)}/>
+                                <label className="ms-2">Ship to Current location.</label>
+
+                                {
+                                    addressValue === 'current-address' && (
+                                        <div>
+                                            <form>
+                                                <label>Current location</label>
+                                                <input type="text" placeholder="Current Location"/>
+                                            </form>
+                                        </div>
+                                    )
+                                }
+                            </div>
 
                         </form>
                     </div>
                     
                     <div className="text-left m-3">
-                        <p className="text-3xl font-bold">Price Information</p>
+                        <p className="text-4xl font-bold">Pricing</p>
 
                         <div className="justify-between flex my-1">
                         <p>SubTotal:</p>
