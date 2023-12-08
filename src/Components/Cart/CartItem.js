@@ -15,7 +15,7 @@ export default function CartItem(){
                     <img src={img} alt="" id="thumbnail"/>
 
                     <div className="flex-wrap my-auto mx-2">
-                        <p className="flex flex-wrap font-semibold">Microsoft Flight Simulator 2020 shsfbs mknkjn knk kjnm, knmfb sfbfsb sfbgsfbsfd sfbgf</p>
+                        <p className="flex flex-wrap font-semibold">Mishsfbs mknkjn knk kjnm, knmfb sfbfsb sfbgsfbsfd sfbgf</p>
 
                         <div className="flex my-1">
                             <p className="me-2">Quantity:</p>

@@ -22,3 +22,23 @@
         max-height: 120px;
     }
 }
+
+@media screen and (max-width: 1275px) {
+    #pricing-shopping{
+        display: flex;
+        flex-wrap: wrap;
+        margin: initial;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #cart-items-div{
+        min-width: 880px;
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    #pricing-shopping{
+        padding-left: 100px;
+    }
+}

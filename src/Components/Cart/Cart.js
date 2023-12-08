@@ -14,17 +14,17 @@ export default function Cart(){
                         
             <div className="flex flex-wrap" id='price-div'>
 
-                <div className="w-8/12">
+                <div className="" id='cart-items-div'>
                     <CartItem />
                     <CartItem />
                     <CartItem />
                     <CartItem />
                 </div>
 
-                <div className="flex-wrap">
+                <div className="mx-4" id='pricing-shopping'>
 
                     <div className="text-left m-3">
-                        <h1 className="font-bold text-4xl">Delivery Information</h1>
+                        <h1 className="font-bold text-4xl">Shipping Info.</h1>
 
                         <h2 className="font-semibold mt-2">Shipping Address</h2>
 
@@ -32,7 +32,7 @@ export default function Cart(){
 
                             <div className="m-2">
                                 <input type="radio" name='shipping-address' value={'enter-address'} onClick={(e) => setAddressValue(e.target.value)}/>
-                                <label className="ms-2">Enter shipping address.</label>
+                                <label className="ms-1">Enter shipping address.</label>
 
                                 {addressValue === 'enter-address' && (
                                     <div>
@@ -52,7 +52,7 @@ export default function Cart(){
                             
                             <div className="m-2">
                                 <input type="radio" name="shipping-address" value={'saved-address'} onClick={(e) => setAddressValue(e.target.value)}/>
-                                <label className="ms-2">Ship to saved address.</label>   
+                                <label className="ms-1">Ship to saved address.</label>   
 
                                 {
                                     addressValue === 'saved-address' && (
@@ -72,7 +72,7 @@ export default function Cart(){
 
                             <div className="m-2">
                                 <input type="radio" name="shipping-address" value={'current-address'}onClick={(e) => setAddressValue(e.target.value)}/>
-                                <label className="ms-2">Ship to Current location.</label>
+                                <label className="ms-1">Ship to current location.</label>
 
                                 {
                                     addressValue === 'current-address' && (
@@ -112,13 +112,13 @@ export default function Cart(){
                         <p className="font-semibold text-[#ff9800] text-2xl">Kshs. 112,000</p>
                         </div>
 
-                    </div>
-                                
-                    <div className="mx-auto mb-5">
-                        <Link className="btn" id="checkout-btn" to={'/checkout'}>
-                            Check Out
-                            <i className="fa-solid fa-bag-shopping ms-4 my-auto" style={{color: "#ffffff"}}></i>
-                        </Link>
+                        <div className="mx-auto my-3">
+                            <Link className="btn" id="checkout-btn" to={'/checkout'}>
+                                Check Out
+                                <i className="fa-solid fa-bag-shopping ms-4 my-auto" style={{color: "#ffffff"}}></i>
+                            </Link>
+                        </div>
+
                     </div>
 
                     </div>
