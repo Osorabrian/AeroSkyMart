@@ -17,7 +17,7 @@ export default function Cart(){
                     <p className="my-3">Your Cart is empty.</p>
                     <p className="my-3 flex-wrap">Please visit 
                         <Link to={'/store'} className={'text-[rgb(0,0,255)]'}> our store </Link>
-                    to place products in your cart.</p>
+                    to view products.</p>
                 </div>
             )}
             {cartItems.length > 0 && (
