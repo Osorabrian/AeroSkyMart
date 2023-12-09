@@ -21,7 +21,7 @@ export default function Cart(){
                     <CartItem />
                 </div>
 
-                <div className="mx-4" id='pricing-shopping'>
+                <div className="mx-2" id='pricing-shopping'>
 
                     <div className="text-left m-3">
                         <h1 className="font-bold text-4xl">Shipping Info.</h1>
@@ -90,29 +90,30 @@ export default function Cart(){
                     </div>
                     
                     <div className="text-left m-3">
+
                         <p className="text-4xl font-bold">Pricing</p>
 
                         <div className="justify-between flex my-1">
-                        <p>SubTotal:</p>
-                        <p>102,000</p>
+                            <p>SubTotal:</p>
+                            <p>102,000</p>
                         </div>
 
                         <div className="justify-between flex my-1">
-                        <p>shipping:</p>
-                        <p>10,000</p>
+                            <p>shipping:</p>
+                            <p>10,000</p>
                         </div>
 
                         <div className="justify-between flex my-1">
-                        <p>Discount:</p>
-                        <p>0</p>
+                            <p>Discount:</p>
+                            <p>0</p>
                         </div>
 
                         <div className="justify-between flex my-1">
-                        <p className="font-semibold text-2xl">Total:</p>
-                        <p className="font-semibold text-[#ff9800] text-2xl">Kshs. 112,000</p>
+                            <p className="font-semibold text-xl">Total:</p>
+                            <p className="font-semibold text-[#ff9800] text-xl">Kshs. 112,000</p>
                         </div>
 
-                        <div className="mx-auto my-3">
+                        <div className="justify-center mx-auto my-3">
                             <Link className="btn" id="checkout-btn" to={'/checkout'}>
                                 Check Out
                                 <i className="fa-solid fa-bag-shopping ms-4 my-auto" style={{color: "#ffffff"}}></i>
@@ -121,8 +122,8 @@ export default function Cart(){
 
                     </div>
 
-                    </div>
                 </div>
+            </div>
         </div>
     )
 }
