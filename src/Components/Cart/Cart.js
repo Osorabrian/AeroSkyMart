@@ -13,7 +13,7 @@ export default function Cart(){
         <div> 
             {cartItems.length === 0 && (
                 <div className="my-5">
-                    <MdOutlineRemoveShoppingCart className="mx-auto my-5 text-7xl"/>
+                    <MdOutlineRemoveShoppingCart className="mx-auto my-5 text-7xl text-[#ff9800]"/>
                     <p className="my-3">Your Cart is empty.</p>
                     <p className="my-3 flex-wrap">Please visit 
                         <Link to={'/store'} className={'text-[rgb(0,0,255)]'}> our store </Link>
