@@ -5,6 +5,13 @@
     color: white;
     padding: 10px 30px;
 }
+#checkout-btn:hover{
+    border: 1px #ff9800;
+    background-color: #ff9800;
+    border-radius: 0%;
+    color: white;
+    padding: 10px 30px;
+}
 
 #thumbnail{
     max-width: 200px;
@@ -27,18 +34,21 @@
     #pricing-shopping{
         display: flex;
         flex-wrap: wrap;
-        margin: initial;
     }
 }
 
 @media screen and (min-width: 900px){
     #cart-items-div{
-        min-width: 880px;
+        min-width: 900px;
     }
 }
 
 @media screen and (min-width: 1275px) {
     #pricing-shopping{
-        padding-left: 100px;
+        margin-left: 10px;
+    }
+
+    #checkout button{
+        min-width: 330px;
     }
 }
