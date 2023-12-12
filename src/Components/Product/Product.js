@@ -7,6 +7,8 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { GiMoneyStack } from "react-icons/gi";
 import { FaCartPlus } from "react-icons/fa";
 import { PiBookmarksThin } from "react-icons/pi";
+import { FiMinus } from "react-icons/fi";
+import { GoPlus } from "react-icons/go";
 import img1 from '../images/msfs/msfs_cover.jpg'
 import img2 from '../images/msfs/msfs_cockpit.jpg'
 import img3 from '../images/msfs/msfs_2.jpg'
@@ -51,7 +53,16 @@ export default function Product(){
 
                     <div className="flex">
                         <p>Quantity:</p>
-                        <input type="number" min={1} className="w-11 border-1 border-[black] ms-2 ps-2 focus:outline" onChange={e => setQuantity(e.target.value)}/>
+                        <div className='flex mx-2'>
+                            <FiMinus className="my-auto" onClick={() => setQuantity(quantity-1)}/>
+
+                            <input type="text" value={quantity} 
+                            placeholder={quantity}  className="border-1 border-[black] mx-1 px-1 focus:outline my-auto" 
+                            onChange={e => setQuantity(e.target.value)}
+                            id="expandable-input"/>
+
+                            <GoPlus className="my-auto" onClick={() => setQuantity(quantity+1)}/>
+                        </div>
                     </div>
                     
                     <div className="text-center mt-3">
