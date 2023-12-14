@@ -7,6 +7,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { GiMoneyStack } from "react-icons/gi";
 import { FaCartPlus } from "react-icons/fa";
 import { PiBookmarksThin } from "react-icons/pi";
+import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi";
 import { GoPlus } from "react-icons/go";
 import img1 from '../images/msfs/msfs_cover.jpg'
@@ -46,50 +47,79 @@ export default function Product(){
                     
                 </div>
 
-                <div className="m-3 text-left">
+                <div className="text-left mx-4">
                     <h1 className="text-3xl font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
 
-                    <p className="text-xl text-[#ff9800] font-semibold my-2">Kshs. {sellingPrice * quantity}</p>
+                    <div className="flex flex-wrap">
 
-                    <div className="flex">
-                        <p>Quantity:</p>
-                        <div className='flex mx-2'>
-                            <FiMinus className="my-auto" onClick={() => setQuantity(quantity-1)}/>
+                        <div className="mt-3" id="item-info-div">
 
-                            <input type="text" value={quantity} 
-                            placeholder={quantity}  className="border-1 border-[black] mx-1 px-1 focus:outline my-auto" 
-                            onChange={e => setQuantity(e.target.value)}
-                            id="expandable-input"/>
+                            <hr></hr>
+                                <div className="flex m-2">
+                                    <p className="text-2xl">Description</p>
+                                    <FiPlus className="my-auto ms-auto"/>
+                                </div>
 
-                            <GoPlus className="my-auto" onClick={() => setQuantity(quantity+1)}/>
+                            <hr></hr>
+                                <div className="flex m-2">
+                                    <p className="text-2xl">Specifications</p>
+                                    <FiPlus className="my-auto ms-auto"/>
+                                </div>
+
+                            <hr></hr>
+                                <div className="flex m-2">
+                                    <p className="text-2xl">Shipping</p>
+                                    <FiPlus className="my-auto ms-auto"/>
+                                </div>
+                            <hr></hr>
+
                         </div>
-                    </div>
-                    
-                    <div className="text-center mt-3">
 
-                        <button className="w-7/12 border-1 border-[black] p-2 m-2 bg-black text-white">
-                            <div className="justify-center flex">
-                                <GiMoneyStack className="my-auto me-2" />
-                                Buy It Now
-                            </div>
-                        </button>
+                        <div className="mx-5">
+                            <p className="text-xl text-[#ff9800] font-semibold my-2">Kshs. {sellingPrice * quantity}</p>
 
-                        <button className="w-7/12 border-1 border-[black] p-2 m-2 bg-black text-white">
-                            <div className="justify-center flex">
-                                <FaCartPlus className="my-auto me-2" />
-                                Add to Cart
-                            </div>
-                        </button>
+                            <div className="flex">
+                                <p>Quantity:</p>
+                                <div className='flex mx-2'>
+                                    <FiMinus className="my-auto" onClick={() => setQuantity(quantity-1)}/>
 
-                        <button className="w-7/12 border-1 border-[black] p-2 m-2 bg-black text-white">
-                            <div className="justify-center flex">
-                                <PiBookmarksThin className="my-auto me-2"/>
-                                Add to Wish List
+                                    <input type="text" value={quantity} 
+                                    placeholder={quantity}  className="border-1 border-[black] mx-1 px-1 focus:outline my-auto" 
+                                    onChange={e => setQuantity(e.target.value)}
+                                    id="expandable-input"/>
+
+                                    <GoPlus className="my-auto" onClick={() => setQuantity(quantity+1)}/>
+                                </div>
                             </div>
-                        </button>
+                            
+                            <div className="mt-3 flex-wrap">
+
+                                <div className="border-1 border-[black] p-2 m-2 bg-black text-white">
+                                    <div className="justify-center flex">
+                                        <GiMoneyStack className="my-auto me-2" />
+                                        Buy It Now
+                                    </div>
+                                </div>
+
+                                <div className="border-1 border-[black] p-2 m-2 bg-black text-white">
+                                    <div className="justify-center flex">
+                                        <FaCartPlus className="my-auto me-2" />
+                                        Add to Cart
+                                    </div>
+                                </div>
+
+                                <div className="border-1 border-[black] p-2 m-2 bg-black text-white">
+                                    <div className="justify-center flex">
+                                        <PiBookmarksThin className="my-auto me-2"/>
+                                        Add to Wish List
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
+
                 </div>
 
             <RatesAndReviews/>  
