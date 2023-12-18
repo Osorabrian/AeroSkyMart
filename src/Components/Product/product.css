@@ -28,7 +28,6 @@
     left: 50%;
 }
 
-
 #info-div{
     margin-left: 20px; 
 }
@@ -52,6 +51,14 @@
 .scrollbar::-webkit-scrollbar-thumb
 {
 	background-color: #555;
+}
+
+.left-col{
+    width: 20%;
+}
+
+.right-col{
+    width: 75%;
 }
 
 @media screen and (max-width: 480px) {

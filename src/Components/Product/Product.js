@@ -19,6 +19,9 @@ export default function Product(){
 
     const [currentImage, setCurrentImage] = useState(0)
     const [quantity, setQuantity] = useState(1)
+    const [description, setDescitption] = useState(false)
+    const [specifications, setSpecifications] = useState(false)
+    const [shipping, setShipping] = useState(false)
     const images = [img1, img2, img3, img4]
     const sellingPrice = 28000
 
@@ -55,21 +58,43 @@ export default function Product(){
                         <div className="mt-3" id="item-info-div">
 
                             <hr></hr>
-                                <div className="flex m-2">
-                                    <p className="text-2xl">Description</p>
-                                    <FiPlus className="my-auto ms-auto"/>
+                                <div className="flex-wrap m-2">
+
+                                    <div className="flex" onClick={() => setDescitption(!description)}>
+                                        <p className="text-2xl">Description</p>
+                                        {description === false ? (<FiPlus className="my-auto ms-auto"/>) : (<FiMinus className="my-auto ms-auto"/>)}
+                                    </div>
+
+                                    {description && (<p className="my-1">Take to the skies and experience the joy of flight in the next generation of Microsoft Flight Simulator. The world is at your fingertips.</p>)}
+
                                 </div>
 
                             <hr></hr>
-                                <div className="flex m-2">
-                                    <p className="text-2xl">Specifications</p>
-                                    <FiPlus className="my-auto ms-auto"/>
+                                <div className="m-2">
+
+                                    <div className="flex" onClick={() => setSpecifications(!specifications)}>
+                                        <p className="text-2xl">Specifications</p>
+                                        {specifications === false ? (<FiPlus className="my-auto ms-auto"/>) : (<FiMinus className="my-auto ms-auto"/>)}
+                                    </div>
+
+                                    {specifications && (
+                                        <>
+                                        <div className="flex">
+                                            <p className="font-semibold text-lg left-col">CPU:</p>
+                                            <p className="my-auto right-col">AMD Ryzen 3 1200 or Intel Core i5-4460.</p>
+                                        </div>
+                                        <div className="flex">
+                                            <p className="font-semibold text-lg left-col">RAM:</p>
+                                            <p className="my-auto right-col">8 GB.</p>
+                                        </div>
+                                        </>
+                                    )}
                                 </div>
 
                             <hr></hr>
-                                <div className="flex m-2">
+                                <div className="flex m-2" onClick={() => setShipping(!shipping)}> 
                                     <p className="text-2xl">Shipping</p>
-                                    <FiPlus className="my-auto ms-auto"/>
+                                    {shipping === false ? (<FiPlus className="my-auto ms-auto"/>) : (<FiMinus className="my-auto ms-auto"/>)}
                                 </div>
                             <hr></hr>
 
