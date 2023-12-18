@@ -10,6 +10,7 @@ import { PiBookmarksThin } from "react-icons/pi";
 import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi";
 import { GoPlus } from "react-icons/go";
+import { GiTruck } from "react-icons/gi";
 import img1 from '../images/msfs/msfs_cover.jpg'
 import img2 from '../images/msfs/msfs_cockpit.jpg'
 import img3 from '../images/msfs/msfs_2.jpg'
@@ -78,23 +79,33 @@ export default function Product(){
                                     </div>
 
                                     {specifications && (
-                                        <>
-                                        <div className="flex">
-                                            <p className="font-semibold text-lg left-col">CPU:</p>
-                                            <p className="my-auto right-col">AMD Ryzen 3 1200 or Intel Core i5-4460.</p>
+                                        <div className="my-1">
+                                            <div className="flex">
+                                                <p className="font-semibold text-lg left-col">CPU:</p>
+                                                <p className="my-auto right-col">AMD Ryzen 3 1200 or Intel Core i5-4460.</p>
+                                            </div>
+                                            <div className="flex">
+                                                <p className="font-semibold text-lg left-col">RAM:</p>
+                                                <p className="my-auto right-col">8 GB.</p>
+                                            </div>
                                         </div>
-                                        <div className="flex">
-                                            <p className="font-semibold text-lg left-col">RAM:</p>
-                                            <p className="my-auto right-col">8 GB.</p>
-                                        </div>
-                                        </>
                                     )}
                                 </div>
 
                             <hr></hr>
-                                <div className="flex m-2" onClick={() => setShipping(!shipping)}> 
-                                    <p className="text-2xl">Shipping</p>
-                                    {shipping === false ? (<FiPlus className="my-auto ms-auto"/>) : (<FiMinus className="my-auto ms-auto"/>)}
+                                <div className="m-2">
+
+                                    <div className="flex" onClick={() => setShipping(!shipping)}> 
+                                        <p className="text-2xl">Shipping</p>
+                                        {shipping === false ? (<FiPlus className="my-auto ms-auto"/>) : (<FiMinus className="my-auto ms-auto"/>)}
+                                    </div>
+
+                                    {shipping && (
+                                        <div className="flex">
+                                            <GiTruck className="my-auto fill-[#ff9800] me-2 text-xl"/>
+                                            <p>Delivery in 2 - 5 days</p>
+                                        </div>
+                                    )}
                                 </div>
                             <hr></hr>
 
