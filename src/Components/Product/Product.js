@@ -43,11 +43,11 @@ export default function Product(){
                         <BsChevronLeft className="prev-button text-6xl cursor-pointer" onClick={() => setCurrentImage(currentImage - 1)}/>
                         
                         <p className='image-numbers'>{currentImage + 1}/{images.length}</p>
-                    </div>
+                    </div> 
                     
                 </div>
 
-                <div className="text-left mx-4">
+                <div className="text-left" id='info-div'>
                     <h1 className="text-3xl font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
 
                     <div className="flex flex-wrap">

@@ -28,8 +28,13 @@
     left: 50%;
 }
 
+
+#info-div{
+    margin-left: 20px; 
+}
+
 #item-info-div{
-    min-width: 400px;
+    min-width: 350px;
 }
 
 .scrollbar::-webkit-scrollbar-track
@@ -56,5 +61,10 @@
 
     .next-button, .prev-button{
         font-size: x-large;
+    }
+
+
+    #info-div{
+        margin-left: 0px;
     }
 }
