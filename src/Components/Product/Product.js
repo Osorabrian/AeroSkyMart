@@ -57,7 +57,7 @@ export default function Product(){
 
                     <div className="flex flex-wrap">
 
-                        <div className="mt-3" id="item-info-div">
+                        <div className="mt-3 mx-3" id="item-info-div">
 
                            
                                 {/* <div className="flex-wrap m-2">
