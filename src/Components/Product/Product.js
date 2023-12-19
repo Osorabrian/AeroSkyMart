@@ -53,24 +53,24 @@ export default function Product(){
 
                 <div className="text-left" id='info-div'>
                     <h1 className="text-3xl font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
+                    <p className="my-1">Take to the skies and experience the joy of flight in the next generation of Microsoft Flight Simulator. The world is at your fingertips.</p>
 
                     <div className="flex flex-wrap">
 
                         <div className="mt-3" id="item-info-div">
 
-                            <hr></hr>
-                                <div className="flex-wrap m-2">
+                           
+                                {/* <div className="flex-wrap m-2">
 
                                     <div className="flex" onClick={() => setDescitption(!description)}>
                                         <p className="text-2xl">Description</p>
                                         {description === false ? (<FiPlus className="my-auto ms-auto"/>) : (<FiMinus className="my-auto ms-auto"/>)}
                                     </div>
 
-                                    {description && (<p className="my-1">Take to the skies and experience the joy of flight in the next generation of Microsoft Flight Simulator. The world is at your fingertips.</p>)}
+                                    {description && ()}
 
-                                </div>
+                                </div> */}
 
-                            <hr></hr>
                                 <div className="m-2">
 
                                     <div className="flex" onClick={() => setSpecifications(!specifications)}>
