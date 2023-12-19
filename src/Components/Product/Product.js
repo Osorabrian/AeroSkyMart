@@ -53,11 +53,11 @@ export default function Product(){
 
                 <div className="text-left" id='info-div'>
                     <h1 className="text-3xl font-bold" id='title'>Microsoft Flight Simulator 2020</h1>
-                    <p className="my-1">Take to the skies and experience the joy of flight in the next generation of Microsoft Flight Simulator. The world is at your fingertips.</p>
+                    <p className="my-1 flex flex-wrap">Take to the skies and experience the joy of flight in the next generation of Microsoft Flight Simulator. The world is at your fingertips.</p>
 
                     <div className="flex flex-wrap">
 
-                        <div className="mt-3 mx-3" id="item-info-div">
+                        <div className="mt-2" id="item-info-div">
 
                            
                                 {/* <div className="flex-wrap m-2">
@@ -101,7 +101,7 @@ export default function Product(){
                                     </div>
 
                                     {shipping && (
-                                        <div className="flex">
+                                        <div className="flex m-2">
                                             <GiTruck className="my-auto fill-[#ff9800] me-2 text-xl"/>
                                             <p>Delivery in 2 - 5 days</p>
                                         </div>
