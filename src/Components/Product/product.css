@@ -71,7 +71,7 @@
     }
 
     #item-info-div{
-        max-width: 300px;
+        min-width: 380px;
     }
 
     #info-div{
