@@ -19,7 +19,7 @@ export default function Checkout(){
 
             <div id='payment-types' className='mb-5'>
 
-                <div className='flex border-1 border-[black] my-2 p-2'>
+                <div className='flex border-1 border-[black] my-3 p-2'>
                     <input type='radio' name='payment'/>
                     <label className='flex ms-2'>
                         <PiCreditCardThin className='my-auto me-1'/>
@@ -27,7 +27,7 @@ export default function Checkout(){
                     </label>
                 </div>
 
-                <div className='flex border-1 border-[#253b80] my-2 p-2'>
+                <div className='flex border-1 border-[#253b80] my-3 p-2'>
                     <input type='radio' name='payment'/>
                     <label className='flex ms-2'>
                         <BsPaypal className='my-auto fill-[#253b80] me-1'/>
@@ -38,14 +38,14 @@ export default function Checkout(){
                     </label>
                 </div>
 
-                <div className='flex border-1 border-[#228B22] my-2 p-2'>
+                <div className='flex border-1 border-[#228B22] my-3 p-2'>
                     <input type='radio' name='payment'/>
                     <label className='ms-2'>
                         <img src={mpesa} alt='mpesa' style={{height: '35px'}} />
                     </label>
                 </div>
 
-                <div className='flex border-1 border-[black] my-2 p-2'>
+                <div className='flex border-1 border-[black] my-3 p-2'>
                     <input type='radio' name='payment'/>
                     <label className='flex ms-2'>
                         <FaApple className='text-lg me-1'/>
@@ -53,7 +53,7 @@ export default function Checkout(){
                     </label>
                 </div>
 
-                <div className='flex border-1 border-[#4285F4] my-2 p-2'>
+                <div className='flex border-1 border-[#4285F4] my-3 p-2'>
                     <input type='radio' name='payment'/>
                     <label className='flex ms-2'>
                         <FcGoogle className='my-auto text-lg me-1'/>
