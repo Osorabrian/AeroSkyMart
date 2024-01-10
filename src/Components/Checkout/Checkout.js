@@ -10,10 +10,14 @@ export default function Checkout(){
 
     return(
         <div>
-            <p>Kshs. 1,2000,000</p>
-            <h1 className='my-4'>Payment Type</h1>
 
-            <div id='payment-types'>
+            <div className='text-left mt-4' id='amount-info'>
+                <p className='text-sm font-bold text-[grey]'>TOTAL AMOUNT</p>
+                <p className='text-xl text-[#ff9800]'>Kshs. 1,2000,000</p>
+                <h1 className='my-3 text-3xl ms-2'>Payment Type</h1>
+            </div>
+
+            <div id='payment-types' className='mb-5'>
 
                 <div className='flex border-1 border-[black] my-2 p-2'>
                     <input type='radio' name='payment'/>
