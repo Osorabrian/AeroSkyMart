@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
+import InputMask from 'react-input-mask'
 import { BsPaypal } from "react-icons/bs";
 import { PiCreditCardThin } from "react-icons/pi";
 import { FaApple } from "react-icons/fa6";
@@ -7,6 +8,8 @@ import mpesa from '../images/mpesa logo.png'
 import './checkout.css'
 
 export default function Checkout(){
+
+    const [paymentType, setPaymentType] = useState('debit/credit')
 
     return(
         <div>
@@ -19,48 +22,67 @@ export default function Checkout(){
 
             <div id='payment-types' className='mb-5'>
 
-                <div className='flex border-1 border-[black] my-3 p-2'>
-                    <input type='radio' name='payment'/>
-                    <label className='flex ms-2'>
+                <div className='justify-center flex border-1 border-[black] my-3 p-2' onClick={() => setPaymentType('debit/credit')}>
                         <PiCreditCardThin className='my-auto me-1'/>
                         Debit/Credit Card
-                    </label>
                 </div>
 
-                <div className='flex border-1 border-[#253b80] my-3 p-2'>
-                    <input type='radio' name='payment'/>
-                    <label className='flex ms-2'>
+                <div className='justify-center flex border-1 border-[#ffc43a] my-3 p-2 bg-[#ffc43a]' onClick={() => setPaymentType('paypal')}>
                         <BsPaypal className='my-auto fill-[#253b80] me-1'/>
                         <div>
                             <i className='text-[#253b80] font-bold'>pay</i>
                             <i className='text-[#179bd7] font-bold'>Pal</i>
                         </div>
-                    </label>
                 </div>
 
-                <div className='flex border-1 border-[#228B22] my-3 p-2'>
-                    <input type='radio' name='payment'/>
-                    <label className='ms-2'>
+                <div className='justify-center flex border-1 border-[#228B22] my-3 p-2' onClick={() => setPaymentType('mpesa')}>
                         <img src={mpesa} alt='mpesa' style={{height: '35px'}} />
-                    </label>
                 </div>
 
-                <div className='flex border-1 border-[black] my-3 p-2'>
-                    <input type='radio' name='payment'/>
-                    <label className='flex ms-2'>
-                        <FaApple className='text-lg me-1'/>
-                        Apple Pay
-                    </label>
+                <div className='justify-center flex border-1 border-[black] my-3 p-2 text-[white] bg-[black]' onClick={() => setPaymentType('apple pay')}>
+                        <FaApple className='text-lg me-1 fill-[white]'/>
+                        Pay
                 </div>
 
-                <div className='flex border-1 border-[#4285F4] my-3 p-2'>
-                    <input type='radio' name='payment'/>
-                    <label className='flex ms-2'>
+                <div className='justify-center flex border-1 border-[#4285F4] my-3 p-2 bg-[#4285F4] text-[white]' onClick={() => setPaymentType('google pay')}>
                         <FcGoogle className='my-auto text-lg me-1'/>
-                        Google Pay
-                    </label>
+                        Pay
                 </div>
 
+            </div>
+
+            <div id='card-form' className='my-3'>
+                <form className='text-left'>
+
+                    <label className='form-label'>Card Number</label>
+                    <input type='number' placeholder='Card Number' className='form-control'/>
+
+                    <div className='flex my-3'>
+
+                        <div className='w-8/12'>
+                            <label>Expires</label>
+                            <input type='month' placeholder='' className='form-control'/>
+                        </div>
+
+                        <p className='w-1/12 mt-auto ms-1 text-3xl'>/</p>
+
+                        <div className='w-4/12 -ms-4'>
+                            <label>CVV</label>
+                            <input type='number' placeholder='CVV' className='form-control'/>
+                        </div>
+                        
+                    </div>
+
+                    <label>Name on Card</label>
+                    <input type='text' placeholder='Enter Name' className='form-control'/>
+
+                    <div style={{textAlign: 'center'}} className='my-2'>
+                        <button className='btn border-1 rounded-0 bg-[#4CBB17] text-[white] mt-3 w-6/12' type='submit'>
+                            Make Payment
+                        </button>
+                    </div>
+
+                </form>
             </div>
         </div>
     )
