@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import InputMask from 'react-input-mask'
 import { BsPaypal } from "react-icons/bs";
 import { PiCreditCardThin } from "react-icons/pi";
 import { FaApple } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
+import { FaCcMastercard } from "react-icons/fa6";
 import mpesa from '../images/mpesa logo.png'
 import './checkout.css'
 
@@ -52,10 +52,15 @@ export default function Checkout(){
             </div>
 
             <div id='card-form' className='my-3'>
-                <form className='text-left'>
+                <form className='text-left p-2'>
 
                     <label className='form-label'>Card Number</label>
-                    <input type='number' placeholder='Card Number' className='form-control'/>
+                    <div className='input-group'>
+                        <input type='number' placeholder='Card Number' className='form-control'/>
+                        <span>
+                            <FaCcMastercard className='mt-auto'/>
+                        </span>
+                    </div>
 
                     <div className='flex my-3'>
 
@@ -68,7 +73,7 @@ export default function Checkout(){
 
                         <div className='w-4/12 -ms-4'>
                             <label>CVV</label>
-                            <input type='number' placeholder='CVV' className='form-control'/>
+                            <input type='number' placeholder='cvv' className='form-control'/>
                         </div>
                         
                     </div>
