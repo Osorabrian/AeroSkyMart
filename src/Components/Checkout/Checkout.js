@@ -52,11 +52,11 @@ export default function Checkout(){
             </div>
 
             <div id='card-form' className='my-3'>
-                <form className='text-left p-2'>
+                <form className='text-left p-3'>
 
                     <label className='form-label'>Card Number</label>
                     <div className='input-group'>
-                        <input type='number' placeholder='Card Number' className='form-control'/>
+                        <input type='text'pattern='[0-9]' placeholder='Card Number' className='form-control'/>
                         <span>
                             <FaCcMastercard className='mt-auto'/>
                         </span>
