@@ -14,6 +14,7 @@ import EmailLogin from '../Login/EmailLogin';
 import ResetPassword from '../Login/ResetPassword';
 import ChangePassword from '../Login/ChangePassword';
 import ForgotPassword from '../Login/Forgot Password';
+import Succesful from '../Checkout/Successful';
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path='contact' element={<Contact/>} />
           <Route path='cart' element={<Cart/>} />
           <Route path='checkout' element={<Checkout/>} />
+          <Route path='payment_successful' element={<Succesful/>}/>
       </Routes>
       <Footer/>
     </div>
