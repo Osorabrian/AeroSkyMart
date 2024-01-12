@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { BsPaypal } from "react-icons/bs";
-import { PiCreditCardThin } from "react-icons/pi";
+// import { PiCreditCardThin } from "react-icons/pi";
+import { IoBagCheckOutline } from "react-icons/io5";
 import { FaApple } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { FaCcMastercard } from "react-icons/fa6";
@@ -15,25 +16,22 @@ export default function Checkout(){
     return(
         <div>
 
-            <div className='mt-4' id='amount-info'>
+            <div className='text-left mt-4' id='amount-info'>
                 <p className='text-sm font-bold text-[grey]'>TOTAL AMOUNT</p>
-                <p className='text-xl text-[#ff9800] font-semibold'>$1,2000,000.00</p>
+                <p className='text-2xl text-[#ff9800]'>$1,2000,000.00</p>
                 <h1 className='my-3 text-3xl ms-2'>Payment Types</h1>
             </div>
 
-            <div id='payment-types' className='mb-5'>
+            <div id='payment-types' className='mb-4'>
 
-                <div className='justify-center flex border-1 border-[black] my-3 p-2' onClick={() => setPaymentType('debit/credit')}>
+                {/* <div className='justify-center flex border-1 border-[black] my-3 p-2' onClick={() => setPaymentType('debit/credit')}>
                         <PiCreditCardThin className='my-auto me-1'/>
                         Debit/Credit Card
-                </div>
+                </div> */}
 
-                <div className='justify-center flex border-1 border-[#ffc43a] my-3 p-2 bg-[#ffc43a]' onClick={() => setPaymentType('paypal')}>
-                        <BsPaypal className='my-auto fill-[#253b80] me-1'/>
-                        <div>
-                            <i className='text-[#253b80] font-bold'>pay</i>
-                            <i className='text-[#179bd7] font-bold'>Pal</i>
-                        </div>
+                <div className='justify-center flex border-1 border-[#4285F4] my-3 p-2 text-[white] bg-[#4285f4]' onClick={() => setPaymentType('google pay')}>
+                        <FcGoogle className='my-auto text-lg me-1'/>
+                        Pay
                 </div>
 
                 <div className='justify-center flex border-1 border-[#228B22] my-3 p-2' onClick={() => setPaymentType('mpesa')}>
@@ -45,14 +43,23 @@ export default function Checkout(){
                         Pay
                 </div>
 
-                <div className='justify-center flex border-1 border-[#4285F4] my-3 p-2 bg-[#4285F4] text-[white]' onClick={() => setPaymentType('google pay')}>
-                        <FcGoogle className='my-auto text-lg me-1'/>
-                        Pay
+                <div className='justify-center flex border-1 border-[#ffc43a] my-3 p-2 bg-[#ffc43a]' onClick={() => setPaymentType('paypal')}>
+                        <BsPaypal className='my-auto fill-[#253b80] me-1'/>
+                        <div>
+                            <i className='text-[#253b80] font-extrabold'>pay</i>
+                            <i className='text-[#179bd7] font-extrabold'>Pal</i>
+                        </div>
                 </div>
 
             </div>
 
-            <div id='card-form' className='my-3'>
+            <div className='flex' id='divider'>
+                <hr className='w-5/12 my-auto ms-2 me-2'></hr>
+                <p>or</p>
+                <hr className='w-5/12 my-auto ms-2'></hr>
+            </div>
+
+            <div id='card-form' className='mt-2'>
                 <form className='text-left p-3'>
 
                     <label className='form-label'>Card Number</label>
@@ -79,14 +86,15 @@ export default function Checkout(){
                         
                     </div>
 
-                    <label>Name on Card</label>
-                    <input type='text' placeholder='Enter Name' className='form-control'/>
-
-                    <div style={{textAlign: 'center'}} className='my-2'>
-                        <Link className='btn border-0 rounded-0 bg-[#4CBB17] text-[white] mt-3 w-6/12' type='submit' to='/payment_successful'>
-                            Make Payment
-                        </Link>
+                    <div className='mb-3'>
+                        <label>Name on Card</label>
+                        <input type='text' placeholder='Enter Name' className='form-control'/>
                     </div>
+                    
+                    <Link className='mx-auto flex btn border-0 rounded-0 bg-[#4CBB17] text-[white] my-4 w-7/12 p-3' type='submit' to='/payment_successful'>
+                        <IoBagCheckOutline className='me-2 text-lg'/>
+                        Make Payment
+                    </Link>
 
                 </form>
             </div>
