@@ -91,7 +91,7 @@ export default function Checkout(){
                         <input type='text' placeholder='Enter Name' className='form-control'/>
                     </div>
                     
-                    <div className='my-4'>
+                    <div className='my-5'>
                         <Link className='mx-auto flex btn border-0 rounded-0 bg-[#4CBB17] text-[white] w-7/12 p-3' type='submit' to='/payment_successful'>
                             <IoBagCheckOutline className='me-2 my-auto text-lg'/>
                             Make Payment
