@@ -15,9 +15,9 @@ export default function Checkout(){
     return(
         <div>
 
-            <div className='text-left mt-4' id='amount-info'>
+            <div className='mt-4' id='amount-info'>
                 <p className='text-sm font-bold text-[grey]'>TOTAL AMOUNT</p>
-                <p className='text-xl text-[#ff9800]'>Kshs. 1,2000,000</p>
+                <p className='text-xl text-[#ff9800] font-semibold'>$1,2000,000.00</p>
                 <h1 className='my-3 text-3xl ms-2'>Payment Types</h1>
             </div>
 
