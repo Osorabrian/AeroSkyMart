@@ -86,15 +86,17 @@ export default function Checkout(){
                         
                     </div>
 
-                    <div className='mb-3'>
+                    <div className=''>
                         <label>Name on Card</label>
                         <input type='text' placeholder='Enter Name' className='form-control'/>
                     </div>
                     
-                    <Link className='mx-auto flex btn border-0 rounded-0 bg-[#4CBB17] text-[white] my-4 w-7/12 p-3' type='submit' to='/payment_successful'>
-                        <IoBagCheckOutline className='me-2 text-lg'/>
-                        Make Payment
-                    </Link>
+                    <div className='my-4'>
+                        <Link className='mx-auto flex btn border-0 rounded-0 bg-[#4CBB17] text-[white] w-7/12 p-3' type='submit' to='/payment_successful'>
+                            <IoBagCheckOutline className='me-2 my-auto text-lg'/>
+                            Make Payment
+                        </Link>
+                    </div>
 
                 </form>
             </div>
