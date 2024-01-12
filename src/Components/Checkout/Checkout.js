@@ -83,7 +83,7 @@ export default function Checkout(){
                     <input type='text' placeholder='Enter Name' className='form-control'/>
 
                     <div style={{textAlign: 'center'}} className='my-2'>
-                        <Link className='btn border-0 rounded-0 bg-[#4CBB17] text-[white] mt-3 w-6/12' type='submit' to='payment_successful'>
+                        <Link className='btn border-0 rounded-0 bg-[#4CBB17] text-[white] mt-3 w-6/12' type='submit' to='/payment_successful'>
                             Make Payment
                         </Link>
                     </div>
