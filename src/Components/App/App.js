@@ -35,7 +35,7 @@ function App() {
           <Route path='contact' element={<Contact/>} />
           <Route path='cart' element={<Cart/>} />
           <Route path='checkout' element={<Checkout/>} />
-          <Route path='payment_successful' element={<Succesful/>}/>
+          <Route path='checkout/payment_successful' element={<Succesful/>}/>
       </Routes>
       <Footer/>
     </div>
