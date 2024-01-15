@@ -48,6 +48,22 @@ export default function SideNav({closeSideNav}){
                 </li>
                 <hr></hr>
 
+                <li>
+                    <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                        <FaShippingFast className="my-auto me-2"/>
+                        My Orders
+                    </NavLink>
+                </li>
+                <hr></hr>
+
+                <li>
+                    <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                        <CiBookmark className="my-auto me-2"/>
+                        My Wishlist
+                    </NavLink>
+                </li>
+                <hr></hr>
+
                 <li className='nav-item'>
                     <NavLink to='/login' className={'nav-link flex'} onClick={closeNav}>
                         <AiOutlineLogin className='my-auto me-1'/>
@@ -65,42 +81,39 @@ export default function SideNav({closeSideNav}){
                 <hr></hr>
 
                 <li className='nav-item dropdown'>
+
                     <NavLink className={'flex nav-link'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
                         <img src={profile_pic} alt='profile' className="me-2" id='profile-pic'/>
                         Brian Osora
                         <CiCircleChevDown className="my-auto ms-2 text-xl"/>
                     </NavLink>
+
                     <ul className="dropdown-menu bg-black">
+
                         <li className="nav-item">
                             <NavLink className={'flex dropdown-item bg-black nav-link'}>
                                 <CiUser className="my-auto me-2"/>
                                 View Profile
                             </NavLink>
                         </li>
+                        <hr className="text-[white]"></hr>
+
                         <li>
                             <NavLink className={'flex dropdown-item bg-black nav-link'}>
                                 <CiSettings className="my-auto me-2"/>
                                 Settings
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                                <FaShippingFast className="my-auto me-2"/>
-                                My Orders
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                                <CiBookmark className="my-auto me-2"/>
-                                My Wishlist
-                            </NavLink>
-                        </li>
+                        <hr className="text-[white]"></hr>
+
                         <li>
                             <NavLink className={'flex dropdown-item bg-black nav-link'}>
                                 <RiLogoutCircleLine className="my-auto me-2"/>
                                 Log Out
                             </NavLink>
                         </li>
+                        <hr className="text-[white]"></hr>
+
                     </ul>
                 </li>
 
