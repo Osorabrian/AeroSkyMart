@@ -1,9 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {FaHome} from 'react-icons/fa'
+import { FaShippingFast } from "react-icons/fa";
 import {BiStore} from 'react-icons/bi'
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 import { CiCircleChevDown } from "react-icons/ci";
+import { CiBookmark } from "react-icons/ci";
+import { CiSettings } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
+import { RiLogoutCircleLine } from "react-icons/ri";
 import profile_pic from '../images/greencqard (2).JPG'
 import './Navbar.css'
 
@@ -67,19 +72,34 @@ export default function SideNav({closeSideNav}){
                     </NavLink>
                     <ul className="dropdown-menu bg-black">
                         <li className="nav-item">
-                            <NavLink className={'dropdown-item bg-black nav-link'}>View Profile</NavLink>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                <CiUser className="my-auto me-2"/>
+                                View Profile
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink className={'dropdown-item bg-black nav-link'}>Settings</NavLink>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                <CiSettings className="my-auto me-2"/>
+                                Settings
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink className={'dropdown-item bg-black nav-link'}>My Orders</NavLink>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                <FaShippingFast className="my-auto me-2"/>
+                                My Orders
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink className={'dropdown-item bg-black nav-link'}>My Wishlist</NavLink>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                <CiBookmark className="my-auto me-2"/>
+                                My Wishlist
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink className={'dropdown-item bg-black nav-link'}>Log Out</NavLink>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                <RiLogoutCircleLine className="my-auto me-2"/>
+                                Log Out
+                            </NavLink>
                         </li>
                     </ul>
                 </li>
