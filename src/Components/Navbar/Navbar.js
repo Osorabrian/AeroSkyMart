@@ -25,7 +25,7 @@ export default function Navbar(){
                 <div className='container-fluid'>
 
                 <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-4 w-2/12 my-auto'>
-                    <CiMenuBurger className='text-3xl me-3 w-12/12'/>   
+                    <CiMenuBurger className='text-3xl me-2 w-12/12'/>   
                 </button>
 
                 <NavLink className='navbar-brand text-light text-2xl me-auto flex' to='/'>
@@ -66,12 +66,18 @@ export default function Navbar(){
                             
                     </div>
                     
-                        <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/store')}/>
+                    <div className='justify-end flex'>
 
-                        <div id='cart' className='ms-auto'>
-                            <PiShoppingCartThin id='cart-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/cart')}/>
+                        <NavLink to='/store' className={'nav-link me-1'}>
+                            <CiSearch id='search-icon' className='text-3xl cursor-pointer'/>
+                        </NavLink>
+
+                        <NavLink id='cart' className={'nav-link'} to={'/cart'}>
+                            <PiShoppingCartThin id='cart-icon' className='text-3xl cursor-pointer' />
                             <div id='cart-count' className='p-1'>99+</div>
-                        </div>
+                        </NavLink>
+                    </div>
+
                 </div>          
             </nav>
 
