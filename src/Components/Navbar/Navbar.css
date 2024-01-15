@@ -28,7 +28,7 @@
 
 #cart{
     position: relative;
-    display: inline-block;
+    display: none;
 }
 
 #cart-count{
@@ -73,9 +73,17 @@
     .horizontal-nav{
         display: none;
     }
-
+   
+    #profile-dropdown{
+        display: none;
+    }
+    
     #side-nav{
         display:block;
+    }
+
+    #cart{
+        display: inline-block;
     }
 } 
 

@@ -1,19 +1,25 @@
 import React, {useState} from 'react'
 import {FaHome} from 'react-icons/fa'
+import { FaShippingFast } from "react-icons/fa";
+import { CiBookmark } from "react-icons/ci";
+import { CiCircleChevDown } from "react-icons/ci";
+import { CiSettings } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
+import { RiLogoutCircleLine } from "react-icons/ri";
 import {BiStore} from 'react-icons/bi';
 import { CiSearch } from "react-icons/ci";
 import { PiShoppingCartThin } from "react-icons/pi";
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 import {CiMenuBurger} from 'react-icons/ci'
 import logo from '../images/plane.png'
-import {NavLink, useNavigate} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import SideNav from './SideNav'
+import profile_pic from '../images/greencqard (2).JPG'
 import './Navbar.css'
 
 export default function Navbar(){
 
     const [sideMenu, setSideMenu] = useState(false)
-    let navigate = useNavigate()
 
     function closeSideNav(){
         setSideMenu(false)
@@ -50,6 +56,16 @@ export default function Navbar(){
                                 Cart
                             </NavLink>
 
+                            <NavLink className={'nav-link flex me-4'}>
+                                <FaShippingFast className="my-auto me-1"/>
+                                My Orders
+                            </NavLink>
+                        
+                            <NavLink className={'nav-link flex me-4'}>
+                                <CiBookmark className="my-auto me-1"/>
+                                My Wishlist
+                            </NavLink>
+                        
                     </div>  
 
                     <div className='horizontal-nav navbar flex ms-auto text-xl'>
@@ -76,6 +92,43 @@ export default function Navbar(){
                             <PiShoppingCartThin id='cart-icon' className='text-3xl cursor-pointer' />
                             <div id='cart-count' className='p-1'>99+</div>
                         </NavLink>
+
+                        <div className='nav-item dropdown text-xl' id='profile-dropdown'>
+
+                            <NavLink className={'flex nav-link'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
+                                <img src={profile_pic} alt='profile' className="me-2" id='profile-pic'/>
+                                Brian Osora
+                                <CiCircleChevDown className="my-auto ms-1 text-xl"/>
+                            </NavLink>
+
+                            <ul className="dropdown-menu bg-black text-xl" id='dropdown-menu'>
+
+                                <li className="nav-item p-3">
+                                    <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                        <CiUser className="my-auto me-2"/>
+                                        View Profile
+                                    </NavLink>
+                                </li>
+                                <hr className="text-[white]"></hr>
+
+                                <li className='nav-item p-3'>
+                                    <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                        <CiSettings className="my-auto me-2"/>
+                                        Settings
+                                    </NavLink>
+                                </li>
+                                <hr className="text-[white]"></hr>
+
+                                <li className='nav-item p-3'>
+                                    <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'}>
+                                        <RiLogoutCircleLine className="my-auto me-2"/>
+                                        Log Out
+                                    </NavLink>
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>          

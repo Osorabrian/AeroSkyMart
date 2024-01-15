@@ -85,7 +85,7 @@ export default function SideNav({closeSideNav}){
                     <NavLink className={'flex nav-link'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
                         <img src={profile_pic} alt='profile' className="me-2" id='profile-pic'/>
                         Brian Osora
-                        <CiCircleChevDown className="my-auto ms-2 text-xl"/>
+                        <CiCircleChevDown className="my-auto ms-1 text-xl"/>
                     </NavLink>
 
                     <ul className="dropdown-menu bg-black" id='dropdown-menu'>
