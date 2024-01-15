@@ -30,7 +30,7 @@ export default function Navbar(){
 
                 <NavLink className='navbar-brand text-light text-2xl me-auto flex' to='/'>
                     <img src={logo} alt='logo'id='logo' style={{padding:'0px 12px'}}/>
-                    <span className='font-roboto -ms-2'>AeroSkyMart</span>
+                    <span className='font-roboto -ms-2 me-2'>AeroSkyMart</span>
                 </NavLink>
 
                     <div className='horizontal-nav navbar mx-auto flex text-xl text-light'>
