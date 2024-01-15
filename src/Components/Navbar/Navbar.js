@@ -66,7 +66,7 @@ export default function Navbar(){
                             
                     </div>
 
-                    <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer me-1' onClick={() => navigate('/store')}/>
+                    <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer me-1 ms-2' onClick={() => navigate('/store')}/>
 
                     <div id='cart'>
                         <PiShoppingCartThin id='cart-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/cart')}/>
