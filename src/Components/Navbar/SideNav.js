@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import {FaHome} from 'react-icons/fa'
 import {BiStore} from 'react-icons/bi'
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
+import profile_pic from '../images/greencqard (2).JPG'
 import './Navbar.css'
 
 export default function SideNav({closeSideNav}){
@@ -56,6 +57,30 @@ export default function SideNav({closeSideNav}){
                     </NavLink>
                 </li>
                 <hr></hr>
+
+                <li className='nav-item dropdown'>
+                    <NavLink className={'flex nav-link dropdown-toggle'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
+                        <img src={profile_pic} alt='profile' className="me-2" id='profile-pic'/>
+                        Brian Osora
+                    </NavLink>
+                    <ul className="dropdown-menu bg-black">
+                        <li className="nav-item">
+                            <NavLink className={'dropdown-item bg-black nav-link'}>View Profile</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={'dropdown-item bg-black nav-link'}>Settings</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={'dropdown-item bg-black nav-link'}>My Orders</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={'dropdown-item bg-black nav-link'}>My Wishlist</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={'dropdown-item bg-black nav-link'}>Log Out</NavLink>
+                        </li>
+                    </ul>
+                </li>
 
             </ul>
     )
