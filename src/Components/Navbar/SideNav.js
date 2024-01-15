@@ -88,7 +88,7 @@ export default function SideNav({closeSideNav}){
                         <CiCircleChevDown className="my-auto ms-2 text-xl"/>
                     </NavLink>
 
-                    <ul className="dropdown-menu bg-black">
+                    <ul className="dropdown-menu bg-black" id='dropdown-menu'>
 
                         <li className="nav-item">
                             <NavLink className={'flex dropdown-item bg-black nav-link'}>
@@ -112,7 +112,6 @@ export default function SideNav({closeSideNav}){
                                 Log Out
                             </NavLink>
                         </li>
-                        <hr className="text-[white]"></hr>
 
                     </ul>
                 </li>
