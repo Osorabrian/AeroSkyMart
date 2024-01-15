@@ -24,7 +24,7 @@ export default function Navbar(){
             <nav className='bg-[rgb(0,0,0)] text-light navbar font-roboto navbar-expand-lg' id='nav-bar'>
                 <div className='container-fluid'>
 
-                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-3 w-2/12 my-auto'>
+                <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-4 w-2/12 my-auto'>
                     <CiMenuBurger className='text-3xl me-3 w-12/12'/>   
                 </button>
 
@@ -65,13 +65,13 @@ export default function Navbar(){
                             </NavLink>
                             
                     </div>
+                    
+                        <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/store')}/>
 
-                    <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer me-1 ms-2' onClick={() => navigate('/store')}/>
-
-                    <div id='cart'>
-                        <PiShoppingCartThin id='cart-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/cart')}/>
-                        <div id='cart-count' className='p-1'>99+</div>
-                    </div>
+                        <div id='cart'className='ms-auto'>
+                            <PiShoppingCartThin id='cart-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/cart')}/>
+                            <div id='cart-count' className='p-1'>99+</div>
+                        </div>
                 </div>          
             </nav>
 
