@@ -25,7 +25,7 @@ export default function Navbar(){
                 <div className='container-fluid'>
 
                 <button id='side-menu' onClick={() => setSideMenu(!sideMenu)} className='-ms-4 w-2/12 my-auto'>
-                    <CiMenuBurger className='text-3xl me-2 w-12/12'/>   
+                    <CiMenuBurger className='text-3xl w-12/12'/>   
                 </button>
 
                 <NavLink className='navbar-brand text-light text-2xl me-auto flex' to='/'>
@@ -66,7 +66,7 @@ export default function Navbar(){
                             
                     </div>
                     
-                    <div className='justify-end flex'>
+                    <div className='d-flex justify-content-end'>
 
                         <NavLink to='/store' className={'nav-link me-1'}>
                             <CiSearch id='search-icon' className='text-3xl cursor-pointer'/>

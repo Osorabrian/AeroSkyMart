@@ -7,7 +7,10 @@
 }
 
 #nav-bar{
-    padding: 13px;
+    padding-left: 13px;
+    padding-top: 13px;
+    padding-right: 0px;
+    padding-bottom: 13px;
 }
 
 #logo{
