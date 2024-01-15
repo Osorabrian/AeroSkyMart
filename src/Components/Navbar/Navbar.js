@@ -68,7 +68,7 @@ export default function Navbar(){
                     
                         <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/store')}/>
 
-                        <div id='cart'className='ms-auto'>
+                        <div id='cart' className='ms-auto'>
                             <PiShoppingCartThin id='cart-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/cart')}/>
                             <div id='cart-count' className='p-1'>99+</div>
                         </div>
