@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import {FaHome} from 'react-icons/fa'
 import {BiStore} from 'react-icons/bi'
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
+import { CiCircleChevDown } from "react-icons/ci";
 import profile_pic from '../images/greencqard (2).JPG'
 import './Navbar.css'
 
@@ -59,9 +60,10 @@ export default function SideNav({closeSideNav}){
                 <hr></hr>
 
                 <li className='nav-item dropdown'>
-                    <NavLink className={'flex nav-link dropdown-toggle'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
+                    <NavLink className={'flex nav-link'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
                         <img src={profile_pic} alt='profile' className="me-2" id='profile-pic'/>
                         Brian Osora
+                        <CiCircleChevDown className="my-auto ms-2 text-xl"/>
                     </NavLink>
                     <ul className="dropdown-menu bg-black">
                         <li className="nav-item">
