@@ -107,7 +107,7 @@ export default function SideNav({closeSideNav}){
                         <hr className="text-[white]"></hr>
 
                         <li>
-                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'}>
                                 <RiLogoutCircleLine className="my-auto me-2"/>
                                 Log Out
                             </NavLink>
