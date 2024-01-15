@@ -50,7 +50,7 @@ export default function SideNav({closeSideNav}){
 
                 <li>
                     <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                        <FaShippingFast className="my-auto me-2"/>
+                        <FaShippingFast className="my-auto me-1"/>
                         My Orders
                     </NavLink>
                 </li>
@@ -58,7 +58,7 @@ export default function SideNav({closeSideNav}){
 
                 <li>
                     <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                        <CiBookmark className="my-auto me-2"/>
+                        <CiBookmark className="my-auto me-1"/>
                         My Wishlist
                     </NavLink>
                 </li>
