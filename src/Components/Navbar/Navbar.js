@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {FaHome} from 'react-icons/fa'
 import {BiStore} from 'react-icons/bi';
 import { CiSearch } from "react-icons/ci";
+import { PiShoppingCartThin } from "react-icons/pi";
 import {AiOutlineLogin, AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 import {CiMenuBurger} from 'react-icons/ci'
 import logo from '../images/plane.png'
@@ -65,7 +66,12 @@ export default function Navbar(){
                             
                     </div>
 
-                    <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/store')}/>
+                    <CiSearch id='search-icon' className='text-3xl my-auto cursor-pointer me-2' onClick={() => navigate('/store')}/>
+
+                    <div id='cart'>
+                        <PiShoppingCartThin id='cart-icon' className='text-3xl my-auto cursor-pointer' onClick={() => navigate('/cart')}/>
+                        <div id='cart-count' className='p-1'>99+</div>
+                    </div>
                 </div>          
             </nav>
 
