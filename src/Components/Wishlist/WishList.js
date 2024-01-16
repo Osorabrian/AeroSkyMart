@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import ProductTile from '../Store/ProductTile'
+import ProductCard from '../Store/ProductCard'
 import './wishlist.css'
 
 export default function WishList(){
@@ -19,7 +19,7 @@ export default function WishList(){
 
     const data = list.slice(firstPost, lastPost).map((item) => {
         return (
-            <ProductTile key={item.id} name={item.title} id={item.id}/>
+            <ProductCard key={item.id} name={item.title} id={item.id}/>
         )
     })
 
@@ -39,7 +39,10 @@ export default function WishList(){
         <>
             <p className='text-4xl'>{list.length} items</p>
 
-            { data }
+            <div className='row m-3'>
+                { data }
+            </div>
+
             <div className='mx-auto' id='pagination'>
                 <div className='justify-between flex mx-5 mb-4'>
                     <button onClick={() => previous()} className='btn border-1 bg-black text-white px-3'>
