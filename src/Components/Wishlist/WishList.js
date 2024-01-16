@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ProductTile from '../Store/ProductTile'
+import './wishlist.css'
 
 export default function WishList(){
 
@@ -39,19 +40,18 @@ export default function WishList(){
             <p className='text-4xl'>{list.length} items</p>
 
             { data }
+            <div className='mx-auto' id='pagination'>
+                <div className='justify-between flex mx-5 mb-4'>
+                    <button onClick={() => previous()} className='btn border-1 bg-black text-white px-3'>
+                        Prev
+                    </button>
 
-            <div className='justify-between flex mx-5 mb-4'>
+                    <p className='my-auto'>Page {currentPage} of {totalPages}</p>
 
-                <button onClick={() => previous()} className='btn border-1 bg-black text-white'>
-                    Prev
-                </button>
-
-                <p className='my-auto'>Page {currentPage} of {totalPages}</p>
-
-                <button onClick={() => {next()}} className='btn border-1 bg-black text-white'>
-                    Next
-                </button>
-
+                    <button onClick={() => {next()}} className='btn border-1 bg-black text-white px-3'>
+                        Next
+                    </button>
+                </div>
             </div>
         </>
     )
