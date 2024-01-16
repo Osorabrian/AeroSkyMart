@@ -107,7 +107,7 @@ export default function Navbar(){
                                 <hr className="text-[white]"></hr>
 
                                 <li className='nav-item p-3'>
-                                <NavLink className={'dropdown-item bg-black nav-link flex me-4'}>
+                                <NavLink className={'dropdown-item bg-black nav-link flex me-4'} to='/wishlist'>
                                     <CiBookmark className="my-auto me-2"/>
                                     My Wishlist
                                 </NavLink>

@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 export default function ProductTile({name, id}){
     return(
         <div className="mb-3" id='project-tile'>
-            <Link id='tile' to={`${id}`}>
+            <Link id='tile' to={`${id}`} >
                 <div className="flex">
                     <img src={thumbnail} alt={'gulfstream'} id='thumbnail'/>
                     <div className="ms-3 text-left">

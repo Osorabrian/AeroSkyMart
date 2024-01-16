@@ -91,7 +91,7 @@ export default function SideNav({closeSideNav}){
                         <hr className="text-[white]"></hr>
 
                         <li className='nav-item'>
-                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/wishlist'}>
                                 <CiBookmark className="my-auto me-1"/>
                                 My Wishlist
                             </NavLink>

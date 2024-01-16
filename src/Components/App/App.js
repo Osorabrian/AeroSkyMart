@@ -15,6 +15,7 @@ import ResetPassword from '../Login/ResetPassword';
 import ChangePassword from '../Login/ChangePassword';
 import ForgotPassword from '../Login/Forgot Password';
 import Succesful from '../Checkout/Successful';
+import WishList from '../Wishlist/WishList';
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path='cart' element={<Cart/>} />
           <Route path='checkout' element={<Checkout/>} />
           <Route path='payment_successful' element={<Succesful/>}/>
+          <Route path='wishlist' element={<WishList/>} />
       </Routes>
       <Footer/>
     </div>
