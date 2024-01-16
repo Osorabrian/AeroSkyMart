@@ -37,7 +37,7 @@ export default function WishList(){
 
     return(
         <>
-            <p className='text-4xl'>{list.length} items</p>
+            <p className='text-4xl my-4'>({list.length}) items</p>
 
             <div className='row m-3'>
                 { data }
