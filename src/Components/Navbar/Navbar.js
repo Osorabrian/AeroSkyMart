@@ -61,11 +61,6 @@ export default function Navbar(){
                                 My Orders
                             </NavLink>
                         
-                            <NavLink className={'nav-link flex me-4'}>
-                                <CiBookmark className="my-auto me-1"/>
-                                My Wishlist
-                            </NavLink>
-                        
                     </div>  
 
                     <div className='horizontal-nav navbar flex ms-auto text-xl'>
@@ -110,6 +105,14 @@ export default function Navbar(){
                                     </NavLink>
                                 </li>
                                 <hr className="text-[white]"></hr>
+
+                                <li className='nav-item p-3'>
+                                <NavLink className={'dropdown-item bg-black nav-link flex me-4'}>
+                                    <CiBookmark className="my-auto me-2"/>
+                                    My Wishlist
+                                </NavLink>
+                                </li>
+                                <hr className='text-white'></hr>
 
                                 <li className='nav-item p-3'>
                                     <NavLink className={'flex dropdown-item bg-black nav-link'}>

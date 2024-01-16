@@ -56,14 +56,6 @@ export default function SideNav({closeSideNav}){
                 </li>
                 <hr></hr>
 
-                <li>
-                    <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                        <CiBookmark className="my-auto me-1"/>
-                        My Wishlist
-                    </NavLink>
-                </li>
-                <hr></hr>
-
                 <li className='nav-item'>
                     <NavLink to='/login' className={'nav-link flex'} onClick={closeNav}>
                         <AiOutlineLogin className='my-auto me-1'/>
@@ -97,6 +89,14 @@ export default function SideNav({closeSideNav}){
                             </NavLink>
                         </li>
                         <hr className="text-[white]"></hr>
+
+                        <li className='nav-item'>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                <CiBookmark className="my-auto me-1"/>
+                                My Wishlist
+                            </NavLink>
+                        </li>
+                        <hr className='text-[white]'></hr>
 
                         <li>
                             <NavLink className={'flex dropdown-item bg-black nav-link'}>
