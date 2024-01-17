@@ -1,6 +1,7 @@
 import React from 'react'
 import './profile.css'
 import { MdAddAPhoto } from "react-icons/md";
+import { IoPencilOutline } from "react-icons/io5";
 import profile_pic from '../images/greencqard (2).JPG'
 
 export default function Profile(){
@@ -9,6 +10,10 @@ export default function Profile(){
             <div id='profile-picture-div' className='my-4'>
                 <img src={profile_pic} alt='profile pic' id='profile-picture'/>
                 <MdAddAPhoto id='change-profile-picture-icon' className='text-2xl fill-[#ff9800]'/>
+            </div>
+
+            <div className='me-4'>
+                <IoPencilOutline className='ms-auto text-2xl'/>
             </div>
 
             <div className='text-left ms-4 mb-5'>
