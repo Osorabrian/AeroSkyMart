@@ -23,7 +23,7 @@ export default function Profile(){
         <div>
             <div id='profile-picture-div' className='my-4'>
                 <img src={profile_pic} alt='profile pic' id='profile-picture'/>
-                <input type='file' onChange={handleChange} ref={inputRef} style={{display: 'none'}}/>
+                <input type='file' onChange={handleChange} ref={inputRef} style={{display: 'none'}} accept='image/*'/>
                 <MdAddAPhoto onClick={handleClick}  id='change-profile-picture-icon' className='text-2xl fill-[#ff9800]'/>
             </div>
 
