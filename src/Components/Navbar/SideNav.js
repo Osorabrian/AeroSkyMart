@@ -24,7 +24,7 @@ export default function SideNav({closeSideNav}){
 
                 <hr></hr>
 
-                <li className='nav-item'>
+                <li className='nav-item' >
                     <NavLink to='/' className={'nav-link flex'} onClick={closeNav}>
                         <FaHome className='my-auto me-1'/>
                         Home
@@ -33,7 +33,7 @@ export default function SideNav({closeSideNav}){
                 <hr></hr>
 
                 <li className='nav-item'>
-                    <NavLink to='/store' className={'nav-link flex'} onClick={closeNav}>
+                    <NavLink to='/store' className={'nav-link flex'} onClick={closeNav} >
                         <BiStore className='my-auto me-1'/>
                         Store
                     </NavLink>
@@ -83,7 +83,7 @@ export default function SideNav({closeSideNav}){
                     <ul className="dropdown-menu bg-black" id='dropdown-menu'>
 
                         <li className="nav-item">
-                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'} to='/my_profile'>
                                 <CiUser className="my-auto me-2"/>
                                 View Profile
                             </NavLink>
