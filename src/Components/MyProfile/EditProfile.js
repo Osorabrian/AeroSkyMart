@@ -1,6 +1,10 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 
 export default function EditProfile(){
+
+    const navigate = useNavigate()
+
     return(
         <div>
 
@@ -40,8 +44,8 @@ export default function EditProfile(){
                 </div>
 
                 <div className='justify-between flex mx-5 my-5'>
-                    <button className='btn btn-danger rounded-none'>Cancel</button>
-                    <button className='btn btn-success rounded-none'>Update</button>
+                    <button className='btn btn-danger rounded-none' onClick={() => navigate('/my_profile')}>Cancel</button>
+                    <button type='submit' className='btn btn-success rounded-none'>Update</button>
                 </div>
 
             </form>
