@@ -45,7 +45,7 @@ export default function EditProfile(){
 
                 <div className='justify-between flex mx-5 my-5'>
                     <button className='btn btn-danger rounded-none' onClick={() => navigate('/my_profile')}>Cancel</button>
-                    <button type='submit' className='btn btn-success rounded-none'>Update</button>
+                    <button type='submit' className='btn bg-[#4cbb17] text-white rounded-none'>Update</button>
                 </div>
 
             </form>
