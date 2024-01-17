@@ -17,18 +17,18 @@ export default function Profile(){
 
                 <div className='my-2'>
                     <p className='text-[grey] font-bold'>Email</p>
-                    <p className='font-semibold'>osorabrian@gmail.com</p>
+                    <p>osorabrian@gmail.com</p>
                 </div>
 
                 <div className='my-2'>
                     <p className='text-[grey]  font-bold'>Phone Number</p>
-                    <p className='font-semibold'>+254746451952</p>
+                    <p>+254746451952</p>
                 </div>
 
                 <div className='my-2'>
                     <p className='text-[grey] font-bold'>Address </p>
-                    <p className='font-semibold'>Home</p>
-                    <p>Nairobi, South C, Kawi House.</p>
+                    <p>Home</p>
+                    <p className='text-sm text-[#318CE7]'>Nairobi, South C, Kawi House.</p>
                 </div>
 
             </div>
