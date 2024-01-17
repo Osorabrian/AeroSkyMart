@@ -10,7 +10,8 @@ export default function Profile(){
                 <img src={profile_pic} alt='profile pic' id='profile-picture'/>
                 <MdAddAPhoto id='change-profile-picture-icon' className='text-2xl fill-[#ff9800]'/>
             </div>
-            <div className='text-left ms-4'>
+
+            <div className='text-left ms-4 mb-5'>
 
                 <p className='text-4xl font-bold'>Brian Osora</p>
 
