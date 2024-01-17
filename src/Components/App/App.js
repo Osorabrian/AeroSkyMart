@@ -18,6 +18,7 @@ import Succesful from '../Checkout/Successful';
 import WishList from '../Wishlist/WishList';
 import {Routes, Route} from 'react-router-dom'
 import Profile from '../MyProfile/Profile';
+import EditProfile from '../MyProfile/EditProfile';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path='payment_successful' element={<Succesful/>}/>
           <Route path='wishlist' element={<WishList/>} />
           <Route path='my_profile' element={<Profile/>} />
+          <Route path='edit_profile' element={<EditProfile/>} />
       </Routes>
       <Footer/>
     </div>

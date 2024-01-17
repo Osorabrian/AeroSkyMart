@@ -1,4 +1,5 @@
 import React, {useRef, useState}from 'react'
+import { useNavigate } from 'react-router-dom';
 import './profile.css'
 import { MdAddAPhoto } from "react-icons/md";
 import { IoPencilOutline } from "react-icons/io5";
@@ -7,6 +8,7 @@ import profile_pic from '../images/greencqard (2).JPG'
 export default function Profile(){
 
     const inputRef = useRef()
+    const navigate = useNavigate()
     const [profile, setProfile] = useState('')
 
     function handleClick(){
@@ -26,7 +28,7 @@ export default function Profile(){
             </div>
 
             <div className='me-4'>
-                <IoPencilOutline className='ms-auto text-2xl'/>
+                <IoPencilOutline className='ms-auto text-2xl' onClick={() => navigate('/edit_profile')}/>
             </div>
 
             <div className='text-left ms-4 mb-5'>
