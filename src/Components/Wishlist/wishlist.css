@@ -1,3 +1,7 @@
 #pagination{
     max-width: 400px;
 }
+
+#no-items{
+    min-height: 400px;
+}
