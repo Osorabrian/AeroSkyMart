@@ -35,17 +35,17 @@ export default function Profile(){
 
                 <p className='text-4xl font-bold flex flex-wrap'>Brian Osora</p>
 
-                <div className='my-2'>
+                <div className='my-3'>
                     <p className='text-[grey] font-bold text-lg'>Email</p>
                     <p className='text-md flex flex-wrap'>osorabrian@gmail.com</p>
                 </div>
 
-                <div className='my-2'>
+                <div className='my-3'>
                     <p className='text-[grey]  font-bold text-lg'>Phone Number</p>
                     <p className='text-md flex flex-wrap'>+254746451952</p>
                 </div>
 
-                <div className='my-2'>
+                <div className='my-3'>
                     <p className='text-[grey] font-bold text-lg'>Address </p>
                     <p className='text-md flex flex-wrap'>Home</p>
                     <p className='text-sm text-[#318CE7] flex flex-wrap'>Nairobi, South C, Kawi House.</p>
