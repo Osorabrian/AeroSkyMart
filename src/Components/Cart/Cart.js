@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import {Link, NavLink} from 'react-router-dom'
 import CartItem from "./CartItem";
+import { FaOpencart } from "react-icons/fa";
 import { MdOutlineRemoveShoppingCart } from "react-icons/md";
 import './cart.css'
 
@@ -16,8 +17,13 @@ export default function Cart(){
                     <MdOutlineRemoveShoppingCart className="mx-auto my-5 text-7xl text-[#ff9800]"/>
                     <p className="my-3">Your Cart is empty.</p>
                     <p className="my-3 flex-wrap">Please visit 
-                        <Link to={'/store'} className={'text-[rgb(0,0,255)]'}> our store </Link>
+                        <Link to={'/store'} className={'text-[#ff9800]'}> our store </Link>
                     to view products.</p>
+
+                    <Link className='mx-auto justify-center flex border-1 bg-[#ff9800] rounded-none mt-5 mb-5 text-[white] p-3 w-6/12' to={'/store'}>
+                        <FaOpencart className='me-2'/>
+                        Proceed to Store
+                    </Link>
                 </div>
             )}
             {cartItems.length > 0 && (
