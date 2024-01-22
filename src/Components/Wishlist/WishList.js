@@ -5,7 +5,7 @@ import './wishlist.css'
 export default function WishList(){
 
     const [list, setList] = useState([])
-    const postsPerPage = 20
+    const postsPerPage = 10
     const totalPages = list.length/postsPerPage
     const [firstPost, setFirstPost] = useState(0)
     const [lastPost, setLastPost] = useState(20)
