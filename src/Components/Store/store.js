@@ -147,13 +147,13 @@ export default function Store(){
                     {posts.length > 0 && (
                             <div className="row mx-auto mt-1 mb-5" id='pagination'>
                                 <button className = 'btn btn-dark col-4' disabled={!canPrev} onClick={goToPrev}>
-                                    {`<< Prev.`}
+                                    {`Prev`}
                                 </button>
                                 <p className="col-4">
                                     { currentPage > pages ? currentPage = 1 : currentPage} of {pages}
                                 </p>
                                 <button className = 'btn btn-dark col-4' disabled={!canNext} onClick={goToNext}>
-                                    {`Next >>`}
+                                    {`Next`}
                                 </button>
                             </div>
                     )}
