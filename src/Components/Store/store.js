@@ -126,7 +126,7 @@ export default function Store(){
                         <div>
                             {posts.length > 0 ?
                                 <div>
-                                    <div className="flex mb-2 ms-2">
+                                    <div className="flex mb-3 ms-2">
 
                                         <p style={{textAlign: 'left'}} className="font-semibold m-2 my-auto" >
                                             {start + 1} to {end > totalData ? totalData: end} of {totalData} results 
