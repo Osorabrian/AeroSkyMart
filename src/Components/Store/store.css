@@ -53,6 +53,19 @@
     margin: 10px;
 }
 
+#filter-button{
+    display: none;
+}
+
+@media screen and (max-width: 1045px){
+    #filter-section{
+        display: none;
+    }
+    #filter-button{
+        display: inline-flex;
+    }
+}
+
 @media  screen and (max-width: 650px) {
     #search{
         max-width: 300px;

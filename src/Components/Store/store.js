@@ -100,47 +100,68 @@ export default function Store(){
 
             {!loading ? (
                 <>
-                    {posts.length > 0 && (
-                        <div className="flex mb-2 ms-2">
+                   
+                    <div className="flex" id='cards'>
 
-                            <p style={{textAlign: 'left'}} className="font-semibold m-2" >
-                                {start + 1} to {end > totalData ? totalData: end} of {totalData} results 
-                            </p>
+                        <div className="flex-wrap w-8/12 text-left ms-3 mt-5" id="filter-section">
+                            {/* <div className="vr h-100"></div> */}
+                            <h1 className="font-bold mb-2">Availability</h1>
 
-                            <div className="flex ms-auto m-2">
-                                <button className="flex me-3" onClick={handleFilter}>
-                                    <FcFilledFilter className="my-auto"/>   
-                                    Filter
-                                </button>
-
-                                <div className="dropdown">
-                                    <button className='flex' type="button" data-bs-toggle='dropdown'>
-                                        <BiSort className="my-auto fill-[#e96f0c]"/>
-                                        Sort
-                                    </button>
-                                    <ul className="dropdown-menu">
-                                        <li className="m-2">Best Rated</li>
-                                        <li className="m-2">Best Selling</li>
-                                        <li className="m-2">Price (High to Low)</li>
-                                        <li className="m-2">Price (Low to High)</li>
-                                        <li className="m-2">Newest to Oldest</li>
-                                        <li className="m-2">Oldest to Newest</li>
-                                    </ul>
-                                </div>
+                            <div>
+                                <input type="checkbox" className="me-2"/>
+                                <label>Available</label>
                             </div>
 
-                        </div>
-                    )}
-                
-                    <div className="row mx-auto" id='cards'>
+                            <div>
+                                <input type="checkbox" className="me-2"/>
+                                <label>Out of Stock</label>
+                            </div>
 
-                        {posts.length > 0 ?
-                            <>
-                                {posts}
-                            </>                     
-                        :
-                            <p className='justify-center py-5 my-5 text-2xl flex flex-wrap'>No Search Results.</p>
-                        }
+                            <div>
+                                <input type="checkbox" className="me-2"/>
+                                <label>Upcoming</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            {posts.length > 0 ?
+                                <div>
+                                    <div className="flex mb-2 ms-2">
+
+                                        <p style={{textAlign: 'left'}} className="font-semibold m-2 my-auto" >
+                                            {start + 1} to {end > totalData ? totalData: end} of {totalData} results 
+                                        </p>
+
+                                        <div className="flex ms-auto mx-3">
+                                            <button className="flex me-3" onClick={handleFilter} id='filter-button'>
+                                                <FcFilledFilter className="mt-1"/>   
+                                                Filter
+                                            </button>
+
+                                            <div className="dropdown">
+                                                <button className='flex' type="button" data-bs-toggle='dropdown'>
+                                                    <BiSort className="my-auto fill-[#e96f0c]"/>
+                                                    Sort
+                                                </button>
+                                                <ul className="dropdown-menu">
+                                                    <li className="m-2">Best Rated</li>
+                                                    <li className="m-2">Best Selling</li>
+                                                    <li className="m-2">Price (High to Low)</li>
+                                                    <li className="m-2">Price (Low to High)</li>
+                                                    <li className="m-2">Newest to Oldest</li>
+                                                    <li className="m-2">Oldest to Newest</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div className="flex flex-wrap">
+                                    {posts}
+                                </div>
+                                </div>                     
+                            :
+                                <p className='justify-center py-5 my-5 text-2xl flex flex-wrap'>No Search Results.</p>
+                            }
+                        </div>
                         
                     </div>
 
