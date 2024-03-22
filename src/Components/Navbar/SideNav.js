@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import {FaHome} from 'react-icons/fa'
 import { FaShippingFast } from "react-icons/fa";
@@ -13,6 +13,8 @@ import profile_pic from '../images/greencqard (2).JPG'
 import './Navbar.css'
 
 export default function SideNav({closeSideNav}){
+
+    const [logIn, setLogIn] = useState(false)
 
     function closeNav(){
         closeSideNav()
@@ -56,22 +58,25 @@ export default function SideNav({closeSideNav}){
                 </li>
                 <hr></hr>
 
-                <li className='nav-item'>
-                    <NavLink to='/login' className={'nav-link flex'} onClick={closeNav}>
-                        <AiOutlineLogin className='my-auto me-1'/>
-                        Login
-                    </NavLink>
-                </li> 
-                <hr></hr>  
+                {logIn === false ? (
+                    <>
+                        <li className='nav-item'>
+                            <NavLink to='/login' className={'nav-link flex'} onClick={closeNav}>
+                                <AiOutlineLogin className='my-auto me-1'/>
+                                Login
+                            </NavLink>
+                        </li> 
+                        <hr></hr>  
 
-                <li className='nav-item'>
-                    <NavLink to='/signup' className={'nav-link flex'} onClick={closeNav}>
-                        <AiOutlineUserAdd className='my-auto me-1'/>
-                        SignUp
-                    </NavLink>
-                </li>
-                <hr></hr>
-
+                        <li className='nav-item'>
+                            <NavLink to='/signup' className={'nav-link flex'} onClick={closeNav}>
+                                <AiOutlineUserAdd className='my-auto me-1'/>
+                                SignUp
+                            </NavLink>
+                        </li>
+                        <hr></hr>
+                    </>
+                ):(
                 <li className='nav-item dropdown'>
 
                     <NavLink className={'flex nav-link'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
@@ -115,6 +120,7 @@ export default function SideNav({closeSideNav}){
 
                     </ul>
                 </li>
+                )}
 
             </ul>
     )
