@@ -20,6 +20,7 @@ import './Navbar.css'
 export default function Navbar(){
 
     const [sideMenu, setSideMenu] = useState(false)
+    const [logIn, setLogIn] = useState(false)
 
     function closeSideNav(){
         setSideMenu(false)
@@ -62,10 +63,10 @@ export default function Navbar(){
                             </NavLink>
                         
                     </div>  
-
+                {!logIn && (
                     <div className='horizontal-nav navbar flex ms-auto text-xl'>
 
-                            <NavLink to='/login' className={'nav-link flex me-3'}>
+                            <NavLink to='/login' className={'nav-link flex me-3'} onClick={() => setLogIn(true)}>
                                 <AiOutlineLogin className='my-auto me-1'/>
                                 Login
                             </NavLink>
@@ -76,18 +77,23 @@ export default function Navbar(){
                             </NavLink>
                             
                     </div>
+                )}
                     
                     <div className='d-flex justify-content-end'>
 
-                        <NavLink to='/store' className={'nav-link me-1'}>
-                            <CiSearch id='search-icon' className='text-3xl cursor-pointer'/>
-                        </NavLink>
+                    
+                        <>
+                            <NavLink to='/store' className={'nav-link me-1'}>
+                                <CiSearch id='search-icon' className='text-3xl cursor-pointer'/>
+                            </NavLink>
 
-                        <NavLink id='cart' className={'nav-link'} to={'/cart'}>
-                            <PiShoppingCartThin id='cart-icon' className='text-3xl cursor-pointer' />
-                            <div id='cart-count' className='p-1'>99+</div>
-                        </NavLink>
-
+                            <NavLink id='cart' className={'nav-link'} to={'/cart'}>
+                                <PiShoppingCartThin id='cart-icon' className='text-3xl cursor-pointer' />
+                                <div id='cart-count' className='p-1'>99+</div>
+                            </NavLink>
+                        </>
+                   
+                    {logIn && (
                         <div className='nav-item dropdown text-xl' id='profile-dropdown'>
 
                             <NavLink className={'flex nav-link'} role="button" data-bs-toggle='dropdown' aria-expanded='false'>
@@ -123,7 +129,7 @@ export default function Navbar(){
                                 <hr className="text-[white]"></hr>
 
                                 <li className='nav-item p-3'>
-                                    <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'}>
+                                    <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'} onClick={() => setLogIn(false) }>
                                         <RiLogoutCircleLine className="my-auto me-2"/>
                                         Log Out
                                     </NavLink>
@@ -131,7 +137,8 @@ export default function Navbar(){
 
                             </ul>
                         </div>
-
+                    )}
+       
                     </div>
 
                 </div>          
