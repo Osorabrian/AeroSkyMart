@@ -56,7 +56,7 @@ export default function Navbar(){
                                 Cart
                             </NavLink>
 
-                            <NavLink className={'nav-link flex me-4'}>
+                            <NavLink to='/' className={'nav-link flex me-4'}>
                                 <FaShippingFast className="my-auto me-1"/>
                                 My Orders
                             </NavLink>
@@ -99,7 +99,7 @@ export default function Navbar(){
                             <ul className="dropdown-menu bg-black text-xl" id='dropdown-menu'>
 
                                 <li className="nav-item p-3">
-                                    <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                    <NavLink to='/my_profile' className={'flex dropdown-item bg-black nav-link'}>
                                         <CiUser className="my-auto me-2"/>
                                         View Profile
                                     </NavLink>
