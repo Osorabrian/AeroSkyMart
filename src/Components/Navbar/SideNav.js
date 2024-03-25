@@ -20,12 +20,6 @@ export default function SideNav({closeSideNav}){
         closeSideNav()
     }
 
-    function handleLogIn(){
-        setLogIn(true);
-        closeNav();
-    }
-
-
     return(
             <ul id='side-nav' className="text-light text-xl">
 
