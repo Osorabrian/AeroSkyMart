@@ -14,7 +14,7 @@ import './Navbar.css'
 
 export default function SideNav({closeSideNav}){
 
-    const [logIn, setLogIn] = useState(false)
+    const [logIn, setLogIn] = useState(true)
 
     function closeNav(){
         closeSideNav()
