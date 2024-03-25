@@ -20,6 +20,11 @@ export default function SideNav({closeSideNav}){
         closeSideNav()
     }
 
+    function handleLogIn(){
+        setLogIn(true);
+        closeNav();
+    }
+
 
     return(
             <ul id='side-nav' className="text-light text-xl">
@@ -112,7 +117,7 @@ export default function SideNav({closeSideNav}){
                         <hr className="text-[white]"></hr>
 
                         <li>
-                            <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'}>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'} onClick={() => setLogIn(false)}>
                                 <RiLogoutCircleLine className="my-auto me-2"/>
                                 Log Out
                             </NavLink>
