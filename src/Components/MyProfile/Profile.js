@@ -30,9 +30,9 @@ export default function Profile(){
 
             <div id='profile-details'>
 
-                <div className='justify-end flex cursor-pointer me-3' onClick={() => navigate('/edit_profile')}>
-                    <p className='me-1 text-[#318CE7]'>Edit Profile</p>
+                <div className='justify-end flex cursor-pointer me-3' onClick={() => navigate('/edit_profile')} >
                     <IoPencilOutline className='text-2xl my-auto '/>
+                    <p className='me-1 text-[#318CE7]'>Edit Profile</p>
                 </div>
 
                 <div className='text-left ms-4 mb-5'>
