@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { MdOutlineNotificationsPaused } from 'react-icons/md'
+import { GoPlus } from "react-icons/go";
 import {useNavigate} from 'react-router-dom'
 
 export default function EditProfile(){
@@ -7,6 +8,7 @@ export default function EditProfile(){
     const navigate = useNavigate()
     const [address, setAdress] = useState('')
     const [enterAddress, setEnterAdress] = useState('')
+    const [addAddress, setAddAddress] = useState(false)
 
     return(
         <div>
@@ -42,26 +44,37 @@ export default function EditProfile(){
                 </div>
 
                 <div className='my-4'>
-                   <p>Address</p> 
-                   <p className='form-text mb-2'>Select how to enter you address</p>
 
-                    <div className='mx-4 my-2 '>
-                        <input type='radio' className='me-2' name='address' value='manual' onClick={(e) => setEnterAdress(e.target.value)}/>   
-                        <label>Manually Enter Address</label><br></br>  
-                            {enterAddress === 'manual' && (
-                                <>
-                                    <input type='text' placeholder='Enter Address' className='form-control'/><br></br>
-                                </>
-                            )} 
+                    <div className='flex'>
+                        <p>Address</p>
+                        <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(!addAddress)}>
+                                <GoPlus className='my-auto text-2xl'/>
+                                <p className='me-3'>Add</p>
+                        </span>
                     </div>
+                    {addAddress && (
+                        <>
+                            <p className='form-text mb-2'>Select how to enter you address</p>
 
-                    <div className='mx-4 my-2'>
-                        <input type='radio' className='me-2' name='address' value='automatic' onClick={(e) => setEnterAdress(e.target.value)}/>
-                        <label>Set Current Adress</label>
-                            {enterAddress === 'automatic' && (
-                                <p>Your current address is {address}</p>
-                            )}
-                    </div>
+                            <div className='mx-4 my-2 '>
+                                <input type='radio' className='me-2' id='manual' name='address' value='manual' onClick={(e) => setEnterAdress(e.target.value)}/>   
+                                <label for='manual'>Manually Enter Address</label><br></br>  
+                                    {enterAddress === 'manual' && (
+                                        <>
+                                            <input type='text' placeholder='Enter Address' className='form-control'/><br></br>
+                                        </>
+                                    )} 
+                            </div>
+
+                            <div className='mx-4 my-2'>
+                                <input type='radio' className='me-2' id='automatic-address' name='address' value='automatic' onClick={(e) => setEnterAdress(e.target.value)}/>
+                                <label for='automatic-address'>Set Current Adress</label>
+                                    {enterAddress === 'automatic' && (
+                                        <p>Your current address is {address}</p>
+                                    )}
+                            </div>
+                        </>
+                    )}
 
                 </div>
 
