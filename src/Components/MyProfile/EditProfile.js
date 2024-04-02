@@ -8,9 +8,9 @@ export default function EditProfile(){
     return(
         <div>
 
-            <h1 className='text-3xl font-bold mt-4'>Edit Profile</h1>
+            <h1 className='text-3xl font-bold mt-4 mx-auto'>Edit Profile</h1>
 
-            <form className='text-left m-3'>
+            <form className='text-left m-3 mx-auto' id='edit_profile_form'>
 
                 <div className='flex my-4'>
 
