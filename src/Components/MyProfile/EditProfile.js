@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
+import { MdOutlineNotificationsPaused } from 'react-icons/md'
 import {useNavigate} from 'react-router-dom'
 
 export default function EditProfile(){
 
     const navigate = useNavigate()
+    const [address, setAdress] = useState('')
+    const [enterAddress, setEnterAdress] = useState('')
 
     return(
         <div>
@@ -39,8 +42,27 @@ export default function EditProfile(){
                 </div>
 
                 <div className='my-4'>
-                    <label className='form-label'>Adress</label>
-                    <input type='text' placeholder='Enter Adress' className='form-control'/>
+                   <p>Address</p> 
+                   <p className='form-text mb-2'>Select how to enter you address</p>
+
+                    <div className='mx-4 my-2 '>
+                        <input type='radio' className='me-2' name='address' value='manual' onClick={(e) => setEnterAdress(e.target.value)}/>   
+                        <label>Manually Enter Address</label><br></br>  
+                            {enterAddress === 'manual' && (
+                                <>
+                                    <input type='text' placeholder='Enter Address' className='form-control'/><br></br>
+                                </>
+                            )} 
+                    </div>
+
+                    <div className='mx-4 my-2'>
+                        <input type='radio' className='me-2' name='address' value='automatic' onClick={(e) => setEnterAdress(e.target.value)}/>
+                        <label>Set Current Adress</label>
+                            {enterAddress === 'automatic' && (
+                                <p>Your current address is {address}</p>
+                            )}
+                    </div>
+
                 </div>
 
                 <div className='justify-between flex mx-5 my-5'>
