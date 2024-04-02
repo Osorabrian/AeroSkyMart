@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import { MdOutlineNotificationsPaused } from 'react-icons/md'
 import { GoPlus } from "react-icons/go";
+import { LiaTimesSolid } from "react-icons/lia";
 import {useNavigate} from 'react-router-dom'
 
 export default function EditProfile(){
@@ -11,7 +11,7 @@ export default function EditProfile(){
     const [addAddress, setAddAddress] = useState(false)
 
     return(
-        <div>
+        <div className='m-3'>
 
             <h1 className='text-3xl font-bold mt-4 mx-auto'>Edit Profile</h1>
 
@@ -47,13 +47,20 @@ export default function EditProfile(){
 
                     <div className='flex'>
                         <p>Address</p>
-                        <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(!addAddress)}>
+                        {!addAddress ? (
+                        <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(true)}>
                                 <GoPlus className='my-auto text-2xl'/>
-                                <p className='me-3'>Add</p>
-                        </span>
+                                <p className='me-4'>Add Address</p>
+                        </span> ):(
+                        <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(false)}>
+                                <LiaTimesSolid className='my-auto text-2xl text-[red]'/>
+                                <p className='me-4'>Cancel</p>
+                        </span>)
+                        }
                     </div>
-                    {addAddress && (
-                        <>
+
+                    { addAddress ? (
+                        <div className='my-3'>
                             <p className='form-text mb-2'>Select how to enter you address</p>
 
                             <div className='mx-4 my-2 '>
@@ -61,7 +68,8 @@ export default function EditProfile(){
                                 <label for='manual'>Manually Enter Address</label><br></br>  
                                     {enterAddress === 'manual' && (
                                         <>
-                                            <input type='text' placeholder='Enter Address' className='form-control'/><br></br>
+                                            <input type='text' placeholder='Name of Address' className='form-control my-2'/>
+                                            <textarea rows={2} type='text' placeholder='Enter Address' className='form-control'/><br></br>
                                         </>
                                     )} 
                             </div>
@@ -70,8 +78,23 @@ export default function EditProfile(){
                                 <input type='radio' className='me-2' id='automatic-address' name='address' value='automatic' onClick={(e) => setEnterAdress(e.target.value)}/>
                                 <label for='automatic-address'>Set Current Adress</label>
                                     {enterAddress === 'automatic' && (
-                                        <p>Your current address is {address}</p>
+                                        <>
+                                            <input type='text' placeholder='Name of Address' className='form-control my-2'/>
+                                            <p>Your current address is {address}</p>
+                                        </>
                                     )}
+                            </div>
+                        </div>
+                        ):(
+                        <>
+                            <div className='p-3 shadow-lg my-3'>
+                                <p className='text-[#318CE7]'>Home</p>
+                                <p className='text-sm'>Canaan Lane, Muigai Estate, Kitengela, Kajiado County, Kenya.</p>
+                            </div>
+
+                            <div className='p-3 shadow-lg my-3'>
+                                <p className='text-[#318CE7]'>Work</p>
+                                <p className='text-sm'>Kawi House, South C, Nairobi County, Kenya.</p>
                             </div>
                         </>
                     )}
