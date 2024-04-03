@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { GoPlus } from "react-icons/go";
 import { LiaTimesSolid } from "react-icons/lia";
 import {useNavigate} from 'react-router-dom'
+import { PiTrashThin } from "react-icons/pi";
 
 export default function EditProfile(){
 
@@ -44,16 +45,17 @@ export default function EditProfile(){
                 </div>
 
                     <div className='flex'>
-                        <p>Address</p>
+                        <p>Address(es)</p>
                         {!addAddress ? (
-                        <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(true)}>
-                                <GoPlus className='my-auto text-2xl'/>
-                                <p className='me-4'>Add Address</p>
-                        </span> ):(
-                        <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(false)}>
-                                <LiaTimesSolid className='my-auto text-2xl text-[red]'/>
-                                <p className='me-4'>Cancel</p>
-                        </span>)
+                            <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(true)}>
+                                    <GoPlus className='my-auto text-2xl'/>
+                                    <p className='me-4'>Add Address</p>
+                            </span> 
+                        ):(
+                            <span className='flex ms-auto cursor-pointer' onClick={() => setAddAddress(false)}>
+                                    <LiaTimesSolid className='my-auto text-2xl text-[red]'/>
+                                    <p className='me-4'>Cancel</p>
+                            </span>)
                         }
                     </div>
 
@@ -75,7 +77,7 @@ export default function EditProfile(){
 
                             <div className='mx-4 my-2'>
                                 <input type='radio' className='me-2' id='automatic-address' name='address' value='automatic' onClick={(e) => setEnterAdress(e.target.value)}/>
-                                <label for='automatic-address'>Set Current Adress</label>
+                                <label htmlFor='automatic-address'>Set Current Adress</label>
                                     {enterAddress === 'automatic' && (
                                         <>
                                             <input type='text' placeholder='Name of Address' className='form-control my-2'/>
@@ -89,16 +91,22 @@ export default function EditProfile(){
                             </div>
 
                         </form>
-                        ):(
+                    ):(
                         <>
-                            <div className='p-3 shadow-lg my-3'>
-                                <p className='text-[#318CE7]'>Home</p>
-                                <p className='text-sm'>Canaan Lane, Muigai Estate, Kitengela, Kajiado County, Kenya.</p>
+                            <div className='flex p-3 shadow-lg my-3'>
+                                <div>
+                                    <p className='text-[#318CE7]'>Home</p>
+                                    <p className='text-sm'>Canaan Lane, Muigai Estate, Kitengela, Kajiado County, Kenya.</p>
+                                </div>
+                                <PiTrashThin className='my-auto ms-auto text-lg text-[red] cursor-pointer'/>
                             </div>
 
-                            <div className='p-3 shadow-lg my-3'>
-                                <p className='text-[#318CE7]'>Work</p>
-                                <p className='text-sm'>Kawi House, South C, Nairobi County, Kenya.</p>
+                            <div className='flex p-3 shadow-lg my-3'>
+                                <div>
+                                    <p className='text-[#318CE7]'>Work</p>
+                                    <p className='text-sm'>Kawi House, South C, Nairobi County, Kenya.</p>
+                                </div>
+                                <PiTrashThin className='my-auto ms-auto text-lg text-[red] cursor-pointer'/>
                             </div>
                         
                             <div className='justify-between flex mx-2 my-5'>
@@ -106,7 +114,7 @@ export default function EditProfile(){
                                 <button type='submit' className='btn bg-[#4cbb17] text-white rounded-none'>Update</button>
                             </div>
                         </>
-                )}
+                    )}
 
             </form>
         </div>

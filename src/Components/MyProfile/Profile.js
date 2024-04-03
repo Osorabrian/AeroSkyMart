@@ -31,8 +31,8 @@ export default function Profile(){
             <div id='profile-details'>
 
                 <div className='justify-end flex cursor-pointer me-3' onClick={() => navigate('/edit_profile')} >
-                    <IoPencilOutline className='text-2xl my-auto '/>
-                    <p className='me-1 text-[#318CE7]'>Edit Profile</p>
+                    <IoPencilOutline className='text-2xl my-auto me-1'/>
+                    <p className='me-1'>Edit Profile</p>
                 </div>
 
                 <div className='text-left ms-4 mb-5'>
@@ -50,9 +50,18 @@ export default function Profile(){
                     </div>
 
                     <div className='my-3'>
-                        <p className='text-[grey] font-bold text-lg'>Address </p>
-                        <p className='text-md flex flex-wrap'>Home</p>
-                        <p className='text-sm text-[#318CE7] flex flex-wrap'>Nairobi, South C, Kawi House.</p>
+                        <p className='text-[grey] font-bold text-lg'>Address(es)</p>
+
+                        <div className='shadow-lg p-3 my-3'>
+                            <p className='text-md text-[#318CE7] flex flex-wrap'>Home</p>
+                            <p className='text-sm flex flex-wrap'>Nairobi, South C, Kawi House.</p>
+                        </div>
+
+                        <div className='p-3 shadow-lg my-3'>
+                            <p className='text-[#318CE7]'>Work</p>
+                            <p className='text-sm'>Kawi House, South C, Nairobi County, Kenya.</p>
+                        </div>
+
                     </div>
 
                 </div>
