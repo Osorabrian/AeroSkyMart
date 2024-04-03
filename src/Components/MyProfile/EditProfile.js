@@ -84,7 +84,7 @@ export default function EditProfile(){
                                     )}
                             </div>
 
-                            <div className='text-center my-4'>        
+                            <div className='text-center my-5'>        
                                 <button className='bg-[black] text-[white] border-0 px-3 py-2'>Add Address</button>
                             </div>
 
