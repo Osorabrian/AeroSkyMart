@@ -43,8 +43,6 @@ export default function EditProfile(){
                     </div>
                 </div>
 
-                <div className='my-4'>
-
                     <div className='flex'>
                         <p>Address</p>
                         {!addAddress ? (
@@ -60,7 +58,8 @@ export default function EditProfile(){
                     </div>
 
                     { addAddress ? (
-                        <div className='my-3'>
+                        <form className='my-3'>
+
                             <p className='form-text mb-2'>Select how to enter you address</p>
 
                             <div className='mx-4 my-2 '>
@@ -84,7 +83,12 @@ export default function EditProfile(){
                                         </>
                                     )}
                             </div>
-                        </div>
+
+                            <div className='text-center my-4'>        
+                                <button className='bg-[black] text-[white] border-0 px-3 py-2'>Add Address</button>
+                            </div>
+
+                        </form>
                         ):(
                         <>
                             <div className='p-3 shadow-lg my-3'>
@@ -96,15 +100,13 @@ export default function EditProfile(){
                                 <p className='text-[#318CE7]'>Work</p>
                                 <p className='text-sm'>Kawi House, South C, Nairobi County, Kenya.</p>
                             </div>
+                        
+                            <div className='justify-between flex mx-2 my-5'>
+                                <button className='btn btn-danger rounded-none' onClick={() => navigate('/my_profile')}>Cancel</button>
+                                <button type='submit' className='btn bg-[#4cbb17] text-white rounded-none'>Update</button>
+                            </div>
                         </>
-                    )}
-
-                </div>
-
-                <div className='justify-between flex mx-5 my-5'>
-                    <button className='btn btn-danger rounded-none' onClick={() => navigate('/my_profile')}>Cancel</button>
-                    <button type='submit' className='btn bg-[#4cbb17] text-white rounded-none'>Update</button>
-                </div>
+                )}
 
             </form>
         </div>
