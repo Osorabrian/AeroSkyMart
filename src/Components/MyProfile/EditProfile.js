@@ -96,7 +96,7 @@ export default function EditProfile(){
                             <div className='flex p-3 shadow-lg my-3'>
                                 <div>
                                     <p className='text-[#318CE7]'>Home</p>
-                                    <p className='text-sm'>Canaan Lane, Muigai Estate, Kitengela, Kajiado County, Kenya.</p>
+                                    <p className='text-sm'>Muigai Estate, Kitengela, Kajiado County, Kenya.</p>
                                 </div>
                                 <PiTrashThin className='my-auto ms-auto text-lg text-[red] cursor-pointer'/>
                             </div>

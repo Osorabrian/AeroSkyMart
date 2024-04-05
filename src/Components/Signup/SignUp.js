@@ -58,6 +58,7 @@ export default function SignUp(){
                         <BsPersonFillAdd className="col-3 -ml-5 text-xl "/>
                     </button>
                 </div>
+                
             </form>
 
             <div className='row mx-auto mt-1 p-2 signup-div'>
