@@ -3,6 +3,8 @@ import { GoPlus } from "react-icons/go";
 import { LiaTimesSolid } from "react-icons/lia";
 import {useNavigate} from 'react-router-dom'
 import { PiTrashThin } from "react-icons/pi";
+import PhoneInput from 'react-phone-number-input'
+import 'react-phone-number-input/style.css'
 
 export default function EditProfile(){
 
@@ -22,12 +24,12 @@ export default function EditProfile(){
 
                     <div className='me-3'>
                         <label className='form-label'>First Name</label>
-                        <input type='text' placeholder='first name' className='form-control'/>
+                        <input type='text' placeholder='first name' className='form-control' required/>
                     </div>
 
                     <div>
                         <label className='form-label'>Last Name</label>
-                        <input type='text' placeholder='last name' className='form-control'/>
+                        <input type='text' placeholder='last name' className='form-control' required/>
                     </div>
 
                 </div>
@@ -35,12 +37,12 @@ export default function EditProfile(){
                 <div className='flex my-4'>
                     <div className=''>
                         <label className='form-label'>Email</label>
-                        <input type='email' placeholder='example@gmail.com'className='form-control'/>
+                        <input type='email' placeholder='example@gmail.com'className='form-control' required/>
                     </div>
 
                     <div className='ms-3'>
                         <label className='form-label'>Phone Number</label>
-                        <input type='number' placeholder='0746451952' className='form-control'/>
+                        <PhoneInput maxLength={'11'} type={'tel'} className='form-control -ms-2' placeholder="0712345678" required defaultCountry="KE" id='phone-input'/>
                     </div>
                 </div>
 
