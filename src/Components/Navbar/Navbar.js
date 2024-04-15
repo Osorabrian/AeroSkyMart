@@ -57,7 +57,7 @@ export default function Navbar(){
                                 Cart
                             </NavLink>
 
-                            <NavLink to='/' className={'nav-link flex me-4'}>
+                            <NavLink to='/my_orders' className={'nav-link flex me-4'}>
                                 <FaShippingFast className="my-auto me-1"/>
                                 My Orders
                             </NavLink>

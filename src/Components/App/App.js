@@ -19,6 +19,7 @@ import WishList from '../Wishlist/WishList';
 import {Routes, Route} from 'react-router-dom'
 import Profile from '../MyProfile/Profile';
 import EditProfile from '../MyProfile/EditProfile';
+import Orders from '../Orders/Orders';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='wishlist' element={<WishList/>} />
           <Route path='my_profile' element={<Profile/>} />
           <Route path='edit_profile' element={<EditProfile/>} />
+          <Route path='my_orders' elememt={<Orders/>}/>
       </Routes>
       <Footer/>
     </div>
