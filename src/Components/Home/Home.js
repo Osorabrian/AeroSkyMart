@@ -16,14 +16,7 @@ export default function Home() {
                    <h1 className="text-light font-semibold font-raleway leading-normal mt-4" id='message'>Elevate Your Aviation Experience!</h1>
 
                     <Link type="button" className="bg-white p-3" to='/store'>
-                        <div className="row font-lato font-4xl">
-                            <div className="col-9">
-                                Go To Store  
-                            </div>
-                            <div className="col-3">
-                                <FaOpencart className="mt-1 -ml-1"/>
-                            </div>
-                        </div>
+                        Go To Store
                     </Link> 
 
                 </div>                
