@@ -1,5 +1,4 @@
 import React from "react";
-import {FaOpencart} from 'react-icons/fa'
 import './home.css'
 import { Link } from "react-router-dom";
 import Category from './Category'
@@ -15,7 +14,7 @@ export default function Home() {
 
                    <h1 className="text-light font-semibold font-raleway leading-normal mt-4" id='message'>Elevate Your Aviation Experience!</h1>
 
-                    <Link type="button" className="bg-white p-3" to='/store'>
+                    <Link type="button" className="bg-white p-3 mt-4 " to='/store'>
                         Go To Store
                     </Link> 
 
