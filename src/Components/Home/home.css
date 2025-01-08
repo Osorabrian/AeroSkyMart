@@ -22,11 +22,6 @@
     font-size: 60px;
 }
 
-#store-button{
-    background-color: white;
-    padding: 20px;
-}
-
 .category-image{
     max-height: 150px;
     max-width: 150px;
@@ -41,10 +36,5 @@
 
     #message{
         font-size: 20px;
-    }
-
-    #store-button{
-        background-color: white;
-        padding: 5px;
     }
 }
