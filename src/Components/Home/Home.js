@@ -17,12 +17,12 @@ export default function Home() {
 
                     <Link type="button" className="bg-white p-3" to='/store'>
                         <div className="row font-lato font-4xl">
-                            <span className="col-9">
+                            <div className="col-9">
                                 Go To Store  
-                            </span>
-                            <span className="col-3">
+                            </div>
+                            <div className="col-3">
                                 <FaOpencart className="mt-1 -ml-1"/>
-                            </span>
+                            </div>
                         </div>
                     </Link> 
 
