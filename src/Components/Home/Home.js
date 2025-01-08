@@ -11,11 +11,11 @@ export default function Home() {
         <>
         
             <div id='headline'>
-                <div id='headline-message' className="animate__animated animate__fadeInUp animate__slow p-5" >
+                <div id='headline-message' className="animate__animated animate__fadeInUp animate__slow" >
 
                    <h1 className="text-light font-semibold font-raleway leading-normal mt-4" id='message'>Elevate Your Aviation Experience!</h1>
 
-                    <Link type="button" id='store-button' className="mt-5 mb-5 ms-3" to='/store'>
+                    <Link type="button" id='store-button' to='/store'>
                         <div className="row font-lato font-4xl">
                             <span className="col-9">
                             Go To Store  
