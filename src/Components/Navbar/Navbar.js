@@ -42,24 +42,12 @@ export default function Navbar(){
 
                     <div className='horizontal-nav navbar mx-auto flex text-xl text-light'>
 
-                            <NavLink to='/' className={'nav-link flex me-4'}>
-                                <FaHome className='my-auto me-1'/>
-                                Home
-                            </NavLink>
-
                             <NavLink to='/store' className={'nav-link flex me-4'}>
-                                <BiStore className='my-auto me-1'/>
                                 Store
                             </NavLink>
 
                             <NavLink to='/cart' className={'nav-link flex me-4'}>
-                                <AiOutlineShoppingCart className='my-auto me-1'/>
                                 Cart
-                            </NavLink>
-
-                            <NavLink to='/my_orders' className={'nav-link flex me-4'}>
-                                <FaShippingFast className="my-auto me-1"/>
-                                My Orders
                             </NavLink>
                         
                     </div>  
@@ -67,12 +55,10 @@ export default function Navbar(){
                     <div className='horizontal-nav navbar flex ms-auto text-xl'>
 
                             <NavLink to='/login' className={'nav-link flex me-3'} onClick={() => setLogIn(true)}>
-                                <AiOutlineLogin className='my-auto me-1'/>
                                 Login
                             </NavLink>
 
                             <NavLink to='/signup' className={'nav-link flex me-1'}>
-                                <AiOutlineUserAdd className='my-auto me-1'/>
                                 SignUp
                             </NavLink>
                             
@@ -81,7 +67,6 @@ export default function Navbar(){
                     
                     <div className='d-flex justify-content-end'>
 
-                    
                         <>
                             <NavLink to='/store' className={'nav-link me-1'}>
                                 <CiSearch id='search-icon' className='text-3xl cursor-pointer'/>
@@ -92,6 +77,8 @@ export default function Navbar(){
                                 <div id='cart-count' className='p-1'>99+</div>
                             </NavLink>
                         </>
+                    
+                    
                    
                     {logIn && (
                         <div className='nav-item dropdown text-xl' id='profile-dropdown'>
@@ -106,15 +93,20 @@ export default function Navbar(){
 
                                 <li className="nav-item p-3">
                                     <NavLink to='/my_profile' className={'flex dropdown-item bg-black nav-link'}>
-                                        <CiUser className="my-auto me-2"/>
                                         View Profile
                                     </NavLink>
                                 </li>
                                 <hr className="text-[white]"></hr>
 
                                 <li className='nav-item p-3'>
+                                    <NavLink to='/my_orders' className={'nav-link flex me-4'}>
+                                        My Orders
+                                    </NavLink>
+                                </li>
+                                <hr className='text-white'></hr>
+
+                                <li className='nav-item p-3'>
                                 <NavLink className={'dropdown-item bg-black nav-link flex me-4'} to='/wishlist'>
-                                    <CiBookmark className="my-auto me-2"/>
                                     My Wishlist
                                 </NavLink>
                                 </li>
@@ -122,7 +114,6 @@ export default function Navbar(){
 
                                 <li className='nav-item p-3'>
                                     <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                                        <CiSettings className="my-auto me-2"/>
                                         Settings
                                     </NavLink>
                                 </li>
@@ -130,7 +121,6 @@ export default function Navbar(){
 
                                 <li className='nav-item p-3'>
                                     <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'} onClick={() => setLogIn(false) }>
-                                        <RiLogoutCircleLine className="my-auto me-2"/>
                                         Log Out
                                     </NavLink>
                                 </li>

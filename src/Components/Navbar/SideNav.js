@@ -25,17 +25,8 @@ export default function SideNav({closeSideNav}){
 
                 <hr></hr>
 
-                <li className='nav-item' >
-                    <NavLink to='/' className={'nav-link flex'} onClick={closeNav}>
-                        <FaHome className='my-auto me-1'/>
-                        Home
-                    </NavLink>
-                </li>
-                <hr></hr>
-
                 <li className='nav-item'>
                     <NavLink to='/store' className={'nav-link flex'} onClick={closeNav} >
-                        <BiStore className='my-auto me-1'/>
                         Store
                     </NavLink>
                 </li>
@@ -43,7 +34,6 @@ export default function SideNav({closeSideNav}){
 
                 <li className='nav-item'>
                     <NavLink to='/cart' className={'nav-link flex'} onClick={closeNav}>
-                        <AiOutlineShoppingCart className='my-auto me-1'/>
                         Cart
                     </NavLink>
                 </li>
@@ -51,7 +41,6 @@ export default function SideNav({closeSideNav}){
 
                 <li>
                     <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                        <FaShippingFast className="my-auto me-1"/>
                         My Orders
                     </NavLink>
                 </li>
@@ -88,15 +77,20 @@ export default function SideNav({closeSideNav}){
 
                         <li className="nav-item">
                             <NavLink className={'flex dropdown-item bg-black nav-link'} to='/my_profile'>
-                                <CiUser className="my-auto me-2"/>
                                 View Profile
                             </NavLink>
                         </li>
                         <hr className="text-[white]"></hr>
 
+                        <li>
+                            <NavLink className={'flex dropdown-item bg-black nav-link'}>
+                                My Orders
+                            </NavLink>
+                        </li>
+                        <hr></hr>
+
                         <li className='nav-item'>
                             <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/wishlist'}>
-                                <CiBookmark className="my-auto me-1"/>
                                 My Wishlist
                             </NavLink>
                         </li>
@@ -104,7 +98,6 @@ export default function SideNav({closeSideNav}){
 
                         <li>
                             <NavLink className={'flex dropdown-item bg-black nav-link'}>
-                                <CiSettings className="my-auto me-2"/>
                                 Settings
                             </NavLink>
                         </li>
@@ -112,7 +105,6 @@ export default function SideNav({closeSideNav}){
 
                         <li>
                             <NavLink className={'flex dropdown-item bg-black nav-link'} to={'/'} onClick={() => setLogIn(false)}>
-                                <RiLogoutCircleLine className="my-auto me-2"/>
                                 Log Out
                             </NavLink>
                         </li>
