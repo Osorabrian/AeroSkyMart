@@ -11,9 +11,9 @@ export default function Home() {
         <>
         
             <div id='headline'>
-                <div id='headline-message' className="text-left animate__animated animate__fadeInUp animate__slow" >
+                <div id='headline-message' className="animate__animated animate__fadeInUp animate__slow p-5" >
 
-                   <h1 className="text-6xl text-light font-semibold font-raleway leading-normal mt-4">Elevate Your Aviation Experience!</h1>
+                   <h1 className="text-light font-semibold font-raleway leading-normal mt-4" id='message'>Elevate Your Aviation Experience!</h1>
 
                     <Link type="button" id='store-button' className="mt-5 mb-5 ms-3" to='/store'>
                         <div className="row font-lato font-4xl">

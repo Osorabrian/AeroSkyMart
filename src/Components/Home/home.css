@@ -15,7 +15,11 @@
 }
 
 #headline-message{
-    max-width: 500px;
+    margin: auto;
+}
+
+#message{
+    font-size: 60px;
 }
 
 #store-button{
@@ -34,5 +38,14 @@
     .category-image{
         max-height: 120px;
         max-width: 120px;
+    }
+
+    #message{
+        font-size: 20px;
+    }
+
+    #store-button{
+        background-color: white;
+        padding: 5px;
     }
 }
