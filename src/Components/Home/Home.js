@@ -15,13 +15,13 @@ export default function Home() {
 
                    <h1 className="text-light font-semibold font-raleway leading-normal mt-4" id='message'>Elevate Your Aviation Experience!</h1>
 
-                    <Link type="button" to='/store'>
+                    <Link type="button" className="bg-white p-3" to='/store'>
                         <div className="row font-lato font-4xl">
                             <span className="col-9">
                                 Go To Store  
                             </span>
-                            <span>
-                                <FaOpencart className="col-3 mt-1 -ml-1"/>
+                            <span className="col-3">
+                                <FaOpencart className="mt-1 -ml-1"/>
                             </span>
                         </div>
                     </Link> 
